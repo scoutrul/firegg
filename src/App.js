@@ -1,4 +1,6 @@
 import React, { Component } from 'react'
+import Helmet from "react-helmet"
+
 import HeaderMenu from './components/HeaderMenu'
 import Footer from './components/Footer'
 import Container from './components/Container'
@@ -186,6 +188,19 @@ class App extends Component {
     const ENG = this.state.data.english;
     return (
       <div id="app">
+        <Helmet
+          title="Guardsman Limited®"
+          meta={[
+            {"name": "description", "content": "descriotion here"},
+            {"charset": "utf-8"},
+            {"http-equiv":"X-UA-Compatible", "content":"IE=edge"},
+            {"name":"viewport", "content":"width=device-width, initial-scale=1, user-scalable=0, maximum-scale=1.0"}
+          ]}
+          link={[
+              {"rel":"stylesheet", "href":'./style.css'},
+              {"rel":"stylesheet", "href":'https://fonts.googleapis.com/css?family=Work+Sans:300,400,500,700,900'},
+            ]}
+        />
         <HeaderMenu MenuItems={ENG.headerMenu}/>
         <Container/>
         <Footer MenuItems={ENG.headerMenu} SocialItems={ENG.contacts.social}/>
