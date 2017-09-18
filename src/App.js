@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import HeaderMenu from './components/HeaderMenu'
+import Footer from './components/Footer'
 import Container from './components/Container'
 // , MobileMenu, Content, Footer, Hamburger, Chooser
 
@@ -182,11 +183,12 @@ class App extends Component {
     }; // <- set up react state
   }
   render() {
+    const ENG = this.state.data.english;
     return (
       <div id="app">
-        <HeaderMenu items={this.state.data.english.headerMenu}/>
+        <HeaderMenu MenuItems={ENG.headerMenu}/>
         <Container/>
-
+        <Footer MenuItems={ENG.headerMenu} SocialItems={ENG.contacts.social}/>
       </div>
     )
   }

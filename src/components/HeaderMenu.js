@@ -5,8 +5,8 @@ class HeaderMenu extends Component {
     super(props);
   }
   render() {
-    let {items} = this.props;
-    const menuItems = items.map((menu,i)=>(
+    let {MenuItems} = this.props;
+    const menuItems = MenuItems.map((menu,i)=>(
                   <li key={i}>
                     <span>
                       <a href={menu.url}>{menu.name}</a>
