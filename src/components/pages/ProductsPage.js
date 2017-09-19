@@ -1,12 +1,12 @@
 import React from 'react'
 
-function AboutPage(){
+function ProductsPage(){
 	return (
 		<div id="app">
-			AboutPage
+			ProductsPage
 		</div>
 	)
 	
 }
 
-export default AboutPage;
+export default ProductsPage

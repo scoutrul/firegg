@@ -1,13 +1,8 @@
-import React, { Component } from 'react'
+import React from 'react'
 import { Link } from 'react-router-dom'
 
-class HeaderMenu extends Component {
-  constructor(props) {
-    super(props);
-  }
-  render() {
-    let {MenuItems} = this.props;
-    const menuItems = MenuItems.map((menu,i)=>(
+const HeaderMenu = (props) => {
+    const menuItems = props.MenuItems.map((menu,i)=>(
                   <li key={i}>
                     <span>
                       <Link to={menu.url}>{menu.name}</Link>
@@ -36,7 +31,7 @@ class HeaderMenu extends Component {
           </div>
           <div className="column feedback">
             <div className="feedback_container">
-              <Link className="inner" to="feedback.html">
+              <Link className="inner" to="feedback">
                 <img src="images/icon_cart.svg" alt="Cart" />
                 <span>Free Quote</span>
               </Link>
@@ -46,6 +41,6 @@ class HeaderMenu extends Component {
       </section>
     )
   }
-}
+
 
 export default HeaderMenu;

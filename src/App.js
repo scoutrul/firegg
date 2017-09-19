@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import Helmet from 'react-helmet'
 
-import {HeaderMenu, Footer, IndexPage, MainContainer} from './components/'
+import {HeaderMenu, Footer, MainContainer} from './components/'
 // , MobileMenu, Content, Footer, Hamburger, Chooser
 
 class App extends Component {
