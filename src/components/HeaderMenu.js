@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { Link } from 'react-router-dom'
 
 class HeaderMenu extends Component {
   constructor(props) {
@@ -9,7 +10,7 @@ class HeaderMenu extends Component {
     const menuItems = MenuItems.map((menu,i)=>(
                   <li key={i}>
                     <span>
-                      <a href={menu.url}>{menu.name}</a>
+                      <Link to={menu.url}>{menu.name}</Link>
                     </span>
                   </li>
                   )
@@ -19,9 +20,9 @@ class HeaderMenu extends Component {
         <div className="container">
           <div className="column serv">
             <div className="logo">
-              <a href="index.html">
+              <Link to="/">
                 <img src="images/icon_logo.svg" alt="LOGOTYPE"/>
-              </a>
+              </Link>
             </div>
             <div className="location location_toggle ">
               <img src="images/icon_marker.svg" alt="Location"/>
@@ -35,10 +36,10 @@ class HeaderMenu extends Component {
           </div>
           <div className="column feedback">
             <div className="feedback_container">
-              <a className="inner" href="feedback.html">
+              <Link className="inner" to="feedback.html">
                 <img src="images/icon_cart.svg" alt="Cart" />
                 <span>Free Quote</span>
-              </a>
+              </Link>
             </div>
           </div>
         </div>

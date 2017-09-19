@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { Link } from 'react-router-dom'
 
 class Footer extends Component {
   constructor(props) {
@@ -9,7 +10,7 @@ class Footer extends Component {
   	const menuItems = MenuItems.map((menu,i)=>(
   	              <li key={i}>
   	                <span>
-  	                  <a href={menu.url}>{menu.name}</a>
+  	                  <Link to={menu.url}>{menu.name}</Link>
   	                </span>
   	              </li>
   	              )
@@ -17,7 +18,7 @@ class Footer extends Component {
   	const socialItems = SocialItems.map((social,i)=>(
   	              <li key={i}>
   	                <span>
-  	                  <a href={social.link} target="_blank">{social.name}</a>
+  	                  <Link to={social.link} target="_blank">{social.name}</Link>
   	                </span>
   	              </li>
   	              )
