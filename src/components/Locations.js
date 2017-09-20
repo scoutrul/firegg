@@ -1,11 +1,12 @@
 import React, { Component } from 'react'
-
+import {  Link, } from 'react-router-dom'
 
 const Locations = (props) => {
+
 	const ChooseLanguage = props.languages.map((languages)=>(
 		<li key={languages}>
 			<span className="name">
-				<a href="#">{languages}</a>
+				<Link to={languages}>{languages}</Link>
 			</span>
 		</li>
 		)
@@ -14,7 +15,7 @@ const Locations = (props) => {
 	const RegionsEn = props.regionsEn.map((regions)=>(
 		<li key={regions}>
 			<span>
-				<a href="#">{regions}</a>
+				<Link to={regions}>{regions}</Link>
 			</span>
 		</li>
 		)
@@ -23,11 +24,12 @@ const Locations = (props) => {
 	const RegionsSp = props.regionsSp.map((regions)=>(
 		<li key={regions}>
 			<span>
-				<a href="#">{regions}</a>
+				<Link to={regions}>{regions}</Link>
 			</span>
 		</li>
 		)
 	);
+
 	return (
 		<div id="choose">
 			<div className="title">Choose region</div>

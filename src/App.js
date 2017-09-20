@@ -1,7 +1,16 @@
 import React, { Component } from 'react'
+import { connect } from 'react-redux'
 import Helmet from 'react-helmet'
 
 import {HeaderMenu, MobileMenu, Hamburger, Locations, Footer, MainContainer} from './components/'
+
+
+const mapStateToProps = state => {
+  return {
+    state
+  }
+}
+
 
 class App extends Component {
 	constructor(props) {
@@ -189,19 +198,23 @@ class App extends Component {
 		}; // <- set up react state
 	}
 	render() {
-		const ENG = this.state.data.english;
+		const d = this.state.data;
+
+		const siteMenu = this.props.state.MenuReducer.menu.site;
+		const socialMenu = this.props.state.MenuReducer.menu.social;
+
 		return (
 			<div id="app">
 				<Helmet title="Guardsman Limited®" />
-				<HeaderMenu MenuItems={ENG.headerMenu}/>
-				<MobileMenu MenuItems={ENG.headerMenu}/>
-				<MainContainer/>
-				<Footer MenuItems={ENG.headerMenu} SocialItems={ENG.contacts.social}/>
+				<HeaderMenu MenuItems={siteMenu}/>
+				<MobileMenu MenuItems={siteMenu}/>
+				<MainContainer IndexPage={d.english.index}/>
+				<Footer MenuItems={siteMenu} SocialItems={socialMenu}/>
 				<Hamburger/>
-				<Locations languages={this.state.data.locations.languages} regionsEn={this.state.data.locations.regions.en} regionsSp={this.state.data.locations.regions.sp}/>
+				<Locations languages={d.locations.languages} regionsEn={d.locations.regions.en} regionsSp={this.state.data.locations.regions.sp}/>
 			</div>
 		)
 	}
 }
 
-export default App;
+export default connect(mapStateToProps, )(App);

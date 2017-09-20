@@ -3,7 +3,7 @@ import { Switch, Route } from 'react-router-dom'
 
 import {IndexPage, AboutPage, HelpPage, ContactsPage, FeedbackPage, ProductsPage} from './index'
 
-const MainContainer = () => (
+const MainContainer = (props) => (
 		<Switch>
 		  <Route exact path='/' component={IndexPage}/>
 		  <Route path='/about' component={AboutPage}/>
