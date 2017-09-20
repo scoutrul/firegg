@@ -1,12 +1,9 @@
 import React from 'react'
 
-function ProductsPage(){
-	return (
-		<div id="app">
+const ProductsPage = () => (
+		<section className="content">
 			ProductsPage
-		</div>
-	)
-	
-}
+		</section>
+)
 
 export default ProductsPage

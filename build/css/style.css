@@ -661,7 +661,7 @@ td {
   }
 }
 #choose {
-  height: 0%;
+  height: 0;
   overflow: hidden;
   visibility: hidden;
   text-align: center;
@@ -1885,7 +1885,7 @@ button.center.green .button_inner .arrows:after {
   z-index: 100;
   position: fixed;
   right: 30px;
-  top: 35px;
+  top: 15px;
 }
 @media screen and (min-width: 1200px) {
   .hamburger {
@@ -2397,6 +2397,14 @@ html body #app section.footer .container .footer-menu ul {
   flex: 1 0 auto;
   padding: 0;
 }
+html body #app section.footer .container .footer-menu ul li {
+  max-height: 0.8rem;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: flex-end;
+  -ms-align-items: flex-end;
+  align-items: flex-end;
+}
 html body #app section.footer .container .footer-menu ul a {
   line-height: 0.79rem;
   color: #fff;
@@ -2453,6 +2461,11 @@ html body #app section.content .container {
 }
 html body #app section.content.index-about {
   padding: 0;
+}
+@media screen and (min-width: 768px) {
+  html body #app section.content.index-about {
+    min-height: 100vh;
+  }
 }
 html body #app section.content.index-about .container {
   height: 100%;
@@ -3144,6 +3157,9 @@ html body #app section.help .container ul.faq.accordion_items li span main {
 }
 html body #app section.hero {
   background-color: #121212;
+  display: -webkit-flex;
+  display: flex;
+  min-height: 100vh;
 }
 html body #app section.hero .container {
   -webkit-flex-direction: column;
@@ -3193,6 +3209,11 @@ html body #app section.hero .container .screener {
   -ms-justify-content: center;
   justify-content: center;
   margin: auto;
+}
+@media screen and (min-width: 768px) {
+  html body #app section.hero .container .screener {
+    min-height: 100vh;
+  }
 }
 @media screen and (max-width: 620px) {
   html body #app section.hero .container .screener {

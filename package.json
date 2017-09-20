@@ -4,6 +4,7 @@
   "private": true,
   "homepage": "https://gggg-4bdf2.firebaseapp.com",
   "dependencies": {
+    "classnames": "^2.2.5",
     "firebase": "^4.3.1",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",

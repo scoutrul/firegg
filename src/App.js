@@ -1,14 +1,20 @@
 import React, { Component } from 'react'
 import Helmet from 'react-helmet'
 
-import {HeaderMenu, Footer, MainContainer} from './components/'
-// , MobileMenu, Content, Footer, Hamburger, Chooser
+import {HeaderMenu, MobileMenu, Hamburger, Locations, Footer, MainContainer} from './components/'
 
 class App extends Component {
 	constructor(props) {
 		super(props);
 		this.state = { 
 			data: {
+				locations: {
+					languages: ["English", "Spanish"],
+					regions: {
+						en:["Jamaica", "Barbados", "Grenadine"],
+						sp:["St.Lucia", "St.Vincent"]
+					}
+				},
 				english: {
 					headerMenu: [
 						{
@@ -186,22 +192,13 @@ class App extends Component {
 		const ENG = this.state.data.english;
 		return (
 			<div id="app">
-				<Helmet
-					title="Guardsman Limited®"
-					meta={[
-						{"name": "description", "content": "descriotion here"},
-						{"charset": "utf-8"},
-						{"http-equiv":"X-UA-Compatible", "content":"IE=edge"},
-						{"name":"viewport", "content":"width=device-width, initial-scale=1, user-scalable=0, maximum-scale=1.0"}
-					]}
-					link={[
-							{"rel":"stylesheet", "href":'./style.css'},
-							{"rel":"stylesheet", "href":'https://fonts.googleapis.com/css?family=Work+Sans:300,400,500,700,900'},
-						]}
-				/>
+				<Helmet title="Guardsman Limited®" />
 				<HeaderMenu MenuItems={ENG.headerMenu}/>
+				<MobileMenu MenuItems={ENG.headerMenu}/>
 				<MainContainer/>
 				<Footer MenuItems={ENG.headerMenu} SocialItems={ENG.contacts.social}/>
+				<Hamburger/>
+				<Locations languages={this.state.data.locations.languages} regionsEn={this.state.data.locations.regions.en} regionsSp={this.state.data.locations.regions.sp}/>
 			</div>
 		)
 	}

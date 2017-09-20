@@ -2,9 +2,9 @@ import React from 'react'
 
 function ContactsPage(){
 	return (
-		<div id="app">
+		<section className="content">
 			ContactsPage
-		</div>
+		</section>
 	)
 	
 }

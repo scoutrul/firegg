@@ -1,4 +1,7 @@
 import HeaderMenu from './HeaderMenu'
+import MobileMenu from './MobileMenu'
+import Hamburger from './Hamburger'
+import Locations from './Locations'
 import Footer from './Footer'
 
 import MainContainer from './MainContainer'
@@ -11,6 +14,6 @@ import ContactsPage from './pages/ContactsPage'
 import FeedbackPage from './pages/FeedbackPage'
 
 export {
-	HeaderMenu, Footer, 
+	HeaderMenu, MobileMenu, Hamburger, Locations, Footer, 
 	IndexPage, AboutPage, ProductsPage, HelpPage, ContactsPage, FeedbackPage, 
 	MainContainer}

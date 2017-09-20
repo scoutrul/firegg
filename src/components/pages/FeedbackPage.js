@@ -2,9 +2,9 @@ import React from 'react'
 
 function FeedbackPage(){
 	return (
-		<div id="app">
+		<section className="content">
 			FeedbackPage
-		</div>
+		</section>
 	)
 	
 }

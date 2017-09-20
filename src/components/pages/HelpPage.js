@@ -2,9 +2,9 @@ import React from 'react'
 
 function HelpPage(){
 	return (
-		<div id="app">
+		<section className="content">
 			HelpPage
-		</div>
+		</section>
 	)
 	
 }

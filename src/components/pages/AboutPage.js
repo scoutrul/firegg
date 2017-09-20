@@ -2,9 +2,10 @@ import React from 'react'
 
 function AboutPage(){
 	return (
-		<div id="app">
-			AboutPage
-		</div>
+		<section className="content">
+			<div className="container">AboutPage</div>
+			
+		</section>
 	)
 	
 }

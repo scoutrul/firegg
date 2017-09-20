@@ -1,18 +1,18 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 
 const Footer = (props) => {
 		let {MenuItems, SocialItems } = props;
 		const menuItems = MenuItems.map((menu,i)=>(
-									<li key={i}>
+									<li key={menu.name}>
 										<span>
-											<Link to={menu.url}>{menu.name}</Link>
+											<NavLink to={menu.url} activeStyle={{ color: '#ff002e' }}>{menu.name}</NavLink>
 										</span>
 									</li>
 									)
 								);
 		const socialItems = SocialItems.map((social,i)=>(
-									<li key={i}>
+									<li key={social.name}>
 										<span>
 											<Link to={social.link} target="_blank">{social.name}</Link>
 										</span>
@@ -44,13 +44,13 @@ const Footer = (props) => {
 				</div>
 				<div className="container">
 					<div className="footer-copy">
-						<div className="copy 2017"> © Guardsman Limited.</div>
-						<div className="footer-column.footer-button">
+						<div className="copy">2017 © Guardsman Limited.</div>
+						<div className="footer-column footer-button">
 							<button className="right red">
-								<a className="button_inner" href="products.html">
+								<Link className="button_inner" to="/products">
 									<div className="arrows"></div>
 									<div className="message">Products</div>
-								</a>
+								</Link>
 							</button>
 						</div>
 					</div>
