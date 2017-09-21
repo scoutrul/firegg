@@ -2,23 +2,21 @@ import React from 'react'
 import { Link, NavLink } from 'react-router-dom'
 
 const Footer = (props) => {
-		let {MenuItems, SocialItems } = props;
-		const menuItems = MenuItems.map((menu,i)=>(
-									<li key={menu.name}>
-										<span>
-											<NavLink to={menu.url} activeStyle={{ color: '#ff002e' }}>{menu.name}</NavLink>
-										</span>
-									</li>
-									)
-								);
-		const socialItems = SocialItems.map((social,i)=>(
-									<li key={social.name}>
-										<span>
-											<Link to={social.link} target="_blank">{social.name}</Link>
-										</span>
-									</li>
-									)
-								);
+		let { MenuItems, SocialItems } = props
+		const menuItems = MenuItems.map((menu,i)=>
+			<li key={menu.name}>
+				<span>
+					<NavLink to={menu.url} activeStyle={{ color: '#ff002e' }}>{menu.name}</NavLink>
+				</span>
+			</li>
+		);
+		const socialItems = SocialItems.map((social,i)=>
+			<li key={social.name}>
+				<span>
+					<Link to={social.link} target="_blank">{social.name}</Link>
+				</span>
+			</li>
+		)
 		return (
 			<section className="footer">
 				<div className="container">
@@ -60,4 +58,4 @@ const Footer = (props) => {
 	
 }
 
-export default Footer;	
+export default Footer

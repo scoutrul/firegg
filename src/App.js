@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React from 'react'
 import { connect } from 'react-redux'
 import Helmet from 'react-helmet'
 
@@ -12,23 +12,21 @@ const mapStateToProps = state => {
 	}
 }
 
-class App extends Component {
-	render() {
-		const siteMenu = this.props.menuItems;
-		const socialMenu = this.props.socialItems;
+const App = (props) => {
+	const siteMenu = props.menuItems
+	const socialMenu = props.socialItems
 
-		return (
-			<div id="app">
-				<Helmet title="Guardsman Limited®" />
-				<HeaderMenu MenuItems={siteMenu}/>
-				<MobileMenu MenuItems={siteMenu}/>
-				<MainContainer/>
-				<Footer MenuItems={siteMenu} SocialItems={socialMenu}/>
-				<Hamburger/>
-				<Locations/>
-			</div>
-		)
-	}
+	return (
+		<div id="app">
+			<Helmet title="Guardsman Limited®" />
+			<HeaderMenu MenuItems={siteMenu}/>
+			<MobileMenu MenuItems={siteMenu}/>
+			<MainContainer/>
+			<Footer MenuItems={siteMenu} SocialItems={socialMenu}/>
+			<Hamburger/>
+			<Locations/>
+		</div>
+	)
 }
 
 export default connect(mapStateToProps, )(App);

@@ -18,7 +18,7 @@ const ProductsPage = (props) => {
 				</span>
 			</li>
 		)
-	});
+	})
 	const office = props.office.map((item, i) => {
 		return (
 			<li key={item.title}>
@@ -27,7 +27,7 @@ const ProductsPage = (props) => {
 				</span>
 			</li>
 		)
-	});
+	})
 
 	return (
 		<section className="content product">
