@@ -6,9 +6,9 @@ import { Provider } from 'react-redux'
 import { createStore } from 'redux'
 
 import App from './App'
-import MainReducer from './reducers'
+import MainReducer from './components/reducers'
 
-let store = createStore(MainReducer)
+let store = createStore(MainReducer, window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__())
 
 const component = (
 	<Provider store={store}>

@@ -1,12 +1,32 @@
 import React from 'react'
+import { connect } from 'react-redux'
 
-function HelpPage(){
-	return (
-		<section className="content">
-			HelpPage
-		</section>
-	)
-	
+const mapStateToProps = state => {
+	return {
+		help: state.helpReducer
+	}
 }
 
-export default HelpPage
+function HelpPage(props){
+
+	const items = props.help.map((item, i) => (
+			<li key={i}>
+				<span>
+					<header>{ item.question }</header>
+					<main>{ item.answer }</main>
+				</span>
+			</li>
+	));
+
+	return (
+		<section className="content help">
+			<div className="container">
+				<ul className="faq slide_up_text accordion_items">
+					{ items }
+				</ul>
+			</div>
+		</section>
+	)
+}
+
+export default connect(mapStateToProps, )(HelpPage)

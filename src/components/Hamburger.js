@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React from 'react'
 
 const Hamburger = () => 
 	<div id="hamburger" className="hamburger">
@@ -6,4 +6,5 @@ const Hamburger = () =>
 			<span className="hamburger-inner"></span>
 		</span>
 	</div>
+	
 export default Hamburger

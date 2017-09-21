@@ -1,5 +1,14 @@
-import React, { Component } from 'react'
-import {  Link, } from 'react-router-dom'
+import React from 'react'
+import { Link } from 'react-router-dom'
+import { connect } from 'react-redux'
+
+const mapStateToProps = state => {
+	return {
+		languages: state.locationsReducer.languages,
+		regionsEn: state.locationsReducer.regions.en,
+		regionsSp: state.locationsReducer.regions.sp
+	}
+}
 
 const Locations = (props) => {
 
@@ -57,4 +66,5 @@ const Locations = (props) => {
 		</div>
 	)
 }
-export default Locations
+
+export default connect(mapStateToProps, )(Locations);

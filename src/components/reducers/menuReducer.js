@@ -1,5 +1,3 @@
-import { combineReducers } from 'redux'
-
 const initialState = {
 	menu: {
 		site: [
@@ -41,10 +39,4 @@ const initialState = {
 	}
 }
 
-const MenuReducer = (state = initialState, action) => state;
-
-const MainReducer = combineReducers({
-	MenuReducer
-})
-
-export default MainReducer
+export const menuReducer = (state = initialState.menu, action) => state;

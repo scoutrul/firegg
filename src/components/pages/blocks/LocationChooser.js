@@ -1,7 +1,10 @@
-import React, { Component } from 'react'
+import React from 'react'
 
-export const LocationChooser = () => 
-	<div className="location location_toggle ">
-		<img src="images/icon_marker.svg" alt="Location"/>
-		<span>Jamaica</span>
-	</div>
+export const LocationChooser = () => {
+	return(
+		<div className="location location_toggle ">
+			<img src="images/icon_marker.svg" alt="Location"/>
+			<span>Jamaica</span>
+		</div>
+	)
+}
