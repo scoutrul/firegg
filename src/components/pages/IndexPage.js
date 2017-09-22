@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {Component} from 'react'
 import { connect } from 'react-redux'
 
 import {IndexHero} from './blocks/IndexHero'
@@ -23,13 +23,19 @@ const mapStateToProps = state => {
 	}
 }
 
-const IndexPage = (props) => {
-	return (
-		<div>
-			<IndexHero {...props.indexHero}/>
-			<IndexAbout {...props.indexAbout}/>
-		</div>
-	)
+class IndexPage extends Component {
+	constructor(props){
+		super(props)
+	}
+	render(){
+		return (
+			<div>
+				<IndexHero {...this.props.indexHero}/>
+				<IndexAbout {...this.props.indexAbout}/>
+			</div>
+		)
+		
+	}
 }
 
 export default connect(mapStateToProps, )(IndexPage)

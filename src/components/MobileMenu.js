@@ -3,9 +3,9 @@ import { NavLink, Link } from 'react-router-dom'
 
 import {LocationChooser} from './pages/blocks/LocationChooser'
 
-class MobileMenu extends Component {
-	render(){
-		const menuItems = this.props.MenuItems.map((menu)=>(
+const MobileMenu = (props) => {
+
+		const menuItems = props.MenuItems.map((menu)=>(
 			<li key={menu.name}>
 				<span>
 					<NavLink to={menu.url} activeStyle={{ color: 'white' }}>{menu.name}</NavLink>
@@ -32,7 +32,7 @@ class MobileMenu extends Component {
 				</div>
 			</section>
 		)
-	}
+	
 }
 
 

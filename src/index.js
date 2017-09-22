@@ -1,4 +1,4 @@
-import registerServiceWorker from './registerServiceWorker'
+// import registerServiceWorker from './registerServiceWorker'
 import React from 'react'
 import ReactDOM from 'react-dom'
 import { BrowserRouter } from 'react-router-dom'
@@ -8,15 +8,15 @@ import { createStore } from 'redux'
 import App from './App'
 import MainReducer from './components/reducers'
 
-let store = createStore(MainReducer, window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__())
+const store = createStore(MainReducer, window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__())
 
-const component = (
-	<Provider store={store}>
-		<BrowserRouter>
+const StartApp = (
+	<BrowserRouter>
+		<Provider store={store}>
 			<App/>
-		</BrowserRouter>
-	</Provider>
-);
+		</Provider>
+	</BrowserRouter>
+)
 
-ReactDOM.render(component, document.getElementById('root'))
-registerServiceWorker()
+ReactDOM.render(StartApp, document.getElementById('root'))
+// registerServiceWorker()
