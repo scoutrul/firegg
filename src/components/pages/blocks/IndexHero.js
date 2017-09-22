@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-export const IndexHero = ({...props}) => {
+export const IndexHero = (props) => {
 	return(
 		<section className="hero">
 			<div className="container">

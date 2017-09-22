@@ -2,7 +2,8 @@ import React from 'react'
 import { connect } from 'react-redux'
 import Helmet from 'react-helmet'
 
-import {HeaderMenu, MobileMenu, Hamburger, Locations, Footer, MainContainer} from './components/'
+import {Routes} from "./components/routes"
+import {HeaderMenu, MobileMenu, Hamburger, Locations, Footer} from './components/'
 
 
 const mapStateToProps = state => {
@@ -21,7 +22,7 @@ const App = (props) => {
 			<Helmet title="Guardsman Limited®" />
 			<HeaderMenu MenuItems={siteMenu}/>
 			<MobileMenu MenuItems={siteMenu}/>
-			<MainContainer/>
+			<Routes/>
 			<Footer MenuItems={siteMenu} SocialItems={socialMenu}/>
 			<Hamburger/>
 			<Locations/>
