@@ -50,8 +50,10 @@ const bgHeader = {
 const bgGradient = {
 	background: "-webkit-linear-gradient(left, rgb(18,18,18) 0%,rgb(40,43,50) 15%,rgb(61,68,81) 50%,rgb(40,43,50) 85%, rgb(18,18,18) 100%)",
 }
+
+const bgImageUrl = (process.env.NODE_ENV === 'production') ? "./firegg/public/images/guardsman_promo.png":"./images/guardsman_promo.png";
 const bgImage = {
-	background: "url(./images/guardsman_promo.png) no-repeat",
+	background: `url(${bgImageUrl}) no-repeat`,
 	backgroundSize: "cover",
 	margin: "auto auto 0",
 	maxWidth: "1500px",
@@ -59,5 +61,3 @@ const bgImage = {
 	backgroundPositionX: "center",
 	minHeight: "100vh"
 }
-
-	// background: "url(./firegg/public/images/guardsman_promo.png) no-repeat"
