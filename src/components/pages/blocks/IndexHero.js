@@ -13,8 +13,8 @@ const TitleBlock = (props) => (
 	)
 export const IndexHero = (props) => {
 	return(
-		<section className="hero" style={bgGradient}>
-			<h1 style={bgHeader}>Guardsman</h1>
+		<section className="hero">
+			<h1 className="promo">Guardsman</h1>
 			<div className="container" style={bgImage}>
 				<div className="screener">
 					<div className="title slide_up_text">
@@ -36,28 +36,8 @@ export const IndexHero = (props) => {
 	)
 }
 
-const bgHeader = {
-	position: "absolute",
-	width: "100%",
-	textAlign: "center",
-	color: "#FFF",
-	textTransform: "uppercase",
-	fontWeight: "900",
-	top: "30%",
-	fontSize: "13vw"
-}
-
-const bgGradient = {
-	background: "-webkit-linear-gradient(left, rgb(18,18,18) 0%,rgb(40,43,50) 15%,rgb(61,68,81) 50%,rgb(40,43,50) 85%, rgb(18,18,18) 100%)",
-}
 
 const bgImageUrl = (process.env.NODE_ENV === 'production') ? "./firegg/public/images/guardsman_promo.png":"./images/guardsman_promo.png";
 const bgImage = {
-	background: `url(${bgImageUrl}) no-repeat`,
-	backgroundSize: "cover",
-	margin: "auto auto 0",
-	maxWidth: "1500px",
-	backgroundPositionY: "bottom",
-	backgroundPositionX: "center",
-	minHeight: "100vh"
+	backgroundImage: `url(${bgImageUrl}) no-repeat`,
 }
