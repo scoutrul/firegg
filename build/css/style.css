@@ -3177,7 +3177,7 @@ html body #app section.hero .container {
   flex-direction: column;
   max-height: 1200px;
   height: 100%;
-  background: url("/images/guardsman_promo.png") no-repeat;
+  background: url("../images/guardsman_promo.png") no-repeat;
   background-size: 100vh;
   margin: auto auto 0;
   max-width: 1500px;
