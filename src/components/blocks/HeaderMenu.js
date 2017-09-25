@@ -10,7 +10,7 @@ const HeaderMenu = (props) => {
 	const menuItems = props.MenuItems.map((menu)=>
 		<li key={ menu.name }>
 			<span>
-				<NavLink to={ menu.url } activeStyle={{ color: 'white' }}>{ menu.name }</NavLink>
+				<NavLink to={ menu.url } activeStyle={{ textDecoration: 'underline #ff002e' }}>{ menu.name }</NavLink>
 			</span>
 		</li>
 	)
