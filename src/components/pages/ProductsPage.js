@@ -1,6 +1,31 @@
 import React from 'react'
 import { connect } from 'react-redux'
 import { Link } from 'react-router-dom'
+import $ from 'jquery'
+
+let switchHome = $('#switchHome');
+let switchOffice = $('#switchOffice');
+let homelist = $('#homelist');
+let officelist = $('#officelist');
+const hideProducts = function(){
+    $('.product-list').hide()
+}; 
+hideProducts();
+homelist.show();
+switchHome.toggleClass('active');
+
+switchHome.click(function(){
+    hideProducts();
+    $('.product .slide_up_text').removeClass('slide_up_text--active');
+    homelist.show();
+    $(this).toggleClass('active').siblings('.active').toggleClass('active');
+})
+switchOffice.click(function(){
+    hideProducts();
+    $('.product .slide_up_text').removeClass('slide_up_text--active');
+    officelist.show();
+    $(this).toggleClass('active').siblings('.active').toggleClass('active');
+})
 
 const mapStateToProps = state => {
 	return {

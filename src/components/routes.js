@@ -1,7 +1,15 @@
 import React from 'react'
 import { Switch, Route } from 'react-router-dom'
-
+import $ from 'jquery'
 import {IndexPage, AboutPage, HelpPage, ContactsPage, FeedbackPage, ProductsPage} from './pages'
+
+import appearModule from '../js/appearModule'
+
+window.onload = function() {
+    (document.visibilityState === 'visible') && setTimeout(appearModule.addToAllClasses, 500);
+};
+$(window).on('focus resize scroll click mousemove keydown', appearModule.addToAllClasses); // init
+
 
 const Routes = () => (
 	<Switch>

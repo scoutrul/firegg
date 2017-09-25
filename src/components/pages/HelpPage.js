@@ -1,5 +1,24 @@
 import React from 'react'
 import { connect } from 'react-redux'
+import $ from 'jquery'
+
+let accoirdion_toggle = $('.accordion_items header');
+accoirdion_toggle.each(function(i, el) {
+    $(el).click(function() {
+        $(el).toggleClass('active');
+    })
+    $(el).siblings('.delete').click(function() {
+        $(el).parents('.product').hide('slow');
+
+        setTimeout(function() { // demo for empty cart
+            $(el).parents('.product').remove();
+            //temp
+            $('.is-empty').show();
+            $('.cart-inner').hide();
+        }, 1000);
+
+    })
+});
 
 const mapStateToProps = state => {
 	return {
