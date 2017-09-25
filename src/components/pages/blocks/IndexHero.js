@@ -15,7 +15,7 @@ export const IndexHero = (props) => {
 	return(
 		<section className="hero">
 			<h1 className="promo">Guardsman</h1>
-			<div className="container" style={bgImage}>
+			<div className="container">
 				<div className="screener">
 					<div className="title slide_up_text">
 						<div className="takecontrol">
@@ -36,8 +36,3 @@ export const IndexHero = (props) => {
 	)
 }
 
-
-const bgImageUrl = (process.env.NODE_ENV === 'production') ? "./firegg/public/images/guardsman_promo.png":"./images/guardsman_promo.png";
-const bgImage = {
-	backgroundImage: `url(${bgImageUrl}) no-repeat`,
-}
