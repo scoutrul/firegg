@@ -1,16 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-// <TitleBlock title={props.title11} />
-// <TitleBlock title={props.title12} />
-
-const TitleBlock = (props) => (
-	<div>
-		<span>
-			{props.title}
-		</span>
-	</div>
-	)
 export const IndexHero = (props) => {
 	return(
 		<section className="hero">

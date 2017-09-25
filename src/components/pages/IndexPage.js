@@ -1,8 +1,8 @@
 import React, {Component} from 'react'
 import { connect } from 'react-redux'
 
-import {IndexHero} from './blocks/IndexHero'
-import {IndexAbout} from './blocks/IndexAbout'
+import {IndexHero} from '../blocks/'
+import {IndexAbout} from '../blocks/'
 
 const mapStateToProps = state => {
 	return {
@@ -18,8 +18,6 @@ const mapStateToProps = state => {
 			title23: state.indexReducer.title23,
 			title2link: state.indexReducer.title2link
 		}
-		
-
 	}
 }
 

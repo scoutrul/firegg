@@ -1,7 +1,8 @@
 import React from 'react'
 import { NavLink, Link, withRouter } from 'react-router-dom'
 import cn from 'classnames'
-import { LocationChooser } from './pages/blocks/LocationChooser'
+
+import {LocationChooser} from './'
 
 const HeaderMenu = (props) => {
 
@@ -23,7 +24,7 @@ const HeaderMenu = (props) => {
 							<img src="images/icon_logo.svg" alt="Logotype"/>
 						</NavLink>
 					</div>
-					<LocationChooser/>
+				<LocationChooser/>
 				</div>
 				<div className="column menu">
 					<ul className="top_menu slide_up_text">

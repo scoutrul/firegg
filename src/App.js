@@ -6,7 +6,7 @@ import { withRouter } from 'react-router-dom'
 import Helmet from 'react-helmet'
 
 import Routes from './components/routes'
-import {HeaderMenu, MobileMenu, Hamburger, Locations, Footer} from './components/'
+import {HeaderMenu, MobileMenu, Hamburger, Locations, Footer} from './components/blocks'
 
 // const database = firebase.database()
 
