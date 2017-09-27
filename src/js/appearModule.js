@@ -7,7 +7,6 @@ const appearModule = {
 	        })
 	    },
 	    isScrolledIntoView: function(elem) {
-	        ($(elem).length === 0) ? false : true;
 	        var viewTop = $(window).scrollTop();
 	        var viewBottom = viewTop + $(window).height();
 	        var elemTop = $(elem).offset().top;

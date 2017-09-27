@@ -1,8 +1,7 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
-import { Link } from 'react-router-dom'
-import $ from 'jquery'
-
+import cn from 'classnames'
+import { ProductsListHome, ProductsListOffice } from '../blocks/ProductsList'
 
 
 
@@ -15,67 +14,47 @@ const mapStateToProps = state => {
 
 class ProductsPage extends Component {
 
-	componentDidMount() {
-		let switchHome = $('#switchHome');
-		let switchOffice = $('#switchOffice');
-		let homelist = $('#homelist');
-		let officelist = $('#officelist');
-
-		const hideProducts = function(){
-		    $('.product-list').hide()
-		}; 
-		hideProducts();
-		homelist.show();
-		switchHome.toggleClass('active');
-
-		switchHome.click(function(){
-		    hideProducts();
-		    $('.product .slide_up_text').removeClass('slide_up_text--active');
-		    homelist.show();
-		    $(this).toggleClass('active').siblings('.active').toggleClass('active');
-		})
-		switchOffice.click(function(){
-		    hideProducts();
-		    $('.product .slide_up_text').removeClass('slide_up_text--active');
-		    officelist.show();
-		    $(this).toggleClass('active').siblings('.active').toggleClass('active');
-		})
+	constructor(){
+		super();
+		this.state = {
+			homeTab: true
+		}
 	}
-	render(){
-		const home = this.props.home.map((item, i) => {
-			return (
-				<li key={item.title}>
-					<span>
-						<Link to={`/product/home/${item.title.split(' ').join('_')}`}>{item.title}</Link>
-					</span>
-				</li>
-			)
-		})
-		const office = this.props.office.map((item, i) => {
-			return (
-				<li key={item.title}>
-					<span>
-						<Link to={`/product/office/${item.title.split(' ').join('_')}`}>{item.title}</Link>
-					</span>
-				</li>
-			)
-		})
 
+	render(){
+		const ProductsForHome = () => {
+			return (
+				<ul className="product-list slide_up_text" id="homelist">
+					<ProductsListHome list={this.props.home}/>
+				</ul>
+			)	
+		}
+		const ProductsForOffice = () => {
+			return (
+				<ul className="product-list slide_up_text" id="officelist">
+					<ProductsListOffice list={this.props.office}/>
+				</ul>
+			)	
+		}
+
+		const HomeActive = () => {
+			this.setState({homeTab: true})
+		}
+		const OfficeActive = () => {
+			this.setState({homeTab: false})
+		}
 		return (
 			<section className="content product">
 				<div className="container">
 					<ul id="productsSwitcher">
-						<li id="switchHome">Home</li>
-						<li id="switchOffice">Office</li>
+						<li id="switchHome" onClick={HomeActive} className={cn({'active': this.state.homeTab})}>Home</li>
+						<li id="switchOffice" onClick={OfficeActive} className={cn({'active': !this.state.homeTab})}>Office</li>
 					</ul>
 
-					<ul className="product-list slide_up_text" id="homelist">
-						{home}
-					</ul>
-
-					<ul className="product-list slide_up_text" id="officelist">
-						{office}
-					</ul>
+					{
+						(this.state.homeTab)?<ProductsForHome/>:<ProductsForOffice/>
+					}
+					
 				</div>
 			</section>
 		)
