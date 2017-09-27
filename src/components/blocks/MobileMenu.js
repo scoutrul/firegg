@@ -1,11 +1,19 @@
-import React, { Component } from 'react'
+import React, {Component} from 'react'
 import { NavLink, Link } from 'react-router-dom'
+import cn from 'classnames'
+import { connect } from 'react-redux'
 
 import {LocationChooser} from './'
 
-const MobileMenu = (props) => {
 
-		const menuItems = props.MenuItems.map((menu)=>(
+const mapStateToProps = state => {
+	return { HamburgerOn: state.uiReducer.HamburgerOn }
+}
+
+class MobileMenu extends Component {
+
+	render(){
+		const menuItems = this.props.MenuItems.map((menu)=>(
 			<li key={menu.name}>
 				<span>
 					<NavLink to={menu.url} activeStyle={{ color: 'white' }}>{menu.name}</NavLink>
@@ -13,9 +21,10 @@ const MobileMenu = (props) => {
 			</li>
 			)
 		);
+		let condition = this.props.HamburgerOn;
 	
 		return (
-			<section className="mobile_menu">
+			<section className={ cn('mobile_menu', { 'mobile_menu-active': condition }) }>
 				<div className="container">
 					<LocationChooser/>
 					<ul className="mobile_menu_list slide_up_text">
@@ -32,8 +41,9 @@ const MobileMenu = (props) => {
 				</div>
 			</section>
 		)
+		
+	}
 	
 }
 
-
-export default MobileMenu
+export default connect(mapStateToProps)(MobileMenu)

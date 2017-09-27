@@ -10,9 +10,6 @@ const mapStateToProps = state => {
 }
 
 class HelpPage extends Component{
-	constructor(props){
-		super(props)
-	}
 
 	componentDidMount() {
 	  	let accoirdion_toggle = $('.accordion_items header');

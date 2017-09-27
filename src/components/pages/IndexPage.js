@@ -22,9 +22,6 @@ const mapStateToProps = state => {
 }
 
 class IndexPage extends Component {
-	constructor(props){
-		super(props)
-	}
 	render(){
 		return (
 			<div>

@@ -6,7 +6,7 @@ import { withRouter } from 'react-router-dom'
 import Helmet from 'react-helmet'
 
 import Routes from './components/routes'
-import {HeaderMenu, MobileMenu, Hamburger, Locations, Footer} from './components/blocks'
+import {HeaderMenu, MobileMenu, Locations, Footer, Wrapper} from './components/blocks'
 
 // const database = firebase.database()
 
@@ -35,15 +35,17 @@ const App = (props) => {
 	const siteMenu = props.menuItems
 	const socialMenu = props.socialItems
 	return (
-		<div id="app">
+		<div id="app" style={styles}>
 			<Helmet title="Guardsman Limited®" />
-			<HeaderMenu MenuItems={siteMenu}/>
-			<MobileMenu MenuItems={siteMenu}/>
 
+			<Wrapper MenuItems={siteMenu}>
+				<HeaderMenu MenuItems={siteMenu}/>
 				<Routes/>
+				<MobileMenu MenuItems={siteMenu}/>
+				<Footer MenuItems={siteMenu} SocialItems={socialMenu}/>
+			</Wrapper>
 
-			<Footer MenuItems={siteMenu} SocialItems={socialMenu}/>
-			<Hamburger/>
+			
 			<Locations/>
 		</div>
 	)		
@@ -51,3 +53,7 @@ const App = (props) => {
 }
 
 export default withRouter(connect(mapStateToProps, )(App));
+
+const styles = {
+	minHeight: "100vh"
+}

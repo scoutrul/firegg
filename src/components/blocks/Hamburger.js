@@ -1,30 +1,31 @@
-import React from 'react'
-import $ from 'jquery'
+import React, {Component} from 'react'
 import appearModule from '../../js/appearModule'
+import cn from 'classnames'
+import { bindActionCreators } from 'redux'
+import { connect } from 'react-redux'
+import { withRouter } from 'react-router-dom'
+import { HamburgerOnClick } from '../../js/actions/index'
 
-$(function() {
-	let Hamburger = false;
-	$('#hamburger').click(function() {
-	    if (Hamburger) {
-	        Hamburger = !Hamburger;
-	        $(this).removeClass('is-active');
-	        $('.mobile_menu').removeClass('mobile_menu-active');
+const mapStateToProps = state => {
+	return { HamburgerOn: state.uiReducer.HamburgerOn }
+}
+const mapDispatchToProps = (dispatch) => {
+	return bindActionCreators({ HamburgerOnClick }, dispatch);
+}
 
-	    } else {
-	        Hamburger = !Hamburger;
-	        $(this).addClass('is-active');
-	        $('.mobile_menu').addClass('mobile_menu-active');
-	        $('.mobile_menu .slide_up_text--active').removeClass('slide_up_text--active');
+class Hamburger extends Component {
+	render(){
+		return(
+			<div id="hamburger" className={ cn('hamburger', { 'is-active': this.props.HamburgerOn }) }
+			onClick={() => this.props.HamburgerOnClick(this.props.HamburgerOn)}>
+				<span className="hamburger-box">
+					<span className="hamburger-inner"></span>
+				</span>
+				{this.props.children}
+			</div>
 
-	        appearModule.addToAllClasses
-	    }
-	});
-})
-const Hamburger = () => 
-	<div id="hamburger" className="hamburger">
-		<span className="hamburger-box">
-			<span className="hamburger-inner"></span>
-		</span>
-	</div>
-	
-export default Hamburger
+		)
+	}
+} 
+
+export default withRouter(connect(mapStateToProps, mapDispatchToProps)(Hamburger));
