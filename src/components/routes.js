@@ -6,11 +6,8 @@ import { connect } from 'react-redux'
 import { bindActionCreators } from 'redux'
 import { OnRouteEvent } from '../js/actions/index'
 
-import $ from 'jquery'
 import {IndexPage, AboutPage, HelpPage, ContactsPage, FeedbackPage, ProductsPage} from './pages'
 
-
-import appearModule from '../js/appearModule'
 
 const mapStateToProps = state => {
 	return { HamburgerOn: state.uiReducer.HamburgerOn }
@@ -25,14 +22,9 @@ class Routes extends Component {
 		this.props.history.listen((location, action) => {
 			this.props.OnRouteEvent(this.props.HamburgerOn)
 		 });
-		window.onload = function() {
-			(document.visibilityState === 'visible') && setTimeout(appearModule.addToAllClasses, 500);
-		};
-		$(window).on('focus resize scroll click mousemove keydown', appearModule.addToAllClasses);
 	}
 
 	render(){
-
 		return(
 			<Switch>
 				<Route exact path='/' component={IndexPage}/>

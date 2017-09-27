@@ -7,6 +7,7 @@ import Helmet from 'react-helmet'
 
 import Routes from './components/routes'
 import {HeaderMenu, MobileMenu, Locations, Footer, Wrapper} from './components/blocks'
+import appearModule from './js/appearModule'
 
 // const database = firebase.database()
 
@@ -22,6 +23,16 @@ import {HeaderMenu, MobileMenu, Locations, Footer, Wrapper} from './components/b
 // });
 // console.log(query)
 
+
+//magic appear//////////
+window.onload = function() {
+	(document.visibilityState === 'visible') && setTimeout(appearModule.addToAllClasses, 500);
+};
+
+("focus resize scroll click mousemove keydown".split(" ")).forEach(function(e){
+   window.addEventListener(e,appearModule.addToAllClasses,false);
+});
+////////////////////////
 
 const mapStateToProps = state => {
 	return {

@@ -1,5 +1,4 @@
 import React, {Component} from 'react'
-import appearModule from '../../js/appearModule'
 import cn from 'classnames'
 import { bindActionCreators } from 'redux'
 import { connect } from 'react-redux'

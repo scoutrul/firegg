@@ -1,6 +1,5 @@
 import React, { Component} from 'react'
 import { connect } from 'react-redux'
-import $ from 'jquery'
 
 
 const mapStateToProps = state => {
@@ -11,24 +10,23 @@ const mapStateToProps = state => {
 
 class HelpPage extends Component{
 
-	componentDidMount() {
-	  	let accoirdion_toggle = $('.accordion_items header');
-	  	accoirdion_toggle.each(function(i, el) {
-	  	    $(el).click(function() {
-	  	        $(el).toggleClass('active');
-	  	    })
-	  	});
+	handleClick = (e) => {
+		let target = e.currentTarget;
+		(target.className === 'active')? target.className = '' : target.className = 'active';
 	}
 
 	render(){
-		const items = this.props.help.map((item, i) => (
+		const items = this.props.help.map((item, i) => {
+			return(
 				<li key={i}>
 					<span>
-						<header>{ item.question }</header>
+						<header onClick={(e) => this.handleClick(e)}>{ item.question }</header> 
 						<main>{ item.answer }</main>
 					</span>
 				</li>
-		));
+			)
+		})
+
 		return (
 			<section className="content help">
 				<div className="container">

@@ -1,5 +1,4 @@
 import React from 'react'
-import appearModule from '../../js/appearModule'
 import {Hamburger} from "./"
 import {MobileMenu} from "./"
 
