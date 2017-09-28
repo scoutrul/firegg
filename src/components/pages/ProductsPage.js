@@ -7,8 +7,8 @@ import { ProductsListHome, ProductsListOffice } from '../blocks/ProductsList'
 
 const mapStateToProps = state => {
 	return {
-		home: state.productsReducer.home,
-		office: state.productsReducer.office
+		homelist: state.productsReducer.home,
+		officelist: state.productsReducer.office
 	}
 }
 
@@ -25,30 +25,24 @@ class ProductsPage extends Component {
 		const ProductsForHome = () => {
 			return (
 				<ul className="product-list slide_up_text" id="homelist">
-					<ProductsListHome list={this.props.home}/>
+					<ProductsListHome list={this.props.homelist}/>
 				</ul>
 			)	
 		}
 		const ProductsForOffice = () => {
 			return (
 				<ul className="product-list slide_up_text" id="officelist">
-					<ProductsListOffice list={this.props.office}/>
+					<ProductsListOffice list={this.props.officelist}/>
 				</ul>
 			)	
 		}
 
-		const HomeActive = () => {
-			this.setState({homeTab: true})
-		}
-		const OfficeActive = () => {
-			this.setState({homeTab: false})
-		}
 		return (
 			<section className="content product">
 				<div className="container">
 					<ul id="productsSwitcher">
-						<li onClick={HomeActive} className={cn({'active': this.state.homeTab})}>Home</li>
-						<li onClick={OfficeActive} className={cn({'active': !this.state.homeTab})}>Office</li>
+						<li onClick={()=>this.setState({homeTab: true})} className={cn({'active': this.state.homeTab})}>Home</li>
+						<li onClick={()=>this.setState({homeTab: false})} className={cn({'active': !this.state.homeTab})}>Office</li>
 					</ul>
 
 					{

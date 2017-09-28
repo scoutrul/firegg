@@ -747,7 +747,7 @@ td {
   font-weight: 500;
   line-height: 110%;
   margin: auto;
-  transition: 0.4s ease;
+  transition: 0.4s cubic-bezier(0.49, 0.07, 0.02, 1.07);
 }
 #choose.choose--active ul li a:hover {
   color: #ff002e;
@@ -816,7 +816,7 @@ button.left.red .button_inner {
   line-height: 0.9rem;
   max-width: 3.7rem;
   width: 100%;
-  transition: 0.4s ease;
+  transition: 0.4s cubic-bezier(0.49, 0.07, 0.02, 1.07);
   background-color: #ff002e;
 }
 button.left.red .button_inner:hover {
@@ -827,7 +827,7 @@ button.left.red .button_inner .message {
   position: absolute;
   left: 0;
   top: 0;
-  transition: 0.4s ease;
+  transition: 0.4s cubic-bezier(0.49, 0.07, 0.02, 1.07);
   white-space: nowrap;
   color: #fff;
   font-weight: 400;
@@ -846,7 +846,7 @@ button.left.red .button_inner .arrows {
   align-items: center;
   width: 100%;
   height: 100%;
-  transition: 0.4s ease;
+  transition: 0.4s cubic-bezier(0.49, 0.07, 0.02, 1.07);
   position: absolute;
   left: 0;
   top: 0;
@@ -859,7 +859,7 @@ button.left.red .button_inner .arrows:before {
   height: 0.2rem;
   margin: auto;
   background-repeat: no-repeat;
-  transition: 0.4s ease;
+  transition: 0.4s cubic-bezier(0.49, 0.07, 0.02, 1.07);
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
   filter: alpha(opacity=0);
   opacity: 0;
@@ -910,7 +910,7 @@ button.left.blue .button_inner {
   line-height: 0.9rem;
   max-width: 3.7rem;
   width: 100%;
-  transition: 0.4s ease;
+  transition: 0.4s cubic-bezier(0.49, 0.07, 0.02, 1.07);
   background-color: #0077cb;
 }
 button.left.blue .button_inner:hover {
@@ -921,7 +921,7 @@ button.left.blue .button_inner .message {
   position: absolute;
   left: 0;
   top: 0;
-  transition: 0.4s ease;
+  transition: 0.4s cubic-bezier(0.49, 0.07, 0.02, 1.07);
   white-space: nowrap;
   color: #fff;
   font-weight: 400;
@@ -940,7 +940,7 @@ button.left.blue .button_inner .arrows {
   align-items: center;
   width: 100%;
   height: 100%;
-  transition: 0.4s ease;
+  transition: 0.4s cubic-bezier(0.49, 0.07, 0.02, 1.07);
   position: absolute;
   left: 0;
   top: 0;
@@ -953,7 +953,7 @@ button.left.blue .button_inner .arrows:before {
   height: 0.2rem;
   margin: auto;
   background-repeat: no-repeat;
-  transition: 0.4s ease;
+  transition: 0.4s cubic-bezier(0.49, 0.07, 0.02, 1.07);
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
   filter: alpha(opacity=0);
   opacity: 0;
@@ -1004,7 +1004,7 @@ button.left.grey .button_inner {
   line-height: 0.9rem;
   max-width: 3.7rem;
   width: 100%;
-  transition: 0.4s ease;
+  transition: 0.4s cubic-bezier(0.49, 0.07, 0.02, 1.07);
   background-color: #e5e5e5;
 }
 button.left.grey .button_inner:hover {
@@ -1023,7 +1023,7 @@ button.left.grey .button_inner .message {
   position: absolute;
   left: 0;
   top: 0;
-  transition: 0.4s ease;
+  transition: 0.4s cubic-bezier(0.49, 0.07, 0.02, 1.07);
   white-space: nowrap;
   color: #242424;
   font-weight: 400;
@@ -1041,7 +1041,7 @@ button.left.grey .button_inner .arrows {
   align-items: center;
   width: 100%;
   height: 100%;
-  transition: 0.4s ease;
+  transition: 0.4s cubic-bezier(0.49, 0.07, 0.02, 1.07);
   position: absolute;
   left: 0;
   top: 0;
@@ -1054,7 +1054,7 @@ button.left.grey .button_inner .arrows:before {
   height: 0.2rem;
   margin: auto;
   background-repeat: no-repeat;
-  transition: 0.4s ease;
+  transition: 0.4s cubic-bezier(0.49, 0.07, 0.02, 1.07);
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
   filter: alpha(opacity=0);
   opacity: 0;
@@ -1107,7 +1107,7 @@ button.left.green .button_inner {
   line-height: 0.9rem;
   max-width: 3.7rem;
   width: 100%;
-  transition: 0.4s ease;
+  transition: 0.4s cubic-bezier(0.49, 0.07, 0.02, 1.07);
   background-color: #00cba6;
 }
 button.left.green .button_inner:hover {
@@ -1118,7 +1118,7 @@ button.left.green .button_inner .message {
   position: absolute;
   left: 0;
   top: 0;
-  transition: 0.4s ease;
+  transition: 0.4s cubic-bezier(0.49, 0.07, 0.02, 1.07);
   white-space: nowrap;
   color: #fff;
   font-weight: 400;
@@ -1137,7 +1137,7 @@ button.left.green .button_inner .arrows {
   align-items: center;
   width: 100%;
   height: 100%;
-  transition: 0.4s ease;
+  transition: 0.4s cubic-bezier(0.49, 0.07, 0.02, 1.07);
   position: absolute;
   left: 0;
   top: 0;
@@ -1150,7 +1150,7 @@ button.left.green .button_inner .arrows:before {
   height: 0.2rem;
   margin: auto;
   background-repeat: no-repeat;
-  transition: 0.4s ease;
+  transition: 0.4s cubic-bezier(0.49, 0.07, 0.02, 1.07);
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
   filter: alpha(opacity=0);
   opacity: 0;
@@ -1201,7 +1201,7 @@ button.right.red .button_inner {
   line-height: 0.9rem;
   max-width: 3.7rem;
   width: 100%;
-  transition: 0.4s ease;
+  transition: 0.4s cubic-bezier(0.49, 0.07, 0.02, 1.07);
   background-color: #ff002e;
 }
 button.right.red .button_inner:hover {
@@ -1212,7 +1212,7 @@ button.right.red .button_inner .message {
   position: absolute;
   left: 0;
   top: 0;
-  transition: 0.4s ease;
+  transition: 0.4s cubic-bezier(0.49, 0.07, 0.02, 1.07);
   white-space: nowrap;
   color: #fff;
   font-weight: 400;
@@ -1231,7 +1231,7 @@ button.right.red .button_inner .arrows {
   align-items: center;
   width: 100%;
   height: 100%;
-  transition: 0.4s ease;
+  transition: 0.4s cubic-bezier(0.49, 0.07, 0.02, 1.07);
   position: absolute;
   left: 0;
   top: 0;
@@ -1244,7 +1244,7 @@ button.right.red .button_inner .arrows:before {
   height: 0.2rem;
   margin: auto;
   background-repeat: no-repeat;
-  transition: 0.4s ease;
+  transition: 0.4s cubic-bezier(0.49, 0.07, 0.02, 1.07);
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
   filter: alpha(opacity=0);
   opacity: 0;
@@ -1295,7 +1295,7 @@ button.right.blue .button_inner {
   line-height: 0.9rem;
   max-width: 3.7rem;
   width: 100%;
-  transition: 0.4s ease;
+  transition: 0.4s cubic-bezier(0.49, 0.07, 0.02, 1.07);
   background-color: #0077cb;
 }
 button.right.blue .button_inner:hover {
@@ -1306,7 +1306,7 @@ button.right.blue .button_inner .message {
   position: absolute;
   left: 0;
   top: 0;
-  transition: 0.4s ease;
+  transition: 0.4s cubic-bezier(0.49, 0.07, 0.02, 1.07);
   white-space: nowrap;
   color: #fff;
   font-weight: 400;
@@ -1325,7 +1325,7 @@ button.right.blue .button_inner .arrows {
   align-items: center;
   width: 100%;
   height: 100%;
-  transition: 0.4s ease;
+  transition: 0.4s cubic-bezier(0.49, 0.07, 0.02, 1.07);
   position: absolute;
   left: 0;
   top: 0;
@@ -1338,7 +1338,7 @@ button.right.blue .button_inner .arrows:before {
   height: 0.2rem;
   margin: auto;
   background-repeat: no-repeat;
-  transition: 0.4s ease;
+  transition: 0.4s cubic-bezier(0.49, 0.07, 0.02, 1.07);
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
   filter: alpha(opacity=0);
   opacity: 0;
@@ -1389,7 +1389,7 @@ button.right.grey .button_inner {
   line-height: 0.9rem;
   max-width: 3.7rem;
   width: 100%;
-  transition: 0.4s ease;
+  transition: 0.4s cubic-bezier(0.49, 0.07, 0.02, 1.07);
   background-color: #e5e5e5;
 }
 button.right.grey .button_inner:hover {
@@ -1408,7 +1408,7 @@ button.right.grey .button_inner .message {
   position: absolute;
   left: 0;
   top: 0;
-  transition: 0.4s ease;
+  transition: 0.4s cubic-bezier(0.49, 0.07, 0.02, 1.07);
   white-space: nowrap;
   color: #242424;
   font-weight: 400;
@@ -1426,7 +1426,7 @@ button.right.grey .button_inner .arrows {
   align-items: center;
   width: 100%;
   height: 100%;
-  transition: 0.4s ease;
+  transition: 0.4s cubic-bezier(0.49, 0.07, 0.02, 1.07);
   position: absolute;
   left: 0;
   top: 0;
@@ -1439,7 +1439,7 @@ button.right.grey .button_inner .arrows:before {
   height: 0.2rem;
   margin: auto;
   background-repeat: no-repeat;
-  transition: 0.4s ease;
+  transition: 0.4s cubic-bezier(0.49, 0.07, 0.02, 1.07);
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
   filter: alpha(opacity=0);
   opacity: 0;
@@ -1492,7 +1492,7 @@ button.right.green .button_inner {
   line-height: 0.9rem;
   max-width: 3.7rem;
   width: 100%;
-  transition: 0.4s ease;
+  transition: 0.4s cubic-bezier(0.49, 0.07, 0.02, 1.07);
   background-color: #00cba6;
 }
 button.right.green .button_inner:hover {
@@ -1503,7 +1503,7 @@ button.right.green .button_inner .message {
   position: absolute;
   left: 0;
   top: 0;
-  transition: 0.4s ease;
+  transition: 0.4s cubic-bezier(0.49, 0.07, 0.02, 1.07);
   white-space: nowrap;
   color: #fff;
   font-weight: 400;
@@ -1522,7 +1522,7 @@ button.right.green .button_inner .arrows {
   align-items: center;
   width: 100%;
   height: 100%;
-  transition: 0.4s ease;
+  transition: 0.4s cubic-bezier(0.49, 0.07, 0.02, 1.07);
   position: absolute;
   left: 0;
   top: 0;
@@ -1535,7 +1535,7 @@ button.right.green .button_inner .arrows:before {
   height: 0.2rem;
   margin: auto;
   background-repeat: no-repeat;
-  transition: 0.4s ease;
+  transition: 0.4s cubic-bezier(0.49, 0.07, 0.02, 1.07);
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
   filter: alpha(opacity=0);
   opacity: 0;
@@ -1584,7 +1584,7 @@ button.center.red .button_inner {
   line-height: 0.9rem;
   max-width: 3.7rem;
   width: 100%;
-  transition: 0.4s ease;
+  transition: 0.4s cubic-bezier(0.49, 0.07, 0.02, 1.07);
   background-color: #ff002e;
 }
 button.center.red .button_inner:hover {
@@ -1595,7 +1595,7 @@ button.center.red .button_inner .message {
   position: absolute;
   left: 0;
   top: 0;
-  transition: 0.4s ease;
+  transition: 0.4s cubic-bezier(0.49, 0.07, 0.02, 1.07);
   white-space: nowrap;
   color: #fff;
   font-weight: 400;
@@ -1614,7 +1614,7 @@ button.center.red .button_inner .arrows {
   align-items: center;
   width: 100%;
   height: 100%;
-  transition: 0.4s ease;
+  transition: 0.4s cubic-bezier(0.49, 0.07, 0.02, 1.07);
   position: absolute;
   left: 0;
   top: 0;
@@ -1627,7 +1627,7 @@ button.center.red .button_inner .arrows:before {
   height: 0.2rem;
   margin: auto;
   background-repeat: no-repeat;
-  transition: 0.4s ease;
+  transition: 0.4s cubic-bezier(0.49, 0.07, 0.02, 1.07);
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
   filter: alpha(opacity=0);
   opacity: 0;
@@ -1659,7 +1659,7 @@ button.center.blue .button_inner {
   line-height: 0.9rem;
   max-width: 3.7rem;
   width: 100%;
-  transition: 0.4s ease;
+  transition: 0.4s cubic-bezier(0.49, 0.07, 0.02, 1.07);
   background-color: #0077cb;
 }
 button.center.blue .button_inner:hover {
@@ -1670,7 +1670,7 @@ button.center.blue .button_inner .message {
   position: absolute;
   left: 0;
   top: 0;
-  transition: 0.4s ease;
+  transition: 0.4s cubic-bezier(0.49, 0.07, 0.02, 1.07);
   white-space: nowrap;
   color: #fff;
   font-weight: 400;
@@ -1689,7 +1689,7 @@ button.center.blue .button_inner .arrows {
   align-items: center;
   width: 100%;
   height: 100%;
-  transition: 0.4s ease;
+  transition: 0.4s cubic-bezier(0.49, 0.07, 0.02, 1.07);
   position: absolute;
   left: 0;
   top: 0;
@@ -1702,7 +1702,7 @@ button.center.blue .button_inner .arrows:before {
   height: 0.2rem;
   margin: auto;
   background-repeat: no-repeat;
-  transition: 0.4s ease;
+  transition: 0.4s cubic-bezier(0.49, 0.07, 0.02, 1.07);
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
   filter: alpha(opacity=0);
   opacity: 0;
@@ -1734,7 +1734,7 @@ button.center.grey .button_inner {
   line-height: 0.9rem;
   max-width: 3.7rem;
   width: 100%;
-  transition: 0.4s ease;
+  transition: 0.4s cubic-bezier(0.49, 0.07, 0.02, 1.07);
   background-color: #e5e5e5;
 }
 button.center.grey .button_inner:hover {
@@ -1753,7 +1753,7 @@ button.center.grey .button_inner .message {
   position: absolute;
   left: 0;
   top: 0;
-  transition: 0.4s ease;
+  transition: 0.4s cubic-bezier(0.49, 0.07, 0.02, 1.07);
   white-space: nowrap;
   color: #242424;
   font-weight: 400;
@@ -1771,7 +1771,7 @@ button.center.grey .button_inner .arrows {
   align-items: center;
   width: 100%;
   height: 100%;
-  transition: 0.4s ease;
+  transition: 0.4s cubic-bezier(0.49, 0.07, 0.02, 1.07);
   position: absolute;
   left: 0;
   top: 0;
@@ -1784,7 +1784,7 @@ button.center.grey .button_inner .arrows:before {
   height: 0.2rem;
   margin: auto;
   background-repeat: no-repeat;
-  transition: 0.4s ease;
+  transition: 0.4s cubic-bezier(0.49, 0.07, 0.02, 1.07);
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
   filter: alpha(opacity=0);
   opacity: 0;
@@ -1818,7 +1818,7 @@ button.center.green .button_inner {
   line-height: 0.9rem;
   max-width: 3.7rem;
   width: 100%;
-  transition: 0.4s ease;
+  transition: 0.4s cubic-bezier(0.49, 0.07, 0.02, 1.07);
   background-color: #00cba6;
 }
 button.center.green .button_inner:hover {
@@ -1829,7 +1829,7 @@ button.center.green .button_inner .message {
   position: absolute;
   left: 0;
   top: 0;
-  transition: 0.4s ease;
+  transition: 0.4s cubic-bezier(0.49, 0.07, 0.02, 1.07);
   white-space: nowrap;
   color: #fff;
   font-weight: 400;
@@ -1848,7 +1848,7 @@ button.center.green .button_inner .arrows {
   align-items: center;
   width: 100%;
   height: 100%;
-  transition: 0.4s ease;
+  transition: 0.4s cubic-bezier(0.49, 0.07, 0.02, 1.07);
   position: absolute;
   left: 0;
   top: 0;
@@ -1861,7 +1861,7 @@ button.center.green .button_inner .arrows:before {
   height: 0.2rem;
   margin: auto;
   background-repeat: no-repeat;
-  transition: 0.4s ease;
+  transition: 0.4s cubic-bezier(0.49, 0.07, 0.02, 1.07);
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
   filter: alpha(opacity=0);
   opacity: 0;
@@ -1927,12 +1927,12 @@ button.center.green .button_inner .arrows:after {
   bottom: -9px;
 }
 .hamburger .hamburger-box .hamburger-inner {
-  transition: 0.4s ease;
+  transition: 0.4s cubic-bezier(0.49, 0.07, 0.02, 1.07);
   background-color: #ff002e;
 }
 .hamburger .hamburger-box .hamburger-inner:before,
 .hamburger .hamburger-box .hamburger-inner:after {
-  transition: 0.4s ease;
+  transition: 0.4s cubic-bezier(0.49, 0.07, 0.02, 1.07);
   background-color: #ff002e;
 }
 .hamburger .hamburger-box:hover {
@@ -2279,7 +2279,7 @@ html body #app section.header .container .column.serv .location img {
 }
 html body #app section.header .container .column.serv .location span {
   font-size: 65%;
-  transition: 0.4s ease;
+  transition: 0.4s cubic-bezier(0.49, 0.07, 0.02, 1.07);
 }
 html body #app section.header .container .column.serv .location:hover span {
   color: #ff002e;
@@ -2295,7 +2295,7 @@ html body #app section.header .container .column.feedback .feedback_container {
   text-align: center;
   display: -webkit-flex;
   display: flex;
-  transition: 0.4s ease;
+  transition: 0.4s cubic-bezier(0.49, 0.07, 0.02, 1.07);
 }
 html body #app section.header .container .column.feedback .feedback_container a.inner {
   display: -webkit-flex;
@@ -2303,7 +2303,7 @@ html body #app section.header .container .column.feedback .feedback_container a.
   -webkit-align-items: center;
   -ms-align-items: center;
   align-items: center;
-  transition: 0.4s ease;
+  transition: 0.4s cubic-bezier(0.49, 0.07, 0.02, 1.07);
 }
 html body #app section.header .container .column.feedback .feedback_container a.inner span {
   color: #adadad;
@@ -2334,7 +2334,7 @@ html body #app section.header .container .column.menu .top_menu li {
   margin: 0 0.2rem;
   min-width: 1.65rem;
   text-align: center;
-  transition: 0.4s ease;
+  transition: 0.4s cubic-bezier(0.49, 0.07, 0.02, 1.07);
 }
 html body #app section.header .container .column.menu .top_menu li a {
   color: #fff;
@@ -2382,7 +2382,7 @@ html body #app section.footer .container .footer-title {
 }
 html body #app section.footer .container .footer-title .footer-slogan {
   color: #ff002e;
-  transition: 0.4s ease;
+  transition: 0.4s cubic-bezier(0.49, 0.07, 0.02, 1.07);
   font-size: 60%;
   font-weight: 300;
 }
@@ -2408,7 +2408,7 @@ html body #app section.footer .container .footer-menu ul li {
 html body #app section.footer .container .footer-menu ul a {
   line-height: 0.79rem;
   color: #fff;
-  transition: 0.4s ease;
+  transition: 0.4s cubic-bezier(0.49, 0.07, 0.02, 1.07);
   font-size: 40%;
   min-width: 3rem;
   display: inline-block;
@@ -2449,7 +2449,7 @@ html body #app section.footer .container .footer-copy .footer-column.footer-butt
 html body #app section.content {
   display: -webkit-flex;
   display: flex;
-  min-height: 100%;
+  height: 100%;
   padding: 5rem 0 3rem 0;
 }
 html body #app section.content .container {
@@ -2485,7 +2485,7 @@ html body #app section.content.index-about .container .title {
   margin: 0 0 1.3rem;
   font-weight: 300;
   line-height: 115%;
-  transition: 0.4s ease;
+  transition: 0.4s cubic-bezier(0.49, 0.07, 0.02, 1.07);
   font-size: 140%;
 }
 @media screen and (max-width: 375px) {
@@ -2502,7 +2502,7 @@ html body #app section.content.index-about .container .title {
 }
 html body #app section.content.index-about .container .link_under {
   display: inline-block;
-  transition: 0.4s ease;
+  transition: 0.4s cubic-bezier(0.49, 0.07, 0.02, 1.07);
   color: #545454;
   font-size: 70%;
   font-size: 70%;
@@ -2547,13 +2547,13 @@ html body #app section.in-cart .container.is-empty .title {
   margin: 0 0 1.3rem;
   font-weight: 300;
   line-height: 115%;
-  transition: 0.4s ease;
+  transition: 0.4s cubic-bezier(0.49, 0.07, 0.02, 1.07);
   font-size: 140%;
   color: #e5e5e5;
 }
 html body #app section.in-cart .container.is-empty .link_under {
   display: inline-block;
-  transition: 0.4s ease;
+  transition: 0.4s cubic-bezier(0.49, 0.07, 0.02, 1.07);
   color: #545454;
   font-size: 70%;
 }
@@ -2594,7 +2594,7 @@ html body #app section.in-cart .container .accordion_items {
 }
 html body #app section.in-cart .container .accordion_items li span header {
   display: inline-block;
-  transition: 0.4s ease;
+  transition: 0.4s cubic-bezier(0.49, 0.07, 0.02, 1.07);
   color: #232323;
   font-size: 70%;
   margin: 0.3rem 0;
@@ -2625,19 +2625,13 @@ html body #app section.in-cart .container .accordion_items li span header.active
 }
 html body #app section.in-cart .container .accordion_items li span header.active ~ main {
   display: block;
-  margin: 0;
   margin: 0.5rem 0;
-  max-height: 100%;
+  max-height: 10rem;
   -ms-filter: none;
   -webkit-filter: none;
           filter: none;
   opacity: 1;
   overflow: visible;
-}
-@media screen and (max-width: 480px) {
-  html body #app section.in-cart .container .accordion_items li span header.active ~ main {
-    max-height: initial;
-  }
 }
 html body #app section.in-cart .container .accordion_items li span .add {
   display: inline;
@@ -2653,11 +2647,11 @@ html body #app section.in-cart .container .accordion_items li span main {
   font-size: 30%;
   margin: 0;
   line-height: 200%;
-  max-height: 0;
+  max-height: 0rem;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
   filter: alpha(opacity=0);
   opacity: 0;
-  transition: 0.4s ease;
+  transition: 0.4s cubic-bezier(0.49, 0.07, 0.02, 1.07);
   overflow: hidden;
 }
 @media screen and (max-width: 1200px) {
@@ -2746,7 +2740,7 @@ html body #app section.contact .container ul.office-tab li {
 }
 html body #app section.contact .container ul.office-tab li a {
   font-size: 25%;
-  transition: 0.4s ease;
+  transition: 0.4s cubic-bezier(0.49, 0.07, 0.02, 1.07);
 }
 html body #app section.contact .container ul.office-tab li a:hover {
   color: #ff002e;
@@ -2827,7 +2821,7 @@ html body #app section.contact .container #offices address .info span,
 html body #app section.contact .container #offices address .call a,
 html body #app section.contact .container #offices address .info a {
   display: inline-block;
-  transition: 0.4s ease;
+  transition: 0.4s cubic-bezier(0.49, 0.07, 0.02, 1.07);
   color: #232323;
   font-size: 70%;
 }
@@ -2924,7 +2918,7 @@ html body #app section.contact .container .social ul.links li {
 }
 html body #app section.contact .container .social ul.links li a {
   display: inline-block;
-  transition: 0.4s ease;
+  transition: 0.4s cubic-bezier(0.49, 0.07, 0.02, 1.07);
   color: #232323;
   font-size: 70%;
   font-weight: 600;
@@ -2992,6 +2986,14 @@ html body #app section.feedback .container {
   -ms-align-items: center;
   align-items: center;
 }
+html body #app section.feedback .container .feedback_form,
+html body #app section.feedback .container .feedback_send {
+  display: none;
+}
+html body #app section.feedback .container .feedback_form.active,
+html body #app section.feedback .container .feedback_send.active {
+  display: block;
+}
 html body #app section.feedback .container .title {
   font-size: 150%;
   text-align: center;
@@ -3031,7 +3033,7 @@ html body #app section.feedback .container form .field label {
   -webkit-justify-content: center;
   -ms-justify-content: center;
   justify-content: center;
-  transition: 0.4s ease;
+  transition: 0.4s cubic-bezier(0.49, 0.07, 0.02, 1.07);
   border-bottom: 2px solid rgba(27,27,27,0.15);
 }
 html body #app section.feedback .container form .field label.active {
@@ -3048,7 +3050,7 @@ html body #app section.feedback .container form .field input {
   text-align: center;
   font-size: 42%;
   font-weight: 500;
-  transition: 0.4s ease;
+  transition: 0.4s cubic-bezier(0.49, 0.07, 0.02, 1.07);
   height: 1.5rem;
   padding: 0.9rem 0;
   caret-color: #ff002e;
@@ -3089,7 +3091,7 @@ html body #app section.help .container ul.faq.accordion_items {
 }
 html body #app section.help .container ul.faq.accordion_items li span header {
   display: inline-block;
-  transition: 0.4s ease;
+  transition: 0.4s cubic-bezier(0.49, 0.07, 0.02, 1.07);
   color: #232323;
   font-size: 70%;
   margin: 0.3rem 0;
@@ -3120,19 +3122,13 @@ html body #app section.help .container ul.faq.accordion_items li span header.act
 }
 html body #app section.help .container ul.faq.accordion_items li span header.active ~ main {
   display: block;
-  margin: 0;
   margin: 0.5rem 0;
-  max-height: 100%;
+  max-height: 10rem;
   -ms-filter: none;
   -webkit-filter: none;
           filter: none;
   opacity: 1;
   overflow: visible;
-}
-@media screen and (max-width: 480px) {
-  html body #app section.help .container ul.faq.accordion_items li span header.active ~ main {
-    max-height: initial;
-  }
 }
 html body #app section.help .container ul.faq.accordion_items li span .add {
   display: inline;
@@ -3148,11 +3144,11 @@ html body #app section.help .container ul.faq.accordion_items li span main {
   font-size: 30%;
   margin: 0;
   line-height: 200%;
-  max-height: 0;
+  max-height: 0rem;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
   filter: alpha(opacity=0);
   opacity: 0;
-  transition: 0.4s ease;
+  transition: 0.4s cubic-bezier(0.49, 0.07, 0.02, 1.07);
   overflow: hidden;
 }
 html body #app section.hero {
@@ -3278,7 +3274,7 @@ html body #app section.content.product-inner .container ul.accordion_items {
 }
 html body #app section.content.product-inner .container ul.accordion_items li span header {
   display: inline-block;
-  transition: 0.4s ease;
+  transition: 0.4s cubic-bezier(0.49, 0.07, 0.02, 1.07);
   color: #232323;
   font-size: 70%;
   margin: 0.3rem 0;
@@ -3309,19 +3305,13 @@ html body #app section.content.product-inner .container ul.accordion_items li sp
 }
 html body #app section.content.product-inner .container ul.accordion_items li span header.active ~ main {
   display: block;
-  margin: 0;
   margin: 0.5rem 0;
-  max-height: 100%;
+  max-height: 10rem;
   -ms-filter: none;
   -webkit-filter: none;
           filter: none;
   opacity: 1;
   overflow: visible;
-}
-@media screen and (max-width: 480px) {
-  html body #app section.content.product-inner .container ul.accordion_items li span header.active ~ main {
-    max-height: initial;
-  }
 }
 html body #app section.content.product-inner .container ul.accordion_items li span .add {
   display: inline;
@@ -3337,11 +3327,11 @@ html body #app section.content.product-inner .container ul.accordion_items li sp
   font-size: 30%;
   margin: 0;
   line-height: 200%;
-  max-height: 0;
+  max-height: 0rem;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
   filter: alpha(opacity=0);
   opacity: 0;
-  transition: 0.4s ease;
+  transition: 0.4s cubic-bezier(0.49, 0.07, 0.02, 1.07);
   overflow: hidden;
 }
 html body #app section.content.product-inner .container ul.accordion_items li {

@@ -21,6 +21,7 @@ class Routes extends Component {
 		super(props)
 		this.props.history.listen((location, action) => {
 			this.props.OnRouteEvent(this.props.HamburgerOn)
+			window.scrollTo(0, 0);
 		 });
 	}
 

@@ -2449,7 +2449,7 @@ html body #app section.footer .container .footer-copy .footer-column.footer-butt
 html body #app section.content {
   display: -webkit-flex;
   display: flex;
-  min-height: 100%;
+  height: 100%;
   padding: 5rem 0 3rem 0;
 }
 html body #app section.content .container {
@@ -2985,6 +2985,14 @@ html body #app section.feedback .container {
   -webkit-align-items: center;
   -ms-align-items: center;
   align-items: center;
+}
+html body #app section.feedback .container .feedback_form,
+html body #app section.feedback .container .feedback_send {
+  display: none;
+}
+html body #app section.feedback .container .feedback_form.active,
+html body #app section.feedback .container .feedback_send.active {
+  display: block;
 }
 html body #app section.feedback .container .title {
   font-size: 150%;
