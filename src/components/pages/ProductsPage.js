@@ -47,8 +47,8 @@ class ProductsPage extends Component {
 			<section className="content product">
 				<div className="container">
 					<ul id="productsSwitcher">
-						<li id="switchHome" onClick={HomeActive} className={cn({'active': this.state.homeTab})}>Home</li>
-						<li id="switchOffice" onClick={OfficeActive} className={cn({'active': !this.state.homeTab})}>Office</li>
+						<li onClick={HomeActive} className={cn({'active': this.state.homeTab})}>Home</li>
+						<li onClick={OfficeActive} className={cn({'active': !this.state.homeTab})}>Office</li>
 					</ul>
 
 					{
