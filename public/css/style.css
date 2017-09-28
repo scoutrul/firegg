@@ -3067,6 +3067,9 @@ html body #app section.feedback .container form .field input:focus ~ label {
   color: #1b1b1b;
   border-bottom: 2px solid #1b1b1b;
 }
+html body #app section.feedback .container form button {
+  margin-top: 1.5rem;
+}
 html body #app section.feedback .container .feedback_send .title {
   font-size: 100%;
 }

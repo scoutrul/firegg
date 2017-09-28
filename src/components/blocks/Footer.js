@@ -1,8 +1,7 @@
 import React from 'react'
 import { Link, NavLink } from 'react-router-dom'
 
-const Footer = (props) => {
-		let { MenuItems, SocialItems } = props
+const Footer = ({ MenuItems, SocialItems }) => {
 		const menuItems = MenuItems.map((menu,i)=>
 			<li key={menu.name}>
 				<span>

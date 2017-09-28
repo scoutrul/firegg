@@ -10,9 +10,9 @@ const mapStateToProps = state => {
 	}
 }
 
-const Locations = (props) => {
+const Locations = ({languages, regionsEn, regionsSp}) => {
 
-	const ChooseLanguage = props.languages.map((languages)=>(
+	const ChooseLanguage = languages.map((languages)=>(
 		<li key={languages}>
 			<span className="name">
 				<Link to={languages}>{languages}</Link>
@@ -21,7 +21,7 @@ const Locations = (props) => {
 		)
 	);
 
-	const RegionsEn = props.regionsEn.map((regions)=>(
+	const RegionsEn = regionsEn.map((regions)=>(
 		<li key={regions}>
 			<span>
 				<Link to={regions}>{regions}</Link>
@@ -30,7 +30,7 @@ const Locations = (props) => {
 		)
 	);
 
-	const RegionsSp = props.regionsSp.map((regions)=>(
+	const RegionsSp = regionsSp.map((regions)=>(
 		<li key={regions}>
 			<span>
 				<Link to={regions}>{regions}</Link>

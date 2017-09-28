@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-export const IndexHero = (props) => {
+export const IndexHero = ({title13, title1link}) => {
 	return(
 		<section className="hero">
 			<h1 className="promo">Guardsman</h1>
@@ -10,14 +10,14 @@ export const IndexHero = (props) => {
 					<div className="title slide_up_text">
 						<div className="takecontrol">
 							<span>
-								{props.title13}
+								{title13}
 							</span>
 						</div>
 					</div>
 					<button className="center red">
 						<Link className="button_inner" to="/products">
 							<div className="arrows"></div>
-							<div className="message">{props.title1link}</div> 
+							<div className="message">{title1link}</div> 
 						</Link>
 					</button>
 			 	</div>

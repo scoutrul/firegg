@@ -2,6 +2,8 @@ import React, {Component} from 'react'
 import { Link } from 'react-router-dom'
 import cn from 'classnames'
 
+import {FormInput} from '../blocks'
+
 class FeedbackPage extends Component{
 
 	constructor(){
@@ -19,11 +21,11 @@ class FeedbackPage extends Component{
 		}
 	}
 
-	handleChange(event) {
+	handleChange = (event) => {
 		this.setState({[event.target.name]: event.target.value});
 	}
 
-	formSubmit() {
+	formSubmit = () => {
 		this.setState({formSent: true})
 		window.scrollTo(0, 0);
 	}
@@ -42,64 +44,27 @@ class FeedbackPage extends Component{
 							</div>
 						</div>
 
-						<form id="feedback" autoComplete="off" name="feedback">
-							<div className="field">
-								<input name="name" type="text" value={this.state.name} onChange={this.handleChange.bind(this)}/>
-								<label htmlFor="name" className={ cn('slide_up_text',{'active': this.state.name }) }>
-									<span>Full Name</span>
-								</label>
-							</div>
-							<div className="field">
-								<input name="email" type="email" value={this.state.email} onChange={this.handleChange.bind(this)}/>
-								<label htmlFor="email"  className={ cn('slide_up_text',{'active': this.state.email }) }>
-									<span>E-mail address</span>
-								</label>
-							</div>
-							<div className="field">
-								<input name="phone" type="text" value={this.state.phone} onChange={this.handleChange.bind(this)}/>
-								<label htmlFor="phone"  className={ cn('slide_up_text',{'active': this.state.phone }) }>
-									<span>Phone number</span>
-								</label>
-							</div>
-							<div className="field">
-								<input name="street1" type="text" value={this.state.street1} onChange={this.handleChange.bind(this)}/>
-								<label htmlFor="street1"  className={ cn('slide_up_text',{'active': this.state.street1 }) }>
-									<span>Street Address</span>
-								</label>
-							</div>
-							<div className="field">
-								<input name="street2" type="email" value={this.state.street2} onChange={this.handleChange.bind(this)}/> 
-								<label htmlFor="street2"  className={ cn('slide_up_text',{'active': this.state.street2 }) }>
-									<span>Street Address2</span>
-								</label>
-							</div>
+						<form id="feedback" autoComplete="off" name="feedback" method="get">
+							<FormInput name="name" type="text" value={this.state.name} onChange={this.handleChange} label="Full Name"/>
+							<FormInput name="email" type="email" value={this.state.email} onChange={this.handleChange} label="E-mail address"/>
+							<FormInput name="phone" type="text" value={this.state.phone} onChange={this.handleChange} label="Phone number"/>
+							<FormInput name="street1" type="text" value={this.state.street1} onChange={this.handleChange} label="Street Address"/>
+							<FormInput name="street2" type="text" value={this.state.street2} onChange={this.handleChange} label="Street Address2"/>
+
+
 							<div className="thin">
-								<div className="field">
-									<input name="city" type="text" value={this.state.city} onChange={this.handleChange.bind(this)}/>
-									<label htmlFor="city" className={ cn('slide_up_text',{'active': this.state.city }) }> 
-										<span>City</span>
-									</label>
-								</div>
-								<div className="field" style={{margin: "0 0.5rem"}}>
-									<input name="state" type="text" value={this.state.state} onChange={this.handleChange.bind(this)}/>
-									<label htmlFor="state" className={ cn('slide_up_text',{'active': this.state.state }) }> 
-										<span>State</span>
-									</label>
-								</div>
-								<div className="field">
-									<input name="zip" type="text" value={this.state.zip} onChange={this.handleChange.bind(this)}/>
-									<label htmlFor="zip" className={ cn('slide_up_text',{'active': this.state.zip }) }> 
-										<span>ZIP Code</span>
-									</label>
-								</div>
+								<FormInput name="city" type="text" value={this.state.city} onChange={this.handleChange} label="City"/>
+								<FormInput name="state" type="text" value={this.state.state} onChange={this.handleChange} label="State"/>
+								<FormInput name="zup" type="text" value={this.state.zup} onChange={this.handleChange} label="Zip Code"/>
+
 							</div>
+							<button className="center red" onClick={this.formSubmit}>
+								<div className="button_inner">
+									<div className="arrows"></div>
+									<div className="message">Get quotes</div>
+								</div>
+							</button>
 						</form>
-						<button className="center red" onClick={this.formSubmit.bind(this)}>
-							<div className="button_inner">
-								<div className="arrows"></div>
-								<div className="message">Get quotes</div>
-							</div>
-						</button>
 					</div>
 
 					<div className={ cn('feedback_send',{'active': this.state.formSent }) }>

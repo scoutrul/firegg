@@ -7,8 +7,8 @@ import Wrapper from './Wrapper'
 import {IndexHero} from './IndexHero'
 import {IndexAbout} from './IndexAbout'
 import {LocationChooser} from './LocationChooser'
-
+import FormInput from './FormInput'
 
 export {
-	HeaderMenu, MobileMenu, Hamburger, Locations, Footer, IndexHero, IndexAbout, LocationChooser, Wrapper
+	HeaderMenu, MobileMenu, Hamburger, Locations, Footer, IndexHero, IndexAbout, LocationChooser, Wrapper, FormInput
 	}

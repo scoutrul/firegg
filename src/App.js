@@ -40,7 +40,7 @@ window.onload = function() {
 const mapStateToProps = state => {
 	return {
 		menuItems: state.menuReducer.site,
-		socialItems: state.menuReducer.social
+		socialItems: state.contactsReducer.social
 	}
 }
 

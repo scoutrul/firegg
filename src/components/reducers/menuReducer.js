@@ -18,24 +18,7 @@ const initialState = {
 				url: "/contacts"
 			}
 		],
-		social: [
-			{
-				name: "YouTube",
-				link: "https://www.youtube.com/user/GuardsmanGroup/"
-			},
-			{
-				name: "Facebook",
-				link: "https://www.facebook.com/GuardsmanGroup"
-			},
-			{
-				name: "Twitter",
-				link: "https://twitter.com/guardsmangroup"
-			},
-			{
-				name: "Google Plus",
-				link: "http://gplus.to/guardsmangroup"
-			}
-		]
+		
 	}
 }
 

@@ -1,13 +1,13 @@
 import React from 'react'
-import { NavLink, Link, withRouter } from 'react-router-dom'
+import { NavLink, withRouter } from 'react-router-dom'
 import cn from 'classnames'
 
 import {LocationChooser} from './'
 
-const HeaderMenu = (props) => {
+const HeaderMenu = ({location, MenuItems }) => {
 
-	const { pathname } = props.location
-	const menuItems = props.MenuItems.map((menu)=>
+	const { pathname } = location
+	const menuItems = MenuItems.map((menu)=>
 		<li key={ menu.name }>
 			<span>
 				<NavLink to={ menu.url } activeStyle={{ textDecoration: 'underline #ff002e' }}>{ menu.name }</NavLink>
@@ -33,10 +33,10 @@ const HeaderMenu = (props) => {
 				</div>
 				<div className="column feedback">
 					<div className="feedback_container">
-						<Link className="inner" to="/feedback">
+						<NavLink className="inner" to="/feedback" activeStyle={{ textDecoration: 'underline #ff002e' }}>
 							<img src="images/icon_cart.svg" alt="Cart" />
 							<span>Free Quote</span>
-						</Link>
+						</NavLink>
 					</div>
 				</div>
 			</div>
