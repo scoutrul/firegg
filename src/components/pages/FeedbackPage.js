@@ -1,11 +1,23 @@
 import React, {Component} from 'react'
 import { Link } from 'react-router-dom'
 import cn from 'classnames'
-
+import { connect } from 'react-redux'
 import {FormInput} from '../blocks'
 
-class FeedbackPage extends Component{
 
+const mapStateToProps = state => {
+	return { 
+		title1: state.feedbackReducer.title1,
+		title2: state.feedbackReducer.title2,
+		button1: state.feedbackReducer.button1,
+		button2: state.feedbackReducer.button2,
+		successTitle: state.feedbackReducer.successTitle,
+		successText: state.feedbackReducer.successText,
+	}
+}
+
+
+class FeedbackPage extends Component{
 	constructor(){
 		super();
 		this.state = {
@@ -31,16 +43,18 @@ class FeedbackPage extends Component{
 	}
 
 	render(){
+		const {title1, title2, button1, button2, successTitle, successText} = this.props
+
 		return (
 			<section className="content feedback">
 				<div className="container">
 					<div className={ cn('feedback_form', {'active': !this.state.formSent })}>
 						<div className="title slide_up_text">
 							<div>
-								<span>Fill your info &</span>
+								<span>{title1}</span>
 							</div>
 							<div>
-								<span>get free quote now</span>
+								<span>{title2}</span>
 							</div>
 						</div>
 
@@ -61,7 +75,7 @@ class FeedbackPage extends Component{
 							<button className="center red" onClick={this.formSubmit}>
 								<div className="button_inner">
 									<div className="arrows"></div>
-									<div className="message">Get quotes</div>
+									<div className="message">{button1}</div>
 								</div>
 							</button>
 						</form>
@@ -70,15 +84,15 @@ class FeedbackPage extends Component{
 					<div className={ cn('feedback_send',{'active': this.state.formSent }) }>
 						<div className="title slide_up_text">
 							<div>
-								<span>Quote has been sent!</span>
-								<span className="title2">Check your inbox for mote information.</span>
+								<span>{successTitle}</span>
+								<span className="title2">{successText}</span>
 							</div>
 						</div>
 
 						<button className="center red">
 							<Link className="button_inner" to="/products">
 								<div className="arrows"></div>
-								<div className="message">View Products</div>
+								<div className="message">{button2}</div>
 							</Link>
 						</button>
 					</div>
@@ -89,4 +103,4 @@ class FeedbackPage extends Component{
 	
 }
 
-export default FeedbackPage
+export default connect(mapStateToProps, )(FeedbackPage)

@@ -6,7 +6,7 @@ import { withRouter } from 'react-router-dom'
 import Helmet from 'react-helmet'
 
 import Routes from './components/routes'
-import {HeaderMenu, MobileMenu, Locations, Footer, Wrapper} from './components/blocks'
+import {Header, Footer, Wrapper} from './components/blocks'
 import appearModule from './js/appearModule'
 
 // const database = firebase.database()
@@ -53,14 +53,10 @@ const App = (props) => {
 			<Helmet title="Guardsman Limited®" />
 
 			<Wrapper MenuItems={siteMenu}>
-				<HeaderMenu MenuItems={siteMenu}/>
+				<Header MenuItems={siteMenu}/>
 				<Routes/>
-				<MobileMenu MenuItems={siteMenu}/>
 				<Footer MenuItems={siteMenu} SocialItems={socialMenu}/>
 			</Wrapper>
-
-			
-			<Locations/>
 		</div>
 	)		
 	

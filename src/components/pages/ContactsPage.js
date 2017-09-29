@@ -9,6 +9,8 @@ const mapStateToProps = state => {
 		headquarters: state.contactsReducer.headquarters,
 		socialItems: state.contactsReducer.social,
 		forces: state.contactsReducer.forces,
+		title1: state.contactsReducer.title1,
+		title2: state.contactsReducer.title2,
 	}
 }
 
@@ -24,19 +26,18 @@ class ContactsPage extends Component{
 		this.setState({activeTab: this.props.headquarters[i]})
 	}
 
-	componentWillMount() {
-		(this.props.history.location.pathname === '/contacts') && (this.props.history.location.pathname = `/contacts/${this.props.headquarters[0].name}`)
-	}
 
 	render(){
+		//set initial tab active
+		(this.props.history.location.pathname === '/contacts') && (this.props.history.location.pathname = `/contacts/${this.props.headquarters[0].name}`)
 
-		const {headquarters, socialItems, forces} = this.props;
+		const {headquarters, socialItems, forces, title1, title2} = this.props
 
 		const Social = () => 
 			<div className="social">
 				 <h4 className="slogan slide_up_text">
-					 <span>Work with us</span>
-					 <span>or just follow</span>
+					 <span>{title1}</span>
+					 <span>{title2}</span>
 				 </h4>
 				 <ul className="links slide_up_text">
 				 { 

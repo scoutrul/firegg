@@ -1,4 +1,4 @@
-import HeaderMenu from './HeaderMenu'
+import Header from './Header'
 import MobileMenu from './MobileMenu'
 import Hamburger from './Hamburger'
 import Locations from './Locations'
@@ -11,5 +11,5 @@ import FormInput from './FormInput'
 import {ContactsContent} from './ContactsContent'
 
 export {
-	HeaderMenu, MobileMenu, Hamburger, Locations, Footer, IndexHero, IndexAbout, LocationChooser, Wrapper, FormInput, ContactsContent
+	Header, MobileMenu, Hamburger, Locations, Footer, IndexHero, IndexAbout, LocationChooser, Wrapper, FormInput, ContactsContent
 	}

@@ -1,7 +1,18 @@
 import React from 'react'
 import { Link, NavLink } from 'react-router-dom'
+import { connect } from 'react-redux'
 
-const Footer = ({ MenuItems, SocialItems }) => {
+const mapStateToProps = state => {
+	return { 
+		title1: state.footerReducer.title1,
+		title2: state.footerReducer.title2,
+		copy: state.footerReducer.copy,
+		button: state.footerReducer.button,
+	}
+}
+
+const Footer = ({ MenuItems, SocialItems, title1, title2, copy, button }) => {
+
 		const menuItems = MenuItems.map((menu,i)=>
 			<li key={menu.name}>
 				<span>
@@ -22,10 +33,10 @@ const Footer = ({ MenuItems, SocialItems }) => {
 					<div className="footer-title">
 						<h6 className="footer-slogan slide_up_text">
 							<div style={{float: "left"}}>
-								<span>Take&nbsp;</span>
+								<span>{title1}&nbsp;</span>
 							</div>
 							<div>
-								<span>Control.</span>
+								<span>{title2}</span>
 							</div>
 						</h6>
 					</div>
@@ -41,12 +52,12 @@ const Footer = ({ MenuItems, SocialItems }) => {
 				</div>
 				<div className="container">
 					<div className="footer-copy">
-						<div className="copy">2017 © Guardsman Limited.</div>
+						<div className="copy">{copy}</div>
 						<div className="footer-column footer-button">
 							<button className="right red">
 								<Link className="button_inner" to="/products">
 									<div className="arrows"></div>
-									<div className="message">Products</div>
+									<div className="message">{button}</div>
 								</Link>
 							</button>
 						</div>
@@ -57,4 +68,4 @@ const Footer = ({ MenuItems, SocialItems }) => {
 	
 }
 
-export default Footer
+export default connect(mapStateToProps)(Footer)

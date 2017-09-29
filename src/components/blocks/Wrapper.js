@@ -1,12 +1,12 @@
 import React from 'react'
-import {Hamburger} from "./"
-import {MobileMenu} from "./"
+import {MobileMenu, Hamburger, Locations} from "./"
 
 const Wrapper = (props) => (
 	<section style={style}>
 		<Hamburger/>
 		<MobileMenu MenuItems={props.MenuItems}/>
 		{props.children}
+		<Locations/>
 	</section>
 )
 

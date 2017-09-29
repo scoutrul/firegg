@@ -1,7 +1,9 @@
 import React from 'react'
+import Helmet from 'react-helmet'
 
 export const ContactsContent = (props) => 
 <div id="offices">
+	<Helmet title={`${props.name} / Guardsman Limited®`} />
 	<address className="vcard" key={props.name}>
 	    <div className="adr">
 	        <span className="street-address">{props.address}</span>
