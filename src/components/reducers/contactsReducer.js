@@ -14,8 +14,8 @@ const initialState = {
 				link: "https://twitter.com/guardsmangroup"
 			},
 			{
-				name: "Google Plus",
-				link: "http://gplus.to/guardsmangroup"
+				name: "Instagram",
+				link: "https://www.instagram.com/guardsmangroup/"
 			}
 		],
 		title1: "Work with us",
@@ -58,25 +58,32 @@ const initialState = {
 				name: "Montego Bay",
 				address: "Lot 1219 Ironshore, Industrial Estate Montego Bay Ironshore Jamaica",
 				email: "info@guardsmangroup.com",
-				contacts: ["(876) 953-3400","(876) 953-2944","(876) 953-9709","(876) 953-3385"]
+				contacts: ["(876) 953-3400","(876) 953-2944","(876) 953-9709","(876) 953-3385"],
+				googleMap: "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3794.1958276142104!2d-76.773802!3d18.0161133!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xe6b8889eb201591f!2sGuardsman+Group+Ltd.!5e0!3m2!1sru!2sru!4v1502320483649"
 			},
 			{
 				name: "May Pen",
 				address: "55a Manchester Avenue, Industrial Estate May Pen Clarendon Jamaica",
 				email: "info@guardsmangroup.com",
-				contacts: ["(876)986-2765", "(876)902-6762"]
+				contacts: ["(876)986-2765", "(876)902-6762"],
+				googleMap: "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3794.1958276142104!2d-76.773802!3d18.0161133!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xe6b8889eb201591f!2sGuardsman+Group+Ltd.!5e0!3m2!1sru!2sru!4v1502320483649"
+
 			},
 			{
 				name: "Negril",
 				address: "Monte Vista Nompriel Road Sheffield Jamaica",
 				email: "info@guardsmangroup.com",
-				contacts: ["(876) 957-9183","(876) 957-3924","(876) 957-9027"]
+				contacts: ["(876) 957-9183","(876) 957-3924","(876) 957-9027"],
+				googleMap: "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3794.1958276142104!2d-76.773802!3d18.0161133!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xe6b8889eb201591f!2sGuardsman+Group+Ltd.!5e0!3m2!1sru!2sru!4v1502320483649"
+				
 			},
 			{
 				name: "Mandeville",
 				address: "84 Manchester Road Jamaica",
 				email: "info@guardsmangroup.com",
-				contacts: ["(876) 962-2369","(876) 962-0682"]
+				contacts: ["(876) 962-2369","(876) 962-0682"],
+				googleMap: "https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3794.1958276142104!2d-76.773802!3d18.0161133!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xe6b8889eb201591f!2sGuardsman+Group+Ltd.!5e0!3m2!1sru!2sru!4v1502320483649"
+				
 			}
 		]
 	}

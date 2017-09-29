@@ -8,7 +8,8 @@ import {IndexHero} from './IndexHero'
 import {IndexAbout} from './IndexAbout'
 import {LocationChooser} from './LocationChooser'
 import FormInput from './FormInput'
+import {ContactsContent} from './ContactsContent'
 
 export {
-	HeaderMenu, MobileMenu, Hamburger, Locations, Footer, IndexHero, IndexAbout, LocationChooser, Wrapper, FormInput
+	HeaderMenu, MobileMenu, Hamburger, Locations, Footer, IndexHero, IndexAbout, LocationChooser, Wrapper, FormInput, ContactsContent
 	}

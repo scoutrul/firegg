@@ -2449,7 +2449,6 @@ html body #app section.footer .container .footer-copy .footer-column.footer-butt
 html body #app section.content {
   display: -webkit-flex;
   display: flex;
-  height: 100%;
   padding: 5rem 0 3rem 0;
 }
 html body #app section.content .container {
@@ -2752,10 +2751,10 @@ html body #app section.contact .container ul.office-tab li a:before {
   display: block;
   margin: 0.1rem auto;
 }
-html body #app section.contact .container ul.office-tab li.office-tab--active a {
+html body #app section.contact .container ul.office-tab li .office-tab--active {
   color: #ff002e;
 }
-html body #app section.contact .container ul.office-tab li.office-tab--active a:before {
+html body #app section.contact .container ul.office-tab li .office-tab--active:before {
   background-image: url("../images/icon_pin.svg");
   background-repeat: no-repeat;
 }
