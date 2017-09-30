@@ -3,7 +3,7 @@ import { NavLink, Link } from 'react-router-dom'
 import cn from 'classnames'
 import { connect } from 'react-redux'
 
-import {LocationChooser} from './'
+import {LocationsOpener} from './'
 
 
 const mapStateToProps = state => {
@@ -26,7 +26,7 @@ class MobileMenu extends Component {
 		return (
 			<section className={ cn('mobile_menu', { 'mobile_menu-active': condition }) }>
 				<div className="container">
-					<LocationChooser/>
+					<LocationsOpener/>
 					<ul className="mobile_menu_list slide_up_text">
 						{menuItems}
 					</ul>

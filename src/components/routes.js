@@ -34,7 +34,7 @@ class Routes extends Component {
 				<Route path='/help' component={HelpPage}/>
 				<Route path='/contacts' component={ContactsPage}/>
 				<Route path='/feedback' component={FeedbackPage}/>
-				<Route render={()=>(<section className="content">Under Construction</section>)}/>
+				<Route render={()=>(<section className="content" style={{justifyContent: "center"}}>Under Construction</section>)}/>
 			</Switch>	
 		)
 	}
