@@ -10,8 +10,11 @@
     "react": "16.0.0",
     "react-dom": "16.0.0",
     "react-helmet": "^5.2.0",
+    "react-motion": "^0.5.2",
     "react-redux": "^5.0.6",
     "react-router-dom": "^4.2.2",
+    "react-scroll-parallax": "^1.1.0",
+    "react-smooth-scroll": "^0.1.0",
     "redux": "^3.7.2"
   },
   "devDependencies": {

@@ -825,7 +825,6 @@ button.left.red .button_inner:hover {
   max-width: 4rem;
 }
 button.left.red .button_inner .message {
-  position: absolute;
   left: 0;
   top: 0;
   transition: 0.4s cubic-bezier(0.49, 0.07, 0.02, 1.07);
@@ -919,7 +918,6 @@ button.left.blue .button_inner:hover {
   max-width: 4rem;
 }
 button.left.blue .button_inner .message {
-  position: absolute;
   left: 0;
   top: 0;
   transition: 0.4s cubic-bezier(0.49, 0.07, 0.02, 1.07);
@@ -1021,7 +1019,6 @@ button.left.grey .button_inner:hover .message {
   color: #fff;
 }
 button.left.grey .button_inner .message {
-  position: absolute;
   left: 0;
   top: 0;
   transition: 0.4s cubic-bezier(0.49, 0.07, 0.02, 1.07);
@@ -1116,7 +1113,6 @@ button.left.green .button_inner:hover {
   max-width: 4rem;
 }
 button.left.green .button_inner .message {
-  position: absolute;
   left: 0;
   top: 0;
   transition: 0.4s cubic-bezier(0.49, 0.07, 0.02, 1.07);
@@ -1210,7 +1206,6 @@ button.right.red .button_inner:hover {
   max-width: 4rem;
 }
 button.right.red .button_inner .message {
-  position: absolute;
   left: 0;
   top: 0;
   transition: 0.4s cubic-bezier(0.49, 0.07, 0.02, 1.07);
@@ -1304,7 +1299,6 @@ button.right.blue .button_inner:hover {
   max-width: 4rem;
 }
 button.right.blue .button_inner .message {
-  position: absolute;
   left: 0;
   top: 0;
   transition: 0.4s cubic-bezier(0.49, 0.07, 0.02, 1.07);
@@ -1406,7 +1400,6 @@ button.right.grey .button_inner:hover .message {
   color: #fff;
 }
 button.right.grey .button_inner .message {
-  position: absolute;
   left: 0;
   top: 0;
   transition: 0.4s cubic-bezier(0.49, 0.07, 0.02, 1.07);
@@ -1501,7 +1494,6 @@ button.right.green .button_inner:hover {
   max-width: 4rem;
 }
 button.right.green .button_inner .message {
-  position: absolute;
   left: 0;
   top: 0;
   transition: 0.4s cubic-bezier(0.49, 0.07, 0.02, 1.07);
@@ -1593,7 +1585,6 @@ button.center.red .button_inner:hover {
   max-width: 4rem;
 }
 button.center.red .button_inner .message {
-  position: absolute;
   left: 0;
   top: 0;
   transition: 0.4s cubic-bezier(0.49, 0.07, 0.02, 1.07);
@@ -1646,6 +1637,9 @@ button.center.red .button_inner .arrows:after {
   margin: 0 0 0 auto;
   background-image: url("../images/icon_arrow_white_right.svg");
 }
+button.center.red .button_inner {
+  margin: auto;
+}
 button.center.blue .button_inner {
   display: -webkit-flex;
   display: flex;
@@ -1668,7 +1662,6 @@ button.center.blue .button_inner:hover {
   max-width: 4rem;
 }
 button.center.blue .button_inner .message {
-  position: absolute;
   left: 0;
   top: 0;
   transition: 0.4s cubic-bezier(0.49, 0.07, 0.02, 1.07);
@@ -1721,6 +1714,9 @@ button.center.blue .button_inner .arrows:after {
   margin: 0 0 0 auto;
   background-image: url("../images/icon_arrow_white_right.svg");
 }
+button.center.blue .button_inner {
+  margin: auto;
+}
 button.center.grey .button_inner {
   display: -webkit-flex;
   display: flex;
@@ -1751,7 +1747,6 @@ button.center.grey .button_inner:hover .message {
   color: #fff;
 }
 button.center.grey .button_inner .message {
-  position: absolute;
   left: 0;
   top: 0;
   transition: 0.4s cubic-bezier(0.49, 0.07, 0.02, 1.07);
@@ -1805,6 +1800,9 @@ button.center.grey .button_inner .arrows:after {
   background-image: url("../images/icon_arrow_white_right.svg");
   background-image: url("../images/icon_arrow_black_right.svg");
 }
+button.center.grey .button_inner {
+  margin: auto;
+}
 button.center.green .button_inner {
   display: -webkit-flex;
   display: flex;
@@ -1827,7 +1825,6 @@ button.center.green .button_inner:hover {
   max-width: 4rem;
 }
 button.center.green .button_inner .message {
-  position: absolute;
   left: 0;
   top: 0;
   transition: 0.4s cubic-bezier(0.49, 0.07, 0.02, 1.07);
@@ -1879,6 +1876,9 @@ button.center.green .button_inner .arrows:after {
   background-position: 100%;
   margin: 0 0 0 auto;
   background-image: url("../images/icon_arrow_white_right.svg");
+}
+button.center.green .button_inner {
+  margin: auto;
 }
 .hamburger {
   cursor: pointer;
