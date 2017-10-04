@@ -1,6 +1,7 @@
 import React from 'react'
 import { connect } from 'react-redux'
 import { withRouter } from 'react-router-dom'
+import { ParallaxController } from 'react-scroll-parallax'
 // import firebase from './fire'
 
 import Helmet from 'react-helmet'
@@ -44,6 +45,7 @@ const mapStateToProps = state => {
 	}
 }
 
+ParallaxController.init() 
 const App = (props) => {
 
 	const siteMenu = props.menuItems

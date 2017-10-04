@@ -22,7 +22,7 @@ class Routes extends Component {
 		this.props.history.listen((location, action) => {
 			this.props.OnRouteEvent(this.props.HamburgerOn)
 			window.scrollTo(0, 0);
-		 });
+		});
 	}
 
 	render(){

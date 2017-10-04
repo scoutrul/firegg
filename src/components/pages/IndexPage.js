@@ -23,13 +23,10 @@ const mapStateToProps = state => {
 
 class IndexPage extends Component {
 	render(){
-		return (
-			<div>
-				<IndexHero {...this.props.indexHero}/>
-				<IndexAbout {...this.props.indexAbout}/>
-			</div>
-		)
-		
+		return [
+				<IndexHero {...this.props.indexHero} key="IndexHero"/>,
+				<IndexAbout {...this.props.indexAbout} key="IndexAbout"/>
+			]
 	}
 }
 
