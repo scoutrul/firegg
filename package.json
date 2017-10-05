@@ -11,9 +11,7 @@
   "homepage": "https://scoutrul.github.io/firegg/",
   "dependencies": {
     "classnames": "^2.2.5",
-    "firebase": "^4.3.1",
-    "jquery": "^3.2.1",
-    "prop-types": "^15.6.0",
+    "gh-pages-deploy": "^0.4.2",
     "react": "16.0.0",
     "react-dom": "16.0.0",
     "react-helmet": "^5.2.0",
@@ -36,14 +34,14 @@
     "clean-source": "rimraf README.md src webroot package.json"
   },
   "gh-pages-deploy": {
-     "staticpath": "build",
-     "cname": "nope.org",
-     "prep": [
-       "build"
-     ],
-     "post": [
-       "clean-source"
-     ],
-     "noprompt": true
-   },
+    "staticpath": "build",
+    "cname": "nope.org",
+    "prep": [
+      "build"
+    ],
+    "post": [
+      "clean-source"
+    ],
+    "noprompt": true
+  }
 }
