@@ -36,12 +36,10 @@
   "gh-pages-deploy": {
     "staticpath": "build",
     "cname": "nope.org",
-    "prep": [
-      "build"
-    ],
+    "prep": "build",
     "post": [
       "clean-source"
     ],
-    "noprompt": true
+    "noprompt": false
   }
 }
