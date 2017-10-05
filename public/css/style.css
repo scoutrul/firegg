@@ -3188,25 +3188,25 @@ html body #app section.hero .promo {
   top: 30%;
   font-size: 13vw;
 }
+html body #app section.hero .promoHero {
+  position: absolute;
+  min-width: 100vw;
+  min-height: 100vh;
+}
+html body #app section.hero .promoHero .img {
+  background: url("../images/guardsman_promo.png") 50% 100%/100vh no-repeat;
+  left: -15px;
+  min-width: 100vw;
+  min-height: 100vh;
+}
 html body #app section.hero .container {
   -webkit-flex-direction: column;
   flex-direction: column;
   max-height: 1200px;
   height: 100%;
-
-  background-size: 100vh;
   margin: auto auto 0;
   max-width: 100%;
-  background-position-y: bottom;
-  background-position-x: center;
   min-height: 100vh;
-}
-
-.promoHero {
-  position: absolute;
-  min-height: 100vh;
-  min-width: 100vw;
-  /*background: url(../images/guardsman_promo.png) 50% 100% / 100vh no-repeat*/
 }
 @media screen and (min-height: 1200px) and (min-width: 768px) {
   html body #app section.hero .container {

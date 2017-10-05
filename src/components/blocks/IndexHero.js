@@ -10,8 +10,6 @@ export class IndexHero extends Component {
 	}
 
 	render(){
-
-		window.ParallaxController.update() 
 		const {title11, title12, title1link} = this.props
 		return(
 			<ReactSmoothScroll>
@@ -32,7 +30,7 @@ export class IndexHero extends Component {
 								offsetYMin={-15}
 								slowerScrollRate
 								tag="div" className="promoHero">
-								<div style={styles}></div>
+								<div className="img"></div>
 							</Parallax>
 
 
@@ -59,12 +57,4 @@ export class IndexHero extends Component {
 		
 	}
 	
-}
-
-const styles = {
-	minHeight: "100vh",
-	minWidth: "100vw",
-	background: "url(../images/guardsman_promo.png) 50% 100% / 100vh no-repeat",
-	left: -15
-
 }

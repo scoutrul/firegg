@@ -1,7 +1,7 @@
 import React from 'react'
 import { connect } from 'react-redux'
 import { withRouter } from 'react-router-dom'
-import { ParallaxProvider } from 'react-scroll-parallax'
+
 import Helmet from 'react-helmet'
 
 import Routes from './components/routes'
@@ -21,18 +21,16 @@ const App = (props) => {
 
 	const siteMenu = props.menuItems
 	const socialMenu = props.socialItems
-	return (
-		<ParallaxProvider>
-			<div id="app" style={styles}>
-				<Helmet title="Guardsman Limited®" />
+	return (	
+		<div id="app" style={styles}>
+			<Helmet title="Guardsman Limited®" />
 
-				<Wrapper MenuItems={siteMenu}>
-					<Header MenuItems={siteMenu}/>
-					<Routes/>
-					<Footer MenuItems={siteMenu} SocialItems={socialMenu}/>
-				</Wrapper>
-			</div>
-		</ParallaxProvider>
+			<Wrapper MenuItems={siteMenu}>
+				<Header MenuItems={siteMenu}/>
+				<Routes/>
+				<Footer MenuItems={siteMenu} SocialItems={socialMenu}/>
+			</Wrapper>
+		</div>
 	)		
 	
 }
