@@ -2,12 +2,16 @@
   "name": "firegg",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://gggg-4bdf2.firebaseapp.com",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/scoutrul/firegg.git"
+  },
+  "author": "Golovachov Anton <antongolova@gmail.com> (http://github.com/scoutrul)",
+  "license": "MIT",
+  "homepage": "https://scoutrul.github.io/firegg/",
   "dependencies": {
     "classnames": "^2.2.5",
-    "firebase": "^4.3.1",
-    "jquery": "^3.2.1",
-    "prop-types": "^15.6.0",
+    "gh-pages-deploy": "^0.4.2",
     "react": "16.0.0",
     "react-dom": "16.0.0",
     "react-helmet": "^5.2.0",
@@ -25,6 +29,17 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "deploy": "gh-pages-deploy",
+    "clean-source": "rimraf README.md src webroot package.json"
+  },
+  "gh-pages-deploy": {
+    "staticpath": "build",
+    "cname": "nope.org",
+    "prep": ["build"],
+    "post": [
+      "clean-source"
+    ],
+    "noprompt": false
   }
 }

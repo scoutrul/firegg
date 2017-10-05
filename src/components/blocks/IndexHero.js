@@ -1,56 +1,70 @@
 import React, {Component} from 'react'
-import { NavLink } from 'react-router-dom'
-import { ParallaxProvider, Parallax } from 'react-scroll-parallax'
+import { Link } from 'react-router-dom'
+import { Parallax } from 'react-scroll-parallax'
 import ReactSmoothScroll from 'react-smooth-scroll'
 
 export class IndexHero extends Component {
 
-	componentDidMount() {
+	componentWillMount() {
 		window.ParallaxController.update() 
 	}
 
 	render(){
+
+		window.ParallaxController.update() 
 		const {title11, title12, title1link} = this.props
 		return(
 			<ReactSmoothScroll>
 				<section className="hero">
-					<ParallaxProvider>
-						<Parallax
-							className="promo"
-							offsetYMax={150}
-							offsetYMin={-150}
-							slowerScrollRate
-							tag="h1">
-							{title11}
-						</Parallax>
+					<Parallax
+						className="promo"
+						offsetYMax={140}
+						offsetYMin={-150}
+						slowerScrollRate
+						tag="h1">
+						{title11}
+					</Parallax>
 
-						<div className="container">
-							<div className="screener">
-								<Parallax
-									className="title slide_up_text"
-									offsetYMax={15}
-									offsetYMin={-15}
-									tag="div">
+					<div className="container">
+						<div className="screener">
+							<Parallax
+								offsetYMax={15}
+								offsetYMin={-15}
+								slowerScrollRate
+								tag="div" className="promoHero">
+								<div style={styles}></div>
+							</Parallax>
+
+
+								<div className="title slide_up_text">
 									<div className="takecontrol">
 										<span>
 											{title12}
 										</span>
 									</div>
+								</div>
 
-									<button className="center red">
-										<NavLink className="button_inner" to="/products">
-											<div className="arrows"></div>
-											<div className="message">{title1link}</div> 
-										</NavLink>
-									</button>
-								</Parallax>
-						 	</div>
-						</div>
-					 </ParallaxProvider>
+								<button className="center red">
+									<Link className="button_inner" to="/products">
+										<div className="arrows"></div>
+										<div className="message">{title1link}</div> 
+									</Link>
+								</button>
+
+					 	</div>
+					</div>
 				</section>
 			</ReactSmoothScroll>
 		)
 		
 	}
 	
+}
+
+const styles = {
+	minHeight: "100vh",
+	minWidth: "100vw",
+	background: "url(../images/guardsman_promo.png) 50% 100% / 100vh no-repeat",
+	left: -15
+
 }

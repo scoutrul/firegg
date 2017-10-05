@@ -1,4 +1,9 @@
 {
+<<<<<<< HEAD
   "main.js": "static/js/main.a14970ca.js",
   "main.js.map": "static/js/main.a14970ca.js.map"
+=======
+  "main.js": "static/js/main.e68c2ab9.js",
+  "main.js.map": "static/js/main.e68c2ab9.js.map"
+>>>>>>> gh-pages
 }
