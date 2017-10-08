@@ -4,7 +4,7 @@ import { withRouter } from 'react-router'
 import { connect } from 'react-redux'
 
 import { bindActionCreators } from 'redux'
-import { OnRouteEvent } from '../js/actions/index'
+import { OnRouteEvent } from '../actions/index'
 
 import {IndexPage, AboutPage, HelpPage, ContactsPage, FeedbackPage, ProductsPage} from './pages'
 

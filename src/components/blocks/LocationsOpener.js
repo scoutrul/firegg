@@ -2,7 +2,7 @@ import React from 'react'
 import { bindActionCreators } from 'redux'
 import { connect } from 'react-redux'
 
-import { LocationsOpen } from '../../js/actions/index'
+import { LocationsOpen } from '../../actions/index'
 
 const mapStateToProps = state => {
 	return { LocationsOn: state.uiReducer.LocationsOn }

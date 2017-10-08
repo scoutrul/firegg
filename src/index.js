@@ -7,7 +7,7 @@ import { createStore } from 'redux'
 import { ParallaxProvider } from 'react-scroll-parallax'
 
 import App from './App'
-import MainReducer from './components/reducers'
+import MainReducer from './reducers'
 
 const store = createStore(MainReducer, window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__())
 

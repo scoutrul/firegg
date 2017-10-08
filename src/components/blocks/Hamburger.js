@@ -3,7 +3,7 @@ import cn from 'classnames'
 import { bindActionCreators } from 'redux'
 import { connect } from 'react-redux'
 import { withRouter } from 'react-router-dom'
-import { HamburgerOnClick } from '../../js/actions/index'
+import { HamburgerOnClick } from '../../actions/index'
 
 const mapStateToProps = state => {
 	return { HamburgerOn: state.uiReducer.HamburgerOn }

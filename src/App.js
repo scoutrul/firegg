@@ -18,7 +18,6 @@ const mapStateToProps = state => {
 }
 
 const App = (props) => {
-
 	const siteMenu = props.menuItems
 	const socialMenu = props.socialItems
 	return (	
@@ -32,7 +31,6 @@ const App = (props) => {
 			</Wrapper>
 		</div>
 	)		
-	
 }
 
 export default withRouter(connect(mapStateToProps, )(App));

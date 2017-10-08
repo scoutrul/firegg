@@ -2,7 +2,7 @@ import React, {Component} from 'react'
 import { connect } from 'react-redux'
 
 import { bindActionCreators } from 'redux'
-import { LocationsClose } from '../../js/actions/'
+import { LocationsClose } from '../../actions/'
 
 
 const mapStateToProps = state => {
