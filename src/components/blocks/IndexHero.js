@@ -5,7 +5,7 @@ import ReactSmoothScroll from 'react-smooth-scroll'
 
 export class IndexHero extends Component {
 
-	componentWillMount() {
+	componentDidMount() {
 		window.ParallaxController.update() 
 	}
 

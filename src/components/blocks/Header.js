@@ -16,11 +16,11 @@ const Header = ({location, MenuItems }) => {
 	)
 
 	return (
-		<section className={ cn('header', { 'index_layer': pathname === '/' } )}>
+		<section className={ cn('header', { 'index_layer': pathname === '/home' } )}>
 			<div className="container">
 				<div className="column serv">
 					<div className="logo">
-						<NavLink to="/">
+						<NavLink to="/home">
 							<img src="images/icon_logo.svg" alt="Logotype"/>
 						</NavLink>
 					</div>
