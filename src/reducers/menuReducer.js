@@ -2,8 +2,8 @@ const initialState = {
 	menu: {
 		site: [
 			{
-				name: "About", 
-				url: "/about"
+				name: "Company", 
+				url: "/company"
 			},
 			{
 				name: "Products", 
@@ -14,8 +14,12 @@ const initialState = {
 				url: "/help"
 			},
 			{
-				name: "Contacts", 
-				url: "/contacts"
+				name: "Contact", 
+				url: "/contact"
+			},
+			{
+				name: "Blog", 
+				url: "/blog"
 			}
 		],
 		

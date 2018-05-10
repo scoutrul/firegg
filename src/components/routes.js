@@ -6,7 +6,7 @@ import { connect } from 'react-redux'
 import { bindActionCreators } from 'redux'
 import { OnRouteEvent } from '../actions/index'
 
-import {IndexPage, AboutPage, HelpPage, ContactsPage, FeedbackPage, ProductsPage} from './pages'
+import {IndexPage, AboutPage, HelpPage, ContactsPage, FeedbackPage, ProductsPage, BlogPage} from './pages'
 
 
 const mapStateToProps = state => {
@@ -29,11 +29,12 @@ class Routes extends Component {
 		return(
 			<Switch>
 				<Route exact path='/home' component={IndexPage}/>
-				<Route path='/about' component={AboutPage}/>
+				<Route path='/company' component={AboutPage}/>
 				<Route path='/products' component={ProductsPage}/>
 				<Route path='/help' component={HelpPage}/>
-				<Route path='/contacts' component={ContactsPage}/>
+				<Route path='/contact' component={ContactsPage}/>
 				<Route path='/feedback' component={FeedbackPage}/>
+				<Route path='/blog' component={BlogPage}/>
 				<Route render={()=>(<section className="content" style={{justifyContent: "center"}}>Under Construction</section>)}/>
 			</Switch>	
 		)

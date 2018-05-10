@@ -1,8 +1,7 @@
 import React, {Component} from 'react'
 import { connect } from 'react-redux'
 
-import {IndexHero} from '../blocks/'
-import {IndexAbout} from '../blocks/'
+import {IndexHero, IndexAbout} from '../blocks/'
 
 const mapStateToProps = state => {
 	return {

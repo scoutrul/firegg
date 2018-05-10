@@ -39,6 +39,13 @@ const Footer = ({ MenuItems, SocialItems, title1, title2, copy, button }) => {
 								<span>{title2}</span>
 							</div>
 						</h6>
+						<div className="footer-partners">
+							<div className="footer-partners-links-header">Check our partners</div>
+							<div className="footer-partners-links">
+								<a href="#">GML Security</a>
+								<a href="#">MX Systems</a>
+							</div>
+						</div>
 					</div>
 
 					<div className="footer-menu">

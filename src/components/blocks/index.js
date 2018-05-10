@@ -9,7 +9,8 @@ import {IndexAbout} from './IndexAbout'
 import FormInput from './FormInput'
 import {ContactsContent} from './ContactsContent'
 import LocationsOpener from './LocationsOpener'
+import {Lorem} from './Lorem'
 
 export {
-	Header, MobileMenu, Hamburger, Locations, Footer, IndexHero, IndexAbout, Wrapper, FormInput, ContactsContent, LocationsOpener
+	Lorem, Header, MobileMenu, Hamburger, Locations, Footer, IndexHero, IndexAbout, Wrapper, FormInput, ContactsContent, LocationsOpener
 	}
