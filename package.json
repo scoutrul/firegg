@@ -35,7 +35,7 @@
   },
   "gh-pages-deploy": {
     "staticpath": "build",
-    "cname": "nope.org",
+    "commit": "build pack",
     "prep": ["build"],
     "post": [
       "clean-source"
