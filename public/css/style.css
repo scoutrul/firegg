@@ -2271,6 +2271,15 @@ html body #app section.header .container .column.serv .logo {
   -ms-align-self: center;
   align-self: center;
 }
+html body #app section.header .container .column.serv .logo:before {
+  content: '';
+  left: -16px;
+  top: -80px;
+  height: 160px;
+  width: 100px;
+  background: #121212;
+  position: absolute;
+}
 html body #app section.header .container .column.serv .logo img {
   width: 67px;
   height: 67px;
