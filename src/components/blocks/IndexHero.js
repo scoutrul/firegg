@@ -11,7 +11,7 @@ export class IndexHero extends Component {
 
 	render(){
 		const {title11, title12, title1link} = this.props
-		return(
+		return (
 			<ReactSmoothScroll>
 				<section className="hero">
 					<Parallax
@@ -32,29 +32,24 @@ export class IndexHero extends Component {
 								tag="div" className="promoHero">
 								<div className="img"></div>
 							</Parallax>
-
-
-								<div className="title slide_up_text">
-									<div className="takecontrol">
-										<span>
-											{title12}
-										</span>
-									</div>
+							<div className="title slide_up_text">
+								<div className="takecontrol">
+									<span>
+										{title12}
+									</span>
 								</div>
+							</div>
 
-								<button className="center red">
-									<Link className="button_inner" to="/products">
-										<div className="arrows"></div>
-										<div className="message">{title1link}</div> 
-									</Link>
-								</button>
-
+							<button className="center red">
+								<Link className="button_inner" to="/products">
+									<div className="arrows"></div>
+									<div className="message">{title1link}</div> 
+								</Link>
+							</button>
 					 	</div>
 					</div>
 				</section>
 			</ReactSmoothScroll>
 		)
-		
 	}
-	
 }

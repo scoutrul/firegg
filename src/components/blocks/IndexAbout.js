@@ -23,7 +23,7 @@ export const IndexAbout = ({title21,title22,title23,title2link}) => {
 					</div> 
 				</div>
 				<div className="link_under">
-					<Link to="/about">
+					<Link to="/company">
 						{title2link}
 					</Link>
 				</div>

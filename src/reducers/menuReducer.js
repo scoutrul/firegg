@@ -21,8 +21,7 @@ const initialState = {
 				name: "Blog", 
 				url: "/blog"
 			}
-		],
-		
+		],	
 	}
 }
 

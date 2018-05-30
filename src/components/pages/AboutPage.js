@@ -38,17 +38,9 @@ class AboutPage extends Component {
 		}
 
 		return (
-			<section className="content product">
+			<section className="content">
 				<div className="container">
-					<ul id="productsSwitcher">
-						<li onClick={()=>this.setState({homeTab: true})} className={cn({'active': this.state.homeTab})}>History</li>
-						<li onClick={()=>this.setState({homeTab: false})} className={cn({'active': !this.state.homeTab})}>Team</li>
-					</ul>
-
-					{
-						(this.state.homeTab)?<ProductsForHome/>:<ProductsForOffice/>
-					}
-					
+					CONTENT
 				</div>
 			</section>
 		)

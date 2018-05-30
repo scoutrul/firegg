@@ -29,7 +29,7 @@ class ContactsPage extends Component{
 
 	render(){
 		//set initial tab active
-		(this.props.history.location.pathname === '/contacts') && (this.props.history.location.pathname = `/contacts/${this.props.headquarters[0].name}`)
+		(this.props.history.location.pathname === '/contact') && (this.props.history.location.pathname = `/contact/${this.props.headquarters[0].name}`)
 
 		const {headquarters, socialItems, forces, title1, title2} = this.props
 
