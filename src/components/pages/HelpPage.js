@@ -12,24 +12,23 @@ class HelpPage extends Component{
 
 	handleClick = (e) => {
 		let target = e.currentTarget;
-		(target.className === 'active')? target.className = '' : target.className = 'active';
+		target.className === 'active' ? target.className = '' : target.className = 'active';
 	}
 
 	render(){
-		const items = this.props.help.map((item, i) => {
-			return(
-				<li key={i}>
-					<span>
-						<header onClick={(e) => this.handleClick(e)}>{ item.question }</header> 
-						<main>{ item.answer }</main>
-					</span>
-				</li>
-			)
-		})
 
 		const renderContent = (
 			<ul className="faq slide_up_text accordion_items">
-				{ items }
+				{
+					this.props.help.map((item, i) => 
+						<li key={i}>
+							<span>
+								<header onClick={(e) => this.handleClick(e)}>{ item.question }</header> 
+								<main>{ item.answer }</main>
+							</span>
+						</li>
+					)
+				}
 			</ul>
 		)
 		return (

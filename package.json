@@ -12,7 +12,6 @@
   "dependencies": {
     "classnames": "^2.2.5",
     "gh-pages-deploy": "^0.4.2",
-    "gulp": "^3.9.1",
     "react": "16.0.0",
     "react-dom": "16.0.0",
     "react-helmet": "^5.2.0",

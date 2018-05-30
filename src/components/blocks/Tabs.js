@@ -35,10 +35,10 @@ export default class Tabs extends Component {
 
 		const TabTitles = () => (
 			<ul id="tabSwitcher">
-				<li onClick={this.toggle} className={cn({ active: this.state.homeTab })}>
+				<li onClick={() => this.toggle} className={cn({ active: this.state.homeTab })}>
 					{firstTabName}
 				</li>
-				<li onClick={this.toggle} className={cn({ active: !this.state.homeTab })}>
+				<li onClick={() => this.toggle} className={cn({ active: !this.state.homeTab })}>
 					{secondTabName}
 				</li>
 			</ul>
@@ -47,11 +47,13 @@ export default class Tabs extends Component {
 		return (
 			<div>
 				<TabTitles />
-				{this.state.homeTab ? (
-					<TabBlock list={firstList} block={firstBlock} />
-				) : (
-					<TabBlock list={secondList} block={secondBlock} />
-				)}
+				{
+					this.state.homeTab ? (
+						<TabBlock list={firstList || null} block={firstBlock || null} />
+					) : (
+						<TabBlock list={secondList || null} block={secondBlock || null} />
+					)
+			}
 			</div>
 		);
 	}
