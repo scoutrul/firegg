@@ -22,27 +22,24 @@ class ProductsPage extends Component {
 	}
 
 	render(){
-		const ProductsForHome = () => {
-			return (
-				<ul className="product-list slide_up_text" id="homelist">
-					<ProductsListHome list={this.props.homelist}/>
-				</ul>
-			)	
-		}
-		const ProductsForOffice = () => {
-			return (
-				<ul className="product-list slide_up_text" id="officelist">
-					<ProductsListOffice list={this.props.officelist}/>
-				</ul>
-			)	
-		}
+		const ProductsForHome = () => (
+			<ul className="product-list slide_up_text" id="homelist">
+				<ProductsListHome list={this.props.homelist}/>
+			</ul>
+		)
+		
+		const ProductsForOffice = () => (
+			<ul className="product-list slide_up_text" id="officelist">
+				<ProductsListOffice list={this.props.officelist}/>
+			</ul>
+		)
 
 		return (
 			<section className="content product">
 				<div className="container">
 					<ul id="productsSwitcher">
-						<li onClick={()=>this.setState({homeTab: true})} className={cn({'active': this.state.homeTab})}>Home</li>
-						<li onClick={()=>this.setState({homeTab: false})} className={cn({'active': !this.state.homeTab})}>Office</li>
+						<li onClick={()=>this.setState({homeTab: true})} className={cn({'active': this.state.homeTab})}>Home Solutions</li>
+						<li onClick={()=>this.setState({homeTab: false})} className={cn({'active': !this.state.homeTab})}>Office Solutions</li>
 					</ul>
 
 					{

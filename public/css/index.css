@@ -1,666 +1,3 @@
-/* sanitize.stylus v2.0.0 | CC0 1.0 Public Domain | github.com/sotayamashita/sanitize.stylus */
-:root {
-  -ms-overflow-style: -ms-autohiding-scrollbar;
-  overflow-y: scroll;
-  -webkit-text-size-adjust: 100%;
-}
-audio:not([controls]) {
-  display: none;
-}
-button {
-  overflow: visible;
-}
-details {
-  display: block;
-}
-input[type="number"] {
-  width: auto;
-}
-input[type="search"] {
-  -webkit-appearance: textfield;
-}
-input::-webkit-search-cancel-button,
-input::-webkit-search-decoration {
-  -webkit-appearance: none;
-}
-main {
-  display: block;
-}
-summary {
-  display: block;
-}
-pre {
-  overflow: auto;
-}
-progress {
-  display: inline-block;
-}
-small {
-  font-size: 75%;
-}
-template {
-  display: none;
-}
-textarea {
-  overflow: auto;
-}
-[hidden] {
-  display: none;
-}
-*,
-::before,
-::after {
-  box-sizing: inherit;
-}
-* {
-  font-size: inherit;
-  line-height: inherit;
-}
-::before,
-::after {
-  text-decoration: inherit;
-  vertical-align: inherit;
-}
-*,
-::before,
-::after {
-  border-style: solid;
-  border-width: 0;
-}
-* {
-  margin: 0;
-  padding: 0;
-}
-:root {
-  box-sizing: border-box;
-  cursor: default;
-  text-rendering: optimizeLegibility;
-}
-html {
-  background-color: #fff;
-  color: #000;
-}
-a {
-  text-decoration: none;
-}
-audio,
-canvas,
-iframe,
-img,
-svg,
-video {
-  vertical-align: middle;
-}
-button,
-input,
-select,
-textarea {
-  background-color: transparent;
-}
-button,
-input,
-select,
-textarea {
-  color: inherit;
-  font-family: inherit;
-  font-style: inherit;
-  font-weight: inherit;
-}
-button,
-[type="button"],
-[type="date"],
-[type="datetime"],
-[type="datetime-local"],
-[type="email"],
-[type="month"],
-[type="number"],
-[type="password"],
-[type="reset"],
-[type="search"],
-[type="submit"],
-[type="tel"],
-[type="text"],
-[type="time"],
-[type="url"],
-[type="week"],
-select,
-textarea {
-  min-height: 1.5;
-}
-code,
-kbd,
-pre,
-samp {
-  font-family: monospace, monospace;
-}
-nav ol,
-nav ul {
-  list-style: none;
-}
-select {
-  -moz-appearance: none;
-  -webkit-appearance: none;
-}
-select::-ms-expand {
-  display: none;
-}
-select::-ms-value {
-  color: currentColor;
-}
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-textarea {
-  resize: vertical;
-}
-::selection {
-  background-color: #b3d4fc;
-  color: #4c2b03;
-  text-shadow: none;
-}
-[aria-busy="true"] {
-  cursor: progress;
-}
-[aria-controls] {
-  cursor: pointer;
-}
-[aria-disabled] {
-  cursor: default;
-}
-[hidden][aria-hidden="false"] {
-  clip: rect(0 0 0 0);
-  display: inherit;
-  position: absolute;
-}
-[hidden][aria-hidden="false"]:focus {
-  clip: auto;
-}
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-  display: block;
-}
-body {
-  line-height: 1;
-}
-ol,
-ul {
-  list-style: none;
-}
-blockquote,
-q {
-  quotes: none;
-}
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-  content: "";
-  content: none;
-}
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-html {
-  box-sizing: border-box;
-}
-*,
-*:before,
-*:after {
-  box-sizing: inherit;
-}
-html {
-  font-family: 'Work Sans', 'sans-serif';
-  font-weight: 300;
-  color: #1d1e1e;
-  font-size: 22px;
-  line-height: 1.618 ks-em;
-}
-@media (min-width: 320px) {
-  html {
-    font-size: calc( 22px + (65 - 22) * ((100vw - 320px) / (1200 - 320)) );
-  }
-}
-@media (min-width: 1200px) {
-  html {
-    font-size: 65px;
-  }
-}
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td {
-  margin: 0;
-  padding: 0;
-}
-p,
-blockquote,
-pre,
-address,
-dl,
-ol,
-ul,
-table {
-  margin-bottom: 1.618 ks-em;
-}
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: 'Work Sans', 'sans-serif';
-  font-weight: 500;
-  color: #111;
-  clear: both;
-}
-h1 {
-  font-size: 51.06638157929112px;
-  margin-top: 0.871316874701849px ks-em;
-  line-height: 1.045580249642219px ks-em;
-  margin-bottom: 0.17426337494037px ks-em;
-}
-@media (min-width: 320px) {
-  h1 {
-    font-size: calc( 51.06638157929112px + (150.8779455751783 - 51.06638157929112) * ((100vw - 320px) / (1200 - 320)) );
-  }
-}
-@media (min-width: 1200px) {
-  h1 {
-    font-size: 150.8779455751783px;
-    margin-top: 0.871316874701849px ks-em;
-    line-height: 1.045580249642219px ks-em;
-    margin-bottom: 0.17426337494037px ks-em;
-  }
-}
-h2 {
-  font-size: 43.15117291577599px;
-  margin-top: 1.03114230722875px ks-em;
-  line-height: 1.2373707686745px ks-em;
-  margin-bottom: 0.220566087575747px ks-em;
-}
-@media (min-width: 320px) {
-  h2 {
-    font-size: calc( 43.15117291577599px + (127.49210179661087 - 43.15117291577599) * ((100vw - 320px) / (1200 - 320)) );
-  }
-}
-@media (min-width: 1200px) {
-  h2 {
-    font-size: 127.49210179661087px;
-    margin-top: 1.03114230722875px ks-em;
-    line-height: 1.2373707686745px ks-em;
-    margin-bottom: 0.211081196443595px ks-em;
-  }
-}
-h3 {
-  font-size: 36.46280912063492px;
-  margin-top: 1.220284478159406px ks-em;
-  line-height: 1.464341373791287px ks-em;
-  margin-bottom: 0.2641368265136px ks-em;
-}
-@media (min-width: 320px) {
-  h3 {
-    font-size: calc( 36.46280912063492px + (107.73102694733045 - 36.46280912063492) * ((100vw - 320px) / (1200 - 320)) );
-  }
-}
-@media (min-width: 1200px) {
-  h3 {
-    font-size: 107.73102694733045px;
-    margin-top: 1.220284478159406px ks-em;
-    line-height: 1.464341373791287px ks-em;
-    margin-bottom: 0.250853179930309px ks-em;
-  }
-}
-h4 {
-  font-size: 30.811131172793246px;
-  margin-top: 1.444120949356441px ks-em;
-  line-height: 1.732945139227729px ks-em;
-  margin-bottom: 0.316946252795709px ks-em;
-}
-@media (min-width: 320px) {
-  h4 {
-    font-size: calc( 30.811131172793246px + (91.03288755598004 - 30.811131172793246) * ((100vw - 320px) / (1200 - 320)) );
-  }
-}
-@media (min-width: 1200px) {
-  h4 {
-    font-size: 91.03288755598004px;
-    margin-top: 1.44412094935644px ks-em;
-    line-height: 1.732945139227729px ks-em;
-    margin-bottom: 0.2983424265534px ks-em;
-  }
-}
-h5 {
-  font-size: 26.035454399749803px;
-  margin-top: 1.709015687486046px ks-em;
-  line-height: 2.050818824983255px ks-em;
-  margin-bottom: 0.341803137497209px ks-em;
-}
-@media (min-width: 320px) {
-  h5 {
-    font-size: calc( 26.035454399749803px + (76.92293345380624 - 26.035454399749803) * ((100vw - 320px) / (1200 - 320)) );
-  }
-}
-@media (min-width: 1200px) {
-  h5 {
-    font-size: 76.92293345380624px;
-    margin-top: 1.709015687486046px ks-em;
-    line-height: 2.050818824983255px ks-em;
-    margin-bottom: 0.341803137497209px ks-em;
-  }
-}
-h6 {
-  font-size: 22px;
-  margin-top: 2.0225px ks-em;
-  line-height: 2.427px ks-em;
-  margin-bottom: 0.496431818181818px ks-em;
-}
-@media (min-width: 320px) {
-  h6 {
-    font-size: calc( 22px + (65 - 22) * ((100vw - 320px) / (1200 - 320)) );
-  }
-}
-@media (min-width: 1200px) {
-  h6 {
-    font-size: 65px;
-    margin-top: 2.0225px ks-em;
-    line-height: 2.427px ks-em;
-    margin-bottom: 0.422886363636364px ks-em;
-  }
-}
-blockquote {
-  font-style: italic;
-}
-blockquote cite {
-  display: block;
-  font-style: normal;
-}
-pre {
-  padding: 0.809px ks-em;
-  margin-bottom: 1.618px ks-em;
-}
-pre code {
-  padding: 0;
-}
-code {
-  font-family: 'Courier New', 'Courier', 'Lucida Sans Typewriter', 'Lucida Typewriter', 'monospace';
-  padding: 0.0809 ks-em 0.2427 ks-em;
-  line-height: 0;
-}
-big,
-small,
-sub,
-sup {
-  line-height: 0;
-}
-abbr,
-acronym {
-  border-bottom: 1px dotted currentColor;
-  cursor: help;
-}
-address {
-  font-style: normal;
-}
-dt {
-  color: #111;
-  font-weight: bold;
-}
-ul {
-  padding-left: 1.1em;
-}
-ol {
-  padding-left: 1.4em;
-}
-fieldset {
-  padding: 0.809px ks-em 1.618px ks-em 1.618px ks-em;
-  border-width: 1px;
-  border-style: solid;
-  max-width: 100%;
-  margin-bottom: 1.642892307692308px ks-em;
-}
-@media (min-width: 1200px) {
-  fieldset {
-    margin-bottom: 1.991384615384616px ks-em;
-  }
-}
-fieldset button,
-fieldset input[type="submit"] {
-  margin-bottom: 0;
-}
-legend {
-  color: #111;
-  font-weight: bold;
-}
-label {
-  display: block;
-  padding-bottom: 0.20225px ks-em;
-  margin-bottom: -0.342269230769231px ks-em;
-}
-input[type="text"],
-input[type="email"],
-input[type="password"],
-textarea {
-  display: block;
-  max-width: 100%;
-  padding: 0.4045px ks-em;
-  font-size: 22px;
-  margin-bottom: 0.896123076923077px ks-em;
-}
-@media (min-width: 320px) {
-  input[type="text"],
-  input[type="email"],
-  input[type="password"],
-  textarea {
-    font-size: calc( 22px + (65 - 22) * ((100vw - 320px) / (1200 - 320)) );
-  }
-}
-@media (min-width: 1200px) {
-  input[type="text"],
-  input[type="email"],
-  input[type="password"],
-  textarea {
-    font-size: 65px;
-    margin-bottom: 0.426280769230769px ks-em;
-  }
-}
-input[type="submit"],
-button {
-  display: block;
-  cursor: pointer;
-  font-size: 22px;
-  padding: 0.4045px ks-em 1.618px ks-em;
-  margin-bottom: 1.176161538461538px ks-em;
-}
-@media (min-width: 320px) {
-  input[type="submit"],
-  button {
-    font-size: calc( 22px + (65 - 22) * ((100vw - 320px) / (1200 - 320)) );
-  }
-}
-@media (min-width: 1200px) {
-  input[type="submit"],
-  button {
-    font-size: 65px;
-    margin-bottom: 1.2135px ks-em;
-  }
-}
-table {
-  width: 100%;
-  border-spacing: 0;
-  border-collapse: collapse;
-  margin-bottom: 1.742461538461539px ks-em;
-}
-@media (min-width: 1200px) {
-  table {
-    margin-bottom: 1.705123076923077px ks-em;
-  }
-}
-th {
-  text-align: left;
-  color: #111;
-  padding: 0.20225px ks-em 0.809px ks-em;
-}
-@media (min-width: 1200px) {
-  th {
-    padding: 0.4045px ks-em 0.809px ks-em;
-  }
-}
-td {
-  padding: 0.20225px ks-em 0.809px ks-em;
-}
-@media (min-width: 1200px) {
-  td {
-    padding: 0.4045px ks-em 0.809px ks-em;
-  }
-}
 * {
   color: inherit;
   z-index: 5;
@@ -675,12 +12,12 @@ html {
   max-width: 100vw;
   overflow: hidden;
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: $iphone6H) {
   html {
     font-size: 52px;
   }
 }
-@media screen and (max-width: 320px) {
+@media screen and (max-width: $iphone) {
   html {
     font-size: 46px;
   }
@@ -689,16 +26,16 @@ html body #app {
   display: -webkit-flex;
   display: flex;
   -webkit-flex: 1 0 auto;
-  flex: 1 0 auto;
+          flex: 1 0 auto;
   -webkit-flex-flow: column nowrap;
-  flex-flow: column nowrap;
+          flex-flow: column nowrap;
   height: 100%;
 }
 html body #app section {
   width: 100%;
   min-width: 100vw;
   -webkit-flex: 1 0 auto;
-  flex: 1 0 auto;
+          flex: 1 0 auto;
   max-width: 100%;
   width: 100vw;
   min-width: 100%;
@@ -706,16 +43,15 @@ html body #app section {
 }
 html body #app section .container {
   -webkit-flex: 1 0 auto;
-  flex: 1 0 auto;
+          flex: 1 0 auto;
   margin: auto;
   display: -webkit-flex;
   display: flex;
   -webkit-align-items: flex-start;
-  -ms-align-items: flex-start;
-  align-items: flex-start;
-  max-width: 1200px;
+          align-items: flex-start;
+  max-width: $max-width;
   width: 100%;
-  padding: 0 15px;
+  padding: 0 $overpadding;
 }
 html body #app button {
   cursor: pointer;
@@ -723,19 +59,17 @@ html body #app button {
   display: -webkit-flex;
   display: flex;
   -webkit-justify-content: center;
-  -ms-justify-content: center;
-  justify-content: center;
+          justify-content: center;
   -webkit-align-items: center;
-  -ms-align-items: center;
-  align-items: center;
+          align-items: center;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: $iphoneH) {
   html body #app button {
     font-size: 100%;
   }
 }
 html body #app button .message {
-  color: #ff002e;
+  color: $specialRed;
   font-size: 27%;
 }
 html body #app button.blank .message {
@@ -743,54 +77,49 @@ html body #app button.blank .message {
 }
 html body #app button.left.red {
   -webkit-justify-content: flex-end;
-  -ms-justify-content: flex-end;
-  justify-content: flex-end;
+          justify-content: flex-end;
 }
 html body #app button.left.red .button_inner {
   display: -webkit-flex;
   display: flex;
   -webkit-justify-content: center;
-  -ms-justify-content: center;
-  justify-content: center;
+          justify-content: center;
   -webkit-align-items: center;
-  -ms-align-items: center;
-  align-items: center;
+          align-items: center;
   border-radius: 10rem;
   min-height: 0.9rem;
   line-height: 0.9rem;
   max-width: 3.7rem;
   width: 100%;
-  transition: 0.4s ease;
-  background-color: #ff002e;
+  transition: $transition;
+  background-color: $specialRed;
 }
 html body #app button.left.red .button_inner:hover {
-  background-color: #2d2d2d;
+  background-color: $darkhover;
   max-width: 4rem;
 }
 html body #app button.left.red .button_inner .message {
   position: absolute;
   left: 0;
   top: 0;
-  transition: 0.4s ease;
+  transition: $transition;
   white-space: nowrap;
-  color: #fff;
+  color: $white;
   font-weight: 400;
   font-size: 27%;
   width: 100%;
   height: 100%;
   padding: 0;
   text-align: center;
-  color: #fff;
 }
 html body #app button.left.red .button_inner .arrows {
   display: -webkit-flex;
   display: flex;
   -webkit-align-items: center;
-  -ms-align-items: center;
-  align-items: center;
+          align-items: center;
   width: 100%;
   height: 100%;
-  transition: 0.4s ease;
+  transition: $transition;
   position: absolute;
   left: 0;
   top: 0;
@@ -803,12 +132,10 @@ html body #app button.left.red .button_inner .arrows:before {
   height: 0.2rem;
   margin: auto;
   background-repeat: no-repeat;
-  transition: 0.4s ease;
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-  filter: alpha(opacity=0);
+  transition: $transition;
   opacity: 0;
   position: absolute;
-  top: calc(50% - 0.1rem);
+  top: calc('50% - 0.1rem');
 }
 html body #app button.left.red .button_inner .arrows:before {
   left: 0.4rem;
@@ -822,14 +149,9 @@ html body #app button.left.red .button_inner .arrows:after {
   background-image: url("../images/icon_arrow_white_right.svg");
 }
 html body #app button.left.red .button_inner .arrows:before {
-  -ms-filter: none;
-  -webkit-filter: none;
-          filter: none;
   opacity: 1;
 }
 html body #app button.left.red .button_inner .arrows:after {
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-  filter: alpha(opacity=0);
   opacity: 0;
 }
 html body #app button.left.red .button_inner:hover .message {
@@ -837,54 +159,49 @@ html body #app button.left.red .button_inner:hover .message {
 }
 html body #app button.left.blue {
   -webkit-justify-content: flex-end;
-  -ms-justify-content: flex-end;
-  justify-content: flex-end;
+          justify-content: flex-end;
 }
 html body #app button.left.blue .button_inner {
   display: -webkit-flex;
   display: flex;
   -webkit-justify-content: center;
-  -ms-justify-content: center;
-  justify-content: center;
+          justify-content: center;
   -webkit-align-items: center;
-  -ms-align-items: center;
-  align-items: center;
+          align-items: center;
   border-radius: 10rem;
   min-height: 0.9rem;
   line-height: 0.9rem;
   max-width: 3.7rem;
   width: 100%;
-  transition: 0.4s ease;
+  transition: $transition;
   background-color: #0077cb;
 }
 html body #app button.left.blue .button_inner:hover {
-  background-color: #2d2d2d;
+  background-color: $darkhover;
   max-width: 4rem;
 }
 html body #app button.left.blue .button_inner .message {
   position: absolute;
   left: 0;
   top: 0;
-  transition: 0.4s ease;
+  transition: $transition;
   white-space: nowrap;
-  color: #fff;
+  color: $white;
   font-weight: 400;
   font-size: 27%;
   width: 100%;
   height: 100%;
   padding: 0;
   text-align: center;
-  color: #fff;
 }
 html body #app button.left.blue .button_inner .arrows {
   display: -webkit-flex;
   display: flex;
   -webkit-align-items: center;
-  -ms-align-items: center;
-  align-items: center;
+          align-items: center;
   width: 100%;
   height: 100%;
-  transition: 0.4s ease;
+  transition: $transition;
   position: absolute;
   left: 0;
   top: 0;
@@ -897,12 +214,10 @@ html body #app button.left.blue .button_inner .arrows:before {
   height: 0.2rem;
   margin: auto;
   background-repeat: no-repeat;
-  transition: 0.4s ease;
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-  filter: alpha(opacity=0);
+  transition: $transition;
   opacity: 0;
   position: absolute;
-  top: calc(50% - 0.1rem);
+  top: calc('50% - 0.1rem');
 }
 html body #app button.left.blue .button_inner .arrows:before {
   left: 0.4rem;
@@ -916,14 +231,9 @@ html body #app button.left.blue .button_inner .arrows:after {
   background-image: url("../images/icon_arrow_white_right.svg");
 }
 html body #app button.left.blue .button_inner .arrows:before {
-  -ms-filter: none;
-  -webkit-filter: none;
-          filter: none;
   opacity: 1;
 }
 html body #app button.left.blue .button_inner .arrows:after {
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-  filter: alpha(opacity=0);
   opacity: 0;
 }
 html body #app button.left.blue .button_inner:hover .message {
@@ -931,28 +241,25 @@ html body #app button.left.blue .button_inner:hover .message {
 }
 html body #app button.left.grey {
   -webkit-justify-content: flex-end;
-  -ms-justify-content: flex-end;
-  justify-content: flex-end;
+          justify-content: flex-end;
 }
 html body #app button.left.grey .button_inner {
   display: -webkit-flex;
   display: flex;
   -webkit-justify-content: center;
-  -ms-justify-content: center;
-  justify-content: center;
+          justify-content: center;
   -webkit-align-items: center;
-  -ms-align-items: center;
-  align-items: center;
+          align-items: center;
   border-radius: 10rem;
   min-height: 0.9rem;
   line-height: 0.9rem;
   max-width: 3.7rem;
   width: 100%;
-  transition: 0.4s ease;
-  background-color: #e5e5e5;
+  transition: $transition;
+  background-color: $lightgrey2;
 }
 html body #app button.left.grey .button_inner:hover {
-  background-color: #2d2d2d;
+  background-color: $darkhover;
   max-width: 4rem;
 }
 html body #app button.left.grey .button_inner:hover .arrows:after,
@@ -961,15 +268,15 @@ html body #app button.left.grey .button_inner:hover .arrows:before {
           filter: brightness(10);
 }
 html body #app button.left.grey .button_inner:hover .message {
-  color: #fff;
+  color: $white;
 }
 html body #app button.left.grey .button_inner .message {
   position: absolute;
   left: 0;
   top: 0;
-  transition: 0.4s ease;
+  transition: $transition;
   white-space: nowrap;
-  color: #242424;
+  color: $darkgrey;
   font-weight: 400;
   font-size: 27%;
   width: 100%;
@@ -981,11 +288,10 @@ html body #app button.left.grey .button_inner .arrows {
   display: -webkit-flex;
   display: flex;
   -webkit-align-items: center;
-  -ms-align-items: center;
-  align-items: center;
+          align-items: center;
   width: 100%;
   height: 100%;
-  transition: 0.4s ease;
+  transition: $transition;
   position: absolute;
   left: 0;
   top: 0;
@@ -998,12 +304,10 @@ html body #app button.left.grey .button_inner .arrows:before {
   height: 0.2rem;
   margin: auto;
   background-repeat: no-repeat;
-  transition: 0.4s ease;
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-  filter: alpha(opacity=0);
+  transition: $transition;
   opacity: 0;
   position: absolute;
-  top: calc(50% - 0.1rem);
+  top: calc('50% - 0.1rem');
 }
 html body #app button.left.grey .button_inner .arrows:before {
   left: 0.4rem;
@@ -1019,14 +323,9 @@ html body #app button.left.grey .button_inner .arrows:after {
   background-image: url("../images/icon_arrow_black_right.svg");
 }
 html body #app button.left.grey .button_inner .arrows:before {
-  -ms-filter: none;
-  -webkit-filter: none;
-          filter: none;
   opacity: 1;
 }
 html body #app button.left.grey .button_inner .arrows:after {
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-  filter: alpha(opacity=0);
   opacity: 0;
 }
 html body #app button.left.grey .button_inner:hover .message {
@@ -1034,54 +333,49 @@ html body #app button.left.grey .button_inner:hover .message {
 }
 html body #app button.left.green {
   -webkit-justify-content: flex-end;
-  -ms-justify-content: flex-end;
-  justify-content: flex-end;
+          justify-content: flex-end;
 }
 html body #app button.left.green .button_inner {
   display: -webkit-flex;
   display: flex;
   -webkit-justify-content: center;
-  -ms-justify-content: center;
-  justify-content: center;
+          justify-content: center;
   -webkit-align-items: center;
-  -ms-align-items: center;
-  align-items: center;
+          align-items: center;
   border-radius: 10rem;
   min-height: 0.9rem;
   line-height: 0.9rem;
   max-width: 3.7rem;
   width: 100%;
-  transition: 0.4s ease;
+  transition: $transition;
   background-color: #00cba6;
 }
 html body #app button.left.green .button_inner:hover {
-  background-color: #2d2d2d;
+  background-color: $darkhover;
   max-width: 4rem;
 }
 html body #app button.left.green .button_inner .message {
   position: absolute;
   left: 0;
   top: 0;
-  transition: 0.4s ease;
+  transition: $transition;
   white-space: nowrap;
-  color: #fff;
+  color: $white;
   font-weight: 400;
   font-size: 27%;
   width: 100%;
   height: 100%;
   padding: 0;
   text-align: center;
-  color: #fff;
 }
 html body #app button.left.green .button_inner .arrows {
   display: -webkit-flex;
   display: flex;
   -webkit-align-items: center;
-  -ms-align-items: center;
-  align-items: center;
+          align-items: center;
   width: 100%;
   height: 100%;
-  transition: 0.4s ease;
+  transition: $transition;
   position: absolute;
   left: 0;
   top: 0;
@@ -1094,12 +388,10 @@ html body #app button.left.green .button_inner .arrows:before {
   height: 0.2rem;
   margin: auto;
   background-repeat: no-repeat;
-  transition: 0.4s ease;
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-  filter: alpha(opacity=0);
+  transition: $transition;
   opacity: 0;
   position: absolute;
-  top: calc(50% - 0.1rem);
+  top: calc('50% - 0.1rem');
 }
 html body #app button.left.green .button_inner .arrows:before {
   left: 0.4rem;
@@ -1113,14 +405,9 @@ html body #app button.left.green .button_inner .arrows:after {
   background-image: url("../images/icon_arrow_white_right.svg");
 }
 html body #app button.left.green .button_inner .arrows:before {
-  -ms-filter: none;
-  -webkit-filter: none;
-          filter: none;
   opacity: 1;
 }
 html body #app button.left.green .button_inner .arrows:after {
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-  filter: alpha(opacity=0);
   opacity: 0;
 }
 html body #app button.left.green .button_inner:hover .message {
@@ -1128,54 +415,49 @@ html body #app button.left.green .button_inner:hover .message {
 }
 html body #app button.right.red {
   -webkit-justify-content: flex-start;
-  -ms-justify-content: flex-start;
-  justify-content: flex-start;
+          justify-content: flex-start;
 }
 html body #app button.right.red .button_inner {
   display: -webkit-flex;
   display: flex;
   -webkit-justify-content: center;
-  -ms-justify-content: center;
-  justify-content: center;
+          justify-content: center;
   -webkit-align-items: center;
-  -ms-align-items: center;
-  align-items: center;
+          align-items: center;
   border-radius: 10rem;
   min-height: 0.9rem;
   line-height: 0.9rem;
   max-width: 3.7rem;
   width: 100%;
-  transition: 0.4s ease;
-  background-color: #ff002e;
+  transition: $transition;
+  background-color: $specialRed;
 }
 html body #app button.right.red .button_inner:hover {
-  background-color: #2d2d2d;
+  background-color: $darkhover;
   max-width: 4rem;
 }
 html body #app button.right.red .button_inner .message {
   position: absolute;
   left: 0;
   top: 0;
-  transition: 0.4s ease;
+  transition: $transition;
   white-space: nowrap;
-  color: #fff;
+  color: $white;
   font-weight: 400;
   font-size: 27%;
   width: 100%;
   height: 100%;
   padding: 0;
   text-align: center;
-  color: #fff;
 }
 html body #app button.right.red .button_inner .arrows {
   display: -webkit-flex;
   display: flex;
   -webkit-align-items: center;
-  -ms-align-items: center;
-  align-items: center;
+          align-items: center;
   width: 100%;
   height: 100%;
-  transition: 0.4s ease;
+  transition: $transition;
   position: absolute;
   left: 0;
   top: 0;
@@ -1188,12 +470,10 @@ html body #app button.right.red .button_inner .arrows:before {
   height: 0.2rem;
   margin: auto;
   background-repeat: no-repeat;
-  transition: 0.4s ease;
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-  filter: alpha(opacity=0);
+  transition: $transition;
   opacity: 0;
   position: absolute;
-  top: calc(50% - 0.1rem);
+  top: calc('50% - 0.1rem');
 }
 html body #app button.right.red .button_inner .arrows:before {
   left: 0.4rem;
@@ -1207,14 +487,9 @@ html body #app button.right.red .button_inner .arrows:after {
   background-image: url("../images/icon_arrow_white_right.svg");
 }
 html body #app button.right.red .button_inner .arrows:before {
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-  filter: alpha(opacity=0);
   opacity: 0;
 }
 html body #app button.right.red .button_inner .arrows:after {
-  -ms-filter: none;
-  -webkit-filter: none;
-          filter: none;
   opacity: 1;
 }
 html body #app button.right.red .button_inner:hover .message {
@@ -1222,54 +497,49 @@ html body #app button.right.red .button_inner:hover .message {
 }
 html body #app button.right.blue {
   -webkit-justify-content: flex-start;
-  -ms-justify-content: flex-start;
-  justify-content: flex-start;
+          justify-content: flex-start;
 }
 html body #app button.right.blue .button_inner {
   display: -webkit-flex;
   display: flex;
   -webkit-justify-content: center;
-  -ms-justify-content: center;
-  justify-content: center;
+          justify-content: center;
   -webkit-align-items: center;
-  -ms-align-items: center;
-  align-items: center;
+          align-items: center;
   border-radius: 10rem;
   min-height: 0.9rem;
   line-height: 0.9rem;
   max-width: 3.7rem;
   width: 100%;
-  transition: 0.4s ease;
+  transition: $transition;
   background-color: #0077cb;
 }
 html body #app button.right.blue .button_inner:hover {
-  background-color: #2d2d2d;
+  background-color: $darkhover;
   max-width: 4rem;
 }
 html body #app button.right.blue .button_inner .message {
   position: absolute;
   left: 0;
   top: 0;
-  transition: 0.4s ease;
+  transition: $transition;
   white-space: nowrap;
-  color: #fff;
+  color: $white;
   font-weight: 400;
   font-size: 27%;
   width: 100%;
   height: 100%;
   padding: 0;
   text-align: center;
-  color: #fff;
 }
 html body #app button.right.blue .button_inner .arrows {
   display: -webkit-flex;
   display: flex;
   -webkit-align-items: center;
-  -ms-align-items: center;
-  align-items: center;
+          align-items: center;
   width: 100%;
   height: 100%;
-  transition: 0.4s ease;
+  transition: $transition;
   position: absolute;
   left: 0;
   top: 0;
@@ -1282,12 +552,10 @@ html body #app button.right.blue .button_inner .arrows:before {
   height: 0.2rem;
   margin: auto;
   background-repeat: no-repeat;
-  transition: 0.4s ease;
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-  filter: alpha(opacity=0);
+  transition: $transition;
   opacity: 0;
   position: absolute;
-  top: calc(50% - 0.1rem);
+  top: calc('50% - 0.1rem');
 }
 html body #app button.right.blue .button_inner .arrows:before {
   left: 0.4rem;
@@ -1301,14 +569,9 @@ html body #app button.right.blue .button_inner .arrows:after {
   background-image: url("../images/icon_arrow_white_right.svg");
 }
 html body #app button.right.blue .button_inner .arrows:before {
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-  filter: alpha(opacity=0);
   opacity: 0;
 }
 html body #app button.right.blue .button_inner .arrows:after {
-  -ms-filter: none;
-  -webkit-filter: none;
-          filter: none;
   opacity: 1;
 }
 html body #app button.right.blue .button_inner:hover .message {
@@ -1316,28 +579,25 @@ html body #app button.right.blue .button_inner:hover .message {
 }
 html body #app button.right.grey {
   -webkit-justify-content: flex-start;
-  -ms-justify-content: flex-start;
-  justify-content: flex-start;
+          justify-content: flex-start;
 }
 html body #app button.right.grey .button_inner {
   display: -webkit-flex;
   display: flex;
   -webkit-justify-content: center;
-  -ms-justify-content: center;
-  justify-content: center;
+          justify-content: center;
   -webkit-align-items: center;
-  -ms-align-items: center;
-  align-items: center;
+          align-items: center;
   border-radius: 10rem;
   min-height: 0.9rem;
   line-height: 0.9rem;
   max-width: 3.7rem;
   width: 100%;
-  transition: 0.4s ease;
-  background-color: #e5e5e5;
+  transition: $transition;
+  background-color: $lightgrey2;
 }
 html body #app button.right.grey .button_inner:hover {
-  background-color: #2d2d2d;
+  background-color: $darkhover;
   max-width: 4rem;
 }
 html body #app button.right.grey .button_inner:hover .arrows:after,
@@ -1346,15 +606,15 @@ html body #app button.right.grey .button_inner:hover .arrows:before {
           filter: brightness(10);
 }
 html body #app button.right.grey .button_inner:hover .message {
-  color: #fff;
+  color: $white;
 }
 html body #app button.right.grey .button_inner .message {
   position: absolute;
   left: 0;
   top: 0;
-  transition: 0.4s ease;
+  transition: $transition;
   white-space: nowrap;
-  color: #242424;
+  color: $darkgrey;
   font-weight: 400;
   font-size: 27%;
   width: 100%;
@@ -1366,11 +626,10 @@ html body #app button.right.grey .button_inner .arrows {
   display: -webkit-flex;
   display: flex;
   -webkit-align-items: center;
-  -ms-align-items: center;
-  align-items: center;
+          align-items: center;
   width: 100%;
   height: 100%;
-  transition: 0.4s ease;
+  transition: $transition;
   position: absolute;
   left: 0;
   top: 0;
@@ -1383,12 +642,10 @@ html body #app button.right.grey .button_inner .arrows:before {
   height: 0.2rem;
   margin: auto;
   background-repeat: no-repeat;
-  transition: 0.4s ease;
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-  filter: alpha(opacity=0);
+  transition: $transition;
   opacity: 0;
   position: absolute;
-  top: calc(50% - 0.1rem);
+  top: calc('50% - 0.1rem');
 }
 html body #app button.right.grey .button_inner .arrows:before {
   left: 0.4rem;
@@ -1404,14 +661,9 @@ html body #app button.right.grey .button_inner .arrows:after {
   background-image: url("../images/icon_arrow_black_right.svg");
 }
 html body #app button.right.grey .button_inner .arrows:before {
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-  filter: alpha(opacity=0);
   opacity: 0;
 }
 html body #app button.right.grey .button_inner .arrows:after {
-  -ms-filter: none;
-  -webkit-filter: none;
-          filter: none;
   opacity: 1;
 }
 html body #app button.right.grey .button_inner:hover .message {
@@ -1419,54 +671,49 @@ html body #app button.right.grey .button_inner:hover .message {
 }
 html body #app button.right.green {
   -webkit-justify-content: flex-start;
-  -ms-justify-content: flex-start;
-  justify-content: flex-start;
+          justify-content: flex-start;
 }
 html body #app button.right.green .button_inner {
   display: -webkit-flex;
   display: flex;
   -webkit-justify-content: center;
-  -ms-justify-content: center;
-  justify-content: center;
+          justify-content: center;
   -webkit-align-items: center;
-  -ms-align-items: center;
-  align-items: center;
+          align-items: center;
   border-radius: 10rem;
   min-height: 0.9rem;
   line-height: 0.9rem;
   max-width: 3.7rem;
   width: 100%;
-  transition: 0.4s ease;
+  transition: $transition;
   background-color: #00cba6;
 }
 html body #app button.right.green .button_inner:hover {
-  background-color: #2d2d2d;
+  background-color: $darkhover;
   max-width: 4rem;
 }
 html body #app button.right.green .button_inner .message {
   position: absolute;
   left: 0;
   top: 0;
-  transition: 0.4s ease;
+  transition: $transition;
   white-space: nowrap;
-  color: #fff;
+  color: $white;
   font-weight: 400;
   font-size: 27%;
   width: 100%;
   height: 100%;
   padding: 0;
   text-align: center;
-  color: #fff;
 }
 html body #app button.right.green .button_inner .arrows {
   display: -webkit-flex;
   display: flex;
   -webkit-align-items: center;
-  -ms-align-items: center;
-  align-items: center;
+          align-items: center;
   width: 100%;
   height: 100%;
-  transition: 0.4s ease;
+  transition: $transition;
   position: absolute;
   left: 0;
   top: 0;
@@ -1479,12 +726,10 @@ html body #app button.right.green .button_inner .arrows:before {
   height: 0.2rem;
   margin: auto;
   background-repeat: no-repeat;
-  transition: 0.4s ease;
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-  filter: alpha(opacity=0);
+  transition: $transition;
   opacity: 0;
   position: absolute;
-  top: calc(50% - 0.1rem);
+  top: calc('50% - 0.1rem');
 }
 html body #app button.right.green .button_inner .arrows:before {
   left: 0.4rem;
@@ -1498,14 +743,9 @@ html body #app button.right.green .button_inner .arrows:after {
   background-image: url("../images/icon_arrow_white_right.svg");
 }
 html body #app button.right.green .button_inner .arrows:before {
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-  filter: alpha(opacity=0);
   opacity: 0;
 }
 html body #app button.right.green .button_inner .arrows:after {
-  -ms-filter: none;
-  -webkit-filter: none;
-          filter: none;
   opacity: 1;
 }
 html body #app button.right.green .button_inner:hover .message {
@@ -1518,47 +758,43 @@ html body #app button.center.red .button_inner {
   display: -webkit-flex;
   display: flex;
   -webkit-justify-content: center;
-  -ms-justify-content: center;
-  justify-content: center;
+          justify-content: center;
   -webkit-align-items: center;
-  -ms-align-items: center;
-  align-items: center;
+          align-items: center;
   border-radius: 10rem;
   min-height: 0.9rem;
   line-height: 0.9rem;
   max-width: 3.7rem;
   width: 100%;
-  transition: 0.4s ease;
-  background-color: #ff002e;
+  transition: $transition;
+  background-color: $specialRed;
 }
 html body #app button.center.red .button_inner:hover {
-  background-color: #2d2d2d;
+  background-color: $darkhover;
   max-width: 4rem;
 }
 html body #app button.center.red .button_inner .message {
   position: absolute;
   left: 0;
   top: 0;
-  transition: 0.4s ease;
+  transition: $transition;
   white-space: nowrap;
-  color: #fff;
+  color: $white;
   font-weight: 400;
   font-size: 27%;
   width: 100%;
   height: 100%;
   padding: 0;
   text-align: center;
-  color: #fff;
 }
 html body #app button.center.red .button_inner .arrows {
   display: -webkit-flex;
   display: flex;
   -webkit-align-items: center;
-  -ms-align-items: center;
-  align-items: center;
+          align-items: center;
   width: 100%;
   height: 100%;
-  transition: 0.4s ease;
+  transition: $transition;
   position: absolute;
   left: 0;
   top: 0;
@@ -1571,12 +807,10 @@ html body #app button.center.red .button_inner .arrows:before {
   height: 0.2rem;
   margin: auto;
   background-repeat: no-repeat;
-  transition: 0.4s ease;
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-  filter: alpha(opacity=0);
+  transition: $transition;
   opacity: 0;
   position: absolute;
-  top: calc(50% - 0.1rem);
+  top: calc('50% - 0.1rem');
 }
 html body #app button.center.red .button_inner .arrows:before {
   left: 0.4rem;
@@ -1593,47 +827,43 @@ html body #app button.center.blue .button_inner {
   display: -webkit-flex;
   display: flex;
   -webkit-justify-content: center;
-  -ms-justify-content: center;
-  justify-content: center;
+          justify-content: center;
   -webkit-align-items: center;
-  -ms-align-items: center;
-  align-items: center;
+          align-items: center;
   border-radius: 10rem;
   min-height: 0.9rem;
   line-height: 0.9rem;
   max-width: 3.7rem;
   width: 100%;
-  transition: 0.4s ease;
+  transition: $transition;
   background-color: #0077cb;
 }
 html body #app button.center.blue .button_inner:hover {
-  background-color: #2d2d2d;
+  background-color: $darkhover;
   max-width: 4rem;
 }
 html body #app button.center.blue .button_inner .message {
   position: absolute;
   left: 0;
   top: 0;
-  transition: 0.4s ease;
+  transition: $transition;
   white-space: nowrap;
-  color: #fff;
+  color: $white;
   font-weight: 400;
   font-size: 27%;
   width: 100%;
   height: 100%;
   padding: 0;
   text-align: center;
-  color: #fff;
 }
 html body #app button.center.blue .button_inner .arrows {
   display: -webkit-flex;
   display: flex;
   -webkit-align-items: center;
-  -ms-align-items: center;
-  align-items: center;
+          align-items: center;
   width: 100%;
   height: 100%;
-  transition: 0.4s ease;
+  transition: $transition;
   position: absolute;
   left: 0;
   top: 0;
@@ -1646,12 +876,10 @@ html body #app button.center.blue .button_inner .arrows:before {
   height: 0.2rem;
   margin: auto;
   background-repeat: no-repeat;
-  transition: 0.4s ease;
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-  filter: alpha(opacity=0);
+  transition: $transition;
   opacity: 0;
   position: absolute;
-  top: calc(50% - 0.1rem);
+  top: calc('50% - 0.1rem');
 }
 html body #app button.center.blue .button_inner .arrows:before {
   left: 0.4rem;
@@ -1668,21 +896,19 @@ html body #app button.center.grey .button_inner {
   display: -webkit-flex;
   display: flex;
   -webkit-justify-content: center;
-  -ms-justify-content: center;
-  justify-content: center;
+          justify-content: center;
   -webkit-align-items: center;
-  -ms-align-items: center;
-  align-items: center;
+          align-items: center;
   border-radius: 10rem;
   min-height: 0.9rem;
   line-height: 0.9rem;
   max-width: 3.7rem;
   width: 100%;
-  transition: 0.4s ease;
-  background-color: #e5e5e5;
+  transition: $transition;
+  background-color: $lightgrey2;
 }
 html body #app button.center.grey .button_inner:hover {
-  background-color: #2d2d2d;
+  background-color: $darkhover;
   max-width: 4rem;
 }
 html body #app button.center.grey .button_inner:hover .arrows:after,
@@ -1691,15 +917,15 @@ html body #app button.center.grey .button_inner:hover .arrows:before {
           filter: brightness(10);
 }
 html body #app button.center.grey .button_inner:hover .message {
-  color: #fff;
+  color: $white;
 }
 html body #app button.center.grey .button_inner .message {
   position: absolute;
   left: 0;
   top: 0;
-  transition: 0.4s ease;
+  transition: $transition;
   white-space: nowrap;
-  color: #242424;
+  color: $darkgrey;
   font-weight: 400;
   font-size: 27%;
   width: 100%;
@@ -1711,11 +937,10 @@ html body #app button.center.grey .button_inner .arrows {
   display: -webkit-flex;
   display: flex;
   -webkit-align-items: center;
-  -ms-align-items: center;
-  align-items: center;
+          align-items: center;
   width: 100%;
   height: 100%;
-  transition: 0.4s ease;
+  transition: $transition;
   position: absolute;
   left: 0;
   top: 0;
@@ -1728,12 +953,10 @@ html body #app button.center.grey .button_inner .arrows:before {
   height: 0.2rem;
   margin: auto;
   background-repeat: no-repeat;
-  transition: 0.4s ease;
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-  filter: alpha(opacity=0);
+  transition: $transition;
   opacity: 0;
   position: absolute;
-  top: calc(50% - 0.1rem);
+  top: calc('50% - 0.1rem');
 }
 html body #app button.center.grey .button_inner .arrows:before {
   left: 0.4rem;
@@ -1752,47 +975,43 @@ html body #app button.center.green .button_inner {
   display: -webkit-flex;
   display: flex;
   -webkit-justify-content: center;
-  -ms-justify-content: center;
-  justify-content: center;
+          justify-content: center;
   -webkit-align-items: center;
-  -ms-align-items: center;
-  align-items: center;
+          align-items: center;
   border-radius: 10rem;
   min-height: 0.9rem;
   line-height: 0.9rem;
   max-width: 3.7rem;
   width: 100%;
-  transition: 0.4s ease;
+  transition: $transition;
   background-color: #00cba6;
 }
 html body #app button.center.green .button_inner:hover {
-  background-color: #2d2d2d;
+  background-color: $darkhover;
   max-width: 4rem;
 }
 html body #app button.center.green .button_inner .message {
   position: absolute;
   left: 0;
   top: 0;
-  transition: 0.4s ease;
+  transition: $transition;
   white-space: nowrap;
-  color: #fff;
+  color: $white;
   font-weight: 400;
   font-size: 27%;
   width: 100%;
   height: 100%;
   padding: 0;
   text-align: center;
-  color: #fff;
 }
 html body #app button.center.green .button_inner .arrows {
   display: -webkit-flex;
   display: flex;
   -webkit-align-items: center;
-  -ms-align-items: center;
-  align-items: center;
+          align-items: center;
   width: 100%;
   height: 100%;
-  transition: 0.4s ease;
+  transition: $transition;
   position: absolute;
   left: 0;
   top: 0;
@@ -1805,12 +1024,10 @@ html body #app button.center.green .button_inner .arrows:before {
   height: 0.2rem;
   margin: auto;
   background-repeat: no-repeat;
-  transition: 0.4s ease;
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-  filter: alpha(opacity=0);
+  transition: $transition;
   opacity: 0;
   position: absolute;
-  top: calc(50% - 0.1rem);
+  top: calc('50% - 0.1rem');
 }
 html body #app button.center.green .button_inner .arrows:before {
   left: 0.4rem;
@@ -1843,18 +1060,16 @@ html body #app #choose.choose--active {
   min-height: 100vh;
   z-index: 100;
   -webkit-flex-flow: column nowrap;
-  flex-flow: column nowrap;
+          flex-flow: column nowrap;
   -webkit-align-items: center;
-  -ms-align-items: center;
-  align-items: center;
+          align-items: center;
   -webkit-justify-content: center;
-  -ms-justify-content: center;
-  justify-content: center;
+          justify-content: center;
   transition: 0.2s cubic-bezier(1, 0.01, 0.85, 0.99);
-  background-color: #fff;
+  background-color: $white;
 }
 html body #app #choose.choose--active .title {
-  color: #e5e5e5;
+  color: $lightgrey2;
   font-weight: 500;
   font-size: 30%;
   margin: auto;
@@ -1864,8 +1079,7 @@ html body #app #choose.choose--active button {
 }
 html body #app #choose.choose--active .regions {
   -webkit-align-items: center;
-  -ms-align-items: center;
-  align-items: center;
+          align-items: center;
   display: -webkit-flex;
   display: flex;
 }
@@ -1874,33 +1088,32 @@ html body #app #choose.choose--active ul {
   display: flex;
   padding: 0;
   -webkit-justify-content: center;
-  -ms-justify-content: center;
-  justify-content: center;
+          justify-content: center;
   width: 100%;
   -webkit-flex-flow: row wrap;
-  flex-flow: row wrap;
+          flex-flow: row wrap;
   margin: 2rem auto;
 }
-@media screen and (max-width: 667px) {
+@media screen and (max-width: $iphone6) {
   html body #app #choose.choose--active ul {
     overflow: auto;
     margin: 0;
   }
   html body #app #choose.choose--active ul.language {
     -webkit-flex-flow: row nowrap;
-    flex-flow: row nowrap;
+            flex-flow: row nowrap;
   }
 }
 html body #app #choose.choose--active ul li {
   margin: 1rem auto;
   min-width: 300px;
 }
-@media screen and (max-width: 667px) {
+@media screen and (max-width: $iphone6) {
   html body #app #choose.choose--active ul li {
     margin: 0.1rem auto;
   }
 }
-@media all and (orientation: portrait) and (max-width: 1024px) {
+@media all and (orientation: portrait) and (max-width: $ipadPro) {
   html body #app #choose.choose--active ul li {
     width: 100%;
   }
@@ -1910,30 +1123,29 @@ html body #app #choose.choose--active ul li a {
   font-weight: 500;
   line-height: 110%;
   margin: auto;
-  transition: 0.4s ease;
+  transition: $transition;
 }
 html body #app #choose.choose--active ul li a:hover {
-  color: #ff002e;
+  color: $specialRed;
 }
 html body #app #choose.choose--active ul.language li {
   margin: 2rem;
   display: -webkit-flex;
   display: flex;
   -webkit-flex-flow: column wrap;
-  flex-flow: column wrap;
+          flex-flow: column wrap;
   -webkit-align-items: center;
-  -ms-align-items: center;
-  align-items: center;
+          align-items: center;
 }
-@media screen and (max-width: 667px) {
+@media screen and (max-width: $iphone6) {
   html body #app #choose.choose--active ul.language li {
     margin: 0.1rem;
   }
 }
-@media screen and (max-width: 667px) and (max-width: 667px) {
+@media screen and (max-width: $iphone6) and (max-width: $iphone6) {
   html body #app #choose.choose--active ul.language {
     -webkit-flex-flow: row wrap;
-    flex-flow: row wrap;
+            flex-flow: row wrap;
   }
 }
 html body #app section.content {
@@ -1944,10 +1156,9 @@ html body #app section.content {
 }
 html body #app section.content .container {
   -webkit-flex-flow: column wrap;
-  flex-flow: column wrap;
+          flex-flow: column wrap;
   -webkit-align-self: center;
-  -ms-align-self: center;
-  align-self: center;
+          align-self: center;
 }
 html body #app section.content.index-about {
   padding: 0;
@@ -1956,73 +1167,42 @@ html body #app section.content.index-about {
 html body #app section.content.index-about .container {
   height: 100%;
   -webkit-flex-direction: column;
-  flex-direction: column;
+          flex-direction: column;
   -webkit-align-items: center;
-  -ms-align-items: center;
-  align-items: center;
+          align-items: center;
   text-align: center;
   -webkit-justify-content: center;
-  -ms-justify-content: center;
-  justify-content: center;
+          justify-content: center;
   min-height: 600px;
   margin: auto;
 }
-html body #app section.content.index-about .container .title {
-  margin: 0 0 1.3rem;
-  font-weight: 300;
-  line-height: 115%;
-  transition: 0.4s ease;
-  font-size: 140%;
-}
-@media screen and (max-width: 375px) {
+@media screen and (max-width: $iphone6H) {
   html body #app section.content.index-about .container .title {
     font-size: 100%;
     line-height: 100%;
   }
 }
-@media screen and (max-width: 320px) {
+@media screen and (max-width: $iphone) {
   html body #app section.content.index-about .container .title {
     font-size: 90%;
     line-height: 100%;
   }
 }
 html body #app section.content.index-about .container .link_under {
-  display: inline-block;
-  transition: 0.4s ease;
-  color: #545454;
   font-size: 70%;
-  font-size: 70%;
-}
-html body #app section.content.index-about .container .link_under:after {
-  content: "";
-  display: block;
-  width: 100%;
-  max-width: calc(100% - 0.01rem);
-  margin: 0.2rem auto;
-  height: 1px;
-  background-color: #ff002e;
-  transition: 0.8s ease;
-}
-html body #app section.content.index-about .container .link_under:hover {
-  cursor: pointer;
-  color: #ff002e;
-}
-html body #app section.content.index-about .container .link_under:hover:after {
-  width: 0%;
-  background-color: #ddd;
 }
 html body #app section.footer {
-  background-color: #121212;
+  background-color: $footerbg;
   padding: 1.9rem 0;
 }
 html body #app section.footer .container {
   display: -webkit-flex;
   display: flex;
 }
-@media screen and (max-width: 667px) {
+@media screen and (max-width: $iphone6) {
   html body #app section.footer .container {
     -webkit-flex-flow: row wrap;
-    flex-flow: row wrap;
+            flex-flow: row wrap;
   }
 }
 html body #app section.footer .container .footer-title {
@@ -2030,19 +1210,18 @@ html body #app section.footer .container .footer-title {
   max-width: 50%;
   width: 100%;
   -webkit-flex: 1 0 auto;
-  flex: 1 0 auto;
+          flex: 1 0 auto;
   min-height: 3.5rem;
   display: -webkit-flex;
   display: flex;
   -webkit-flex-direction: column;
-  flex-direction: column;
+          flex-direction: column;
   -webkit-justify-content: space-between;
-  -ms-justify-content: space-between;
-  justify-content: space-between;
+          justify-content: space-between;
 }
 html body #app section.footer .container .footer-title .footer-slogan {
-  color: #ff002e;
-  transition: 0.4s ease;
+  color: $specialRed;
+  transition: $transition;
   font-size: 60%;
   font-weight: 300;
 }
@@ -2050,32 +1229,30 @@ html body #app section.footer .container .footer-menu {
   display: -webkit-flex;
   display: flex;
   -webkit-flex: 1 0 auto;
-  flex: 1 0 auto;
+          flex: 1 0 auto;
 }
 html body #app section.footer .container .footer-menu ul {
   -webkit-flex: 1 0 auto;
-  flex: 1 0 auto;
+          flex: 1 0 auto;
   padding: 0;
 }
 html body #app section.footer .container .footer-menu ul li {
   max-height: 0.6rem;
   display: -webkit-flex;
-  display: -webkit-flex;
   display: flex;
   -webkit-align-items: flex-end;
-  -ms-align-items: flex-end;
-  align-items: flex-end;
+          align-items: flex-end;
 }
 html body #app section.footer .container .footer-menu ul li a {
   line-height: 0.79rem;
-  color: #fff;
-  transition: 0.4s ease;
+  color: $white;
+  transition: $transition;
   font-size: 40%;
   min-width: 3rem;
   display: inline-block;
 }
 html body #app section.footer .container .footer-menu ul li a:hover {
-  color: #ff002e;
+  color: $specialRed;
   cursor: pointer;
 }
 html body #app section.footer .container .footer-copy {
@@ -2083,27 +1260,26 @@ html body #app section.footer .container .footer-copy {
   display: flex;
   width: 100%;
   -webkit-align-items: center;
-  -ms-align-items: center;
-  align-items: center;
+          align-items: center;
   margin: 1.2rem 0 0 0;
   -webkit-flex-flow: row wrap;
-  flex-flow: row wrap;
+          flex-flow: row wrap;
 }
 html body #app section.footer .container .footer-copy .copy {
-  color: #757575;
+  color: $darkgrey3;
   font-size: 25%;
   -webkit-flex: 1 1 50%;
-  flex: 1 1 50%;
+          flex: 1 1 50%;
 }
 html body #app section.footer .container .footer-copy .footer-column {
   margin: 0 auto 0 0;
   -webkit-flex: 1 0 50%;
-  flex: 1 0 50%;
+          flex: 1 0 50%;
 }
 html body #app section.footer .container .footer-copy .footer-column.footer-button {
   margin: 0.8rem auto;
   -webkit-flex: 1 1 50%;
-  flex: 1 1 50%;
+          flex: 1 1 50%;
   display: -webkit-flex;
   display: flex;
 }
@@ -2129,7 +1305,7 @@ html body #app .hamburger {
   right: 30px;
   top: 35px;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: $desktop) {
   html body #app .hamburger {
     display: none;
   }
@@ -2169,13 +1345,13 @@ html body #app .hamburger .hamburger-box .hamburger-inner:after {
   bottom: -9px;
 }
 html body #app .hamburger .hamburger-box .hamburger-inner {
-  transition: 0.4s ease;
-  background-color: #ff002e;
+  transition: $transition;
+  background-color: $specialRed;
 }
 html body #app .hamburger .hamburger-box .hamburger-inner:before,
 html body #app .hamburger .hamburger-box .hamburger-inner:after {
-  transition: 0.4s ease;
-  background-color: #ff002e;
+  transition: $transition;
+  background-color: $specialRed;
 }
 html body #app .hamburger .hamburger-box:hover {
   cursor: pointer;
@@ -2183,25 +1359,20 @@ html body #app .hamburger .hamburger-box:hover {
 html body #app .hamburger .hamburger-box:hover .hamburger-inner,
 html body #app .hamburger .hamburger-box:hover .hamburger-inner:before,
 html body #app .hamburger .hamburger-box:hover .hamburger-inner:after {
-  background-color: #2d2d2d;
+  background-color: $darkhover;
 }
 html body #app .hamburger.is-active .hamburger-inner:before,
 html body #app .hamburger.is-active .hamburger-inner:after {
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-  filter: alpha(opacity=0);
   opacity: 0;
 }
 html body #app .hamburger.is-active .hamburger-inner {
   -webkit-transform: rotate(45deg);
-  transform: rotate(45deg);
+          transform: rotate(45deg);
 }
 html body #app .hamburger.is-active .hamburger-inner:before {
   top: 0;
   -webkit-transform: rotate(90deg);
-  transform: rotate(90deg);
-  -ms-filter: none;
-  -webkit-filter: none;
-          filter: none;
+          transform: rotate(90deg);
   opacity: 1;
 }
 html body #app .hamburger.is-active .hamburger-inner:after {
@@ -2210,8 +1381,8 @@ html body #app .hamburger.is-active .hamburger-inner:after {
 html body #app section.header {
   position: absolute;
   z-index: 10;
-  color: #fff;
-  background-color: #fff;
+  color: $white;
+  background-color: $headerBg;
 }
 html body #app section.header.index_layer {
   background-color: transparent;
@@ -2220,19 +1391,16 @@ html body #app section.header .container {
   display: -webkit-flex;
   display: flex;
   -webkit-justify-content: space-between;
-  -ms-justify-content: space-between;
-  justify-content: space-between;
+          justify-content: space-between;
   -webkit-flex-flow: row nowrap;
-  flex-flow: row nowrap;
+          flex-flow: row nowrap;
   -webkit-align-items: center;
-  -ms-align-items: center;
-  align-items: center;
+          align-items: center;
   -webkit-justify-content: center;
-  -ms-justify-content: center;
-  justify-content: center;
+          justify-content: center;
   padding: 75px 15px;
 }
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: $desktop) {
   html body #app section.header .container {
     padding: 15px;
   }
@@ -2241,35 +1409,31 @@ html body #app section.header .container .column {
   display: -webkit-flex;
   display: flex;
   -webkit-flex: 1 0 auto;
-  flex: 1 0 auto;
+          flex: 1 0 auto;
   -webkit-align-self: center;
-  -ms-align-self: center;
-  align-self: center;
+          align-self: center;
   -webkit-flex-flow: row nowrap;
-  flex-flow: row nowrap;
+          flex-flow: row nowrap;
   font-size: 31%;
 }
 html body #app section.header .container .column.serv {
   -webkit-flex: 0 0 210px;
-  flex: 0 0 210px;
+          flex: 0 0 210px;
   -webkit-align-items: center;
-  -ms-align-items: center;
-  align-items: center;
+          align-items: center;
   -webkit-justify-content: space-between;
-  -ms-justify-content: space-between;
-  justify-content: space-between;
+          justify-content: space-between;
   margin-right: 1rem;
 }
 html body #app section.header .container .column.serv .logo {
   -webkit-align-self: center;
-  -ms-align-self: center;
-  align-self: center;
+          align-self: center;
 }
 html body #app section.header .container .column.serv .logo img {
   width: 67px;
   height: 67px;
 }
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: $desktop) {
   html body #app section.header .container .column.serv .logo img {
     width: 50px;
     height: 50px;
@@ -2284,7 +1448,7 @@ html body #app section.header .container .column.serv .logo:before {
   background: #121212;
   position: absolute;
 }
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: $desktop) {
   html body #app section.header .container .column.serv .logo:before {
     width: 84px;
   }
@@ -2294,8 +1458,7 @@ html body #app section.header .container .column.serv .location {
   display: flex;
   text-align: center;
   -webkit-align-items: center;
-  -ms-align-items: center;
-  align-items: center;
+          align-items: center;
   cursor: pointer;
   visibility: hidden;
 }
@@ -2306,31 +1469,29 @@ html body #app section.header .container .column.serv .location img {
 }
 html body #app section.header .container .column.serv .location span {
   font-size: 65%;
-  transition: 0.4s ease;
+  transition: $transition;
 }
 html body #app section.header .container .column.serv .location:hover span {
-  color: #ff002e;
+  color: $specialRed;
 }
 html body #app section.header .container .column.feedback {
   -webkit-justify-content: flex-end;
-  -ms-justify-content: flex-end;
-  justify-content: flex-end;
+          justify-content: flex-end;
   -webkit-flex: 0 0 210px;
-  flex: 0 0 210px;
+          flex: 0 0 210px;
 }
 html body #app section.header .container .column.feedback .feedback_container {
   text-align: center;
   display: -webkit-flex;
   display: flex;
-  transition: 0.4s ease;
+  transition: $transition;
 }
 html body #app section.header .container .column.feedback .feedback_container a.inner {
   display: -webkit-flex;
   display: flex;
   -webkit-align-items: center;
-  -ms-align-items: center;
-  align-items: center;
-  transition: 0.4s ease;
+          align-items: center;
+  transition: $transition;
 }
 html body #app section.header .container .column.feedback .feedback_container a.inner span {
   color: #1d1e1e;
@@ -2339,13 +1500,13 @@ html body #app section.header .container .column.feedback .feedback_container a.
 html body #app section.header .container .column.feedback .feedback_container a.inner img {
   width: 0.3rem;
   height: 0.3rem;
-  margin: auto 15px;
+  margin: auto $overpadding;
 }
 html body #app section.header .container .column.feedback .feedback_container:hover {
   cursor: pointer;
 }
 html body #app section.header .container .column.feedback .feedback_container:hover a.inner span {
-  color: #ff002e;
+  color: $specialRed;
 }
 html body #app section.header .container .column.menu .top_menu {
   display: -webkit-flex;
@@ -2354,14 +1515,13 @@ html body #app section.header .container .column.menu .top_menu {
   margin: auto;
   width: 100%;
   -webkit-justify-content: center;
-  -ms-justify-content: center;
-  justify-content: center;
+          justify-content: center;
 }
 html body #app section.header .container .column.menu .top_menu li {
   margin: 0 0.2rem;
   min-width: 1.65rem;
   text-align: center;
-  transition: 0.4s ease;
+  transition: $transition;
 }
 html body #app section.header .container .column.menu .top_menu li a {
   color: #1d1e1e;
@@ -2370,10 +1530,10 @@ html body #app section.header .container .column.menu .top_menu li a {
 html body #app section.header .container .column.menu .top_menu li a:hover {
   color: #ff002e;
 }
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: $desktop) {
   html body #app section.header .container .column.serv {
     -webkit-flex: 1;
-    flex: 1;
+            flex: 1;
   }
   html body #app section.header .container .column.serv .location {
     display: none;
@@ -2396,23 +1556,22 @@ html body #app section.mobile_menu {
   transition: 0.5s cubic-bezier(1, -0.01, 0.07, 1.03);
   font-size: 130%;
   -webkit-transform: translate(100%, 0);
-  transform: translate(100%, 0);
+          transform: translate(100%, 0);
   z-index: 20;
 }
-@media all and (min-width: 1200px) {
+@media all and (min-width: $desktop) {
   html body #app section.mobile_menu {
     display: none;
   }
 }
 html body #app section.mobile_menu.mobile_menu-active {
   -webkit-transform: translate(0%, 0);
-  transform: translate(0%, 0);
+          transform: translate(0%, 0);
 }
 html body #app section.mobile_menu .container {
   -webkit-flex-flow: row wrap;
-  flex-flow: row wrap;
-  padding: 15px;
-  -ms-align-content: space-between;
+          flex-flow: row wrap;
+  padding: $overpadding;
   -webkit-align-content: space-between;
           align-content: space-between;
   height: 100%;
@@ -2422,11 +1581,10 @@ html body #app section.mobile_menu .container .location {
   display: -webkit-flex;
   display: flex;
   -webkit-flex: 1 1 100%;
-  flex: 1 1 100%;
+          flex: 1 1 100%;
   text-align: center;
   -webkit-align-items: center;
-  -ms-align-items: center;
-  align-items: center;
+          align-items: center;
   cursor: pointer;
   top: 9px;
 }
@@ -2440,28 +1598,27 @@ html body #app section.mobile_menu .container .location span {
   font-weight: 500;
 }
 html body #app section.mobile_menu .container .location:hover span {
-  color: #ff002e;
+  color: $specialRed;
 }
 html body #app section.mobile_menu .container .mobile_menu_list {
   padding: 0;
   margin: 1rem 0;
   -webkit-flex: 1 1 60%;
-  flex: 1 1 60%;
+          flex: 1 1 60%;
 }
 html body #app section.mobile_menu .container .mobile_menu_list li {
   font-weight: 700;
   line-height: 120%;
 }
 html body #app section.mobile_menu .container .mobile_menu_list li a:hover {
-  color: #ff002e;
+  color: $specialRed;
 }
 html body #app section.mobile_menu .container .mobile_menu_feedback {
   padding: 0;
   -webkit-flex: 1 1 100%;
-  flex: 1 1 100%;
+          flex: 1 1 100%;
   -webkit-order: 2;
-  -ms-order: 2;
-  order: 2;
+          order: 2;
 }
 html body #app section.mobile_menu .container .mobile_menu_feedback li.feedback_container {
   font-weight: 700;
@@ -2474,8 +1631,7 @@ html body #app section.mobile_menu .container .mobile_menu_feedback li.feedback_
   display: -webkit-flex;
   display: flex;
   -webkit-align-items: center;
-  -ms-align-items: center;
-  align-items: center;
+          align-items: center;
   text-align: left;
 }
 html body #app section.mobile_menu .container .mobile_menu_feedback li.feedback_container .inner img {
@@ -2485,12 +1641,12 @@ html body #app section.mobile_menu .container .mobile_menu_feedback li.feedback_
 }
 html body #app section.mobile_menu .container .mobile_menu_feedback li.feedback_container .inner:hover span {
   cursor: pointer;
-  color: #ff002e;
+  color: $specialRed;
 }
 html body #app section.mobile_menu .container .mobile_menu_feedback li.feedback_container .inner span {
   white-space: pre;
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: $iphoneH) {
   html body #app section.mobile_menu .container .mobile_menu_feedback li.feedback_container .inner span:nth-of-type(1) {
     display: none;
   }
@@ -2504,18 +1660,16 @@ html body #app .slide_up_mobileMenu span {
   overflow: hidden;
   display: block;
   -webkit-transform: translate(0, 150%);
-  transform: translate(0, 150%);
-  transition: -webkit-transform 0.4s cubic-bezier(0, 0.98, 0.94, 1);
-  transition: transform 0.4s cubic-bezier(0, 0.98, 0.94, 1);
-  transition: transform 0.4s cubic-bezier(0, 0.98, 0.94, 1), -webkit-transform 0.4s cubic-bezier(0, 0.98, 0.94, 1);
+          transform: translate(0, 150%);
+  transition: -webkit-transform $slide_up_text;
+  transition: transform $slide_up_text;
+  transition: transform $slide_up_text, -webkit-transform $slide_up_text;
   transition-delay: 0s;
   line-height: 113%;
 }
 html body #app .slide_up_mobileMenu li header,
 html body #app .slide_up_mobileMenu div header,
 html body #app .slide_up_mobileMenu span header {
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-  filter: alpha(opacity=0);
   opacity: 0;
 }
 html body #app .slide_up_mobileMenu.slide_up_mobileMenu--active {
@@ -2523,12 +1677,9 @@ html body #app .slide_up_mobileMenu.slide_up_mobileMenu--active {
 }
 html body #app .slide_up_mobileMenu.slide_up_mobileMenu--active * {
   display: block;
-  transition: 0.4s cubic-bezier(0, 0.98, 0.94, 1);
+  transition: $slide_up_text;
   -webkit-transform: translate(0, 0%);
-  transform: translate(0, 0%);
-  -ms-filter: none;
-  -webkit-filter: none;
-          filter: none;
+          transform: translate(0, 0%);
   opacity: 1;
 }
 html body #app .slide_up_mobileMenu.slide_up_mobileMenu--active > li:nth-child(1) span,
@@ -2560,18 +1711,16 @@ html body #app .slide_up_text span {
   overflow: hidden;
   display: block;
   -webkit-transform: translate(0, 150%);
-  transform: translate(0, 150%);
-  transition: -webkit-transform 0.4s cubic-bezier(0, 0.98, 0.94, 1);
-  transition: transform 0.4s cubic-bezier(0, 0.98, 0.94, 1);
-  transition: transform 0.4s cubic-bezier(0, 0.98, 0.94, 1), -webkit-transform 0.4s cubic-bezier(0, 0.98, 0.94, 1);
+          transform: translate(0, 150%);
+  transition: -webkit-transform $slide_up_text;
+  transition: transform $slide_up_text;
+  transition: transform $slide_up_text, -webkit-transform $slide_up_text;
   transition-delay: 0s;
   line-height: 113%;
 }
 html body #app .slide_up_text li header,
 html body #app .slide_up_text div header,
 html body #app .slide_up_text span header {
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-  filter: alpha(opacity=0);
   opacity: 0;
 }
 html body #app .slide_up_text.slide_up_text--active {
@@ -2579,12 +1728,9 @@ html body #app .slide_up_text.slide_up_text--active {
 }
 html body #app .slide_up_text.slide_up_text--active * {
   display: block;
-  transition: 0.4s cubic-bezier(0, 0.98, 0.94, 1);
+  transition: $slide_up_text;
   -webkit-transform: translate(0, 0%);
-  transform: translate(0, 0%);
-  -ms-filter: none;
-  -webkit-filter: none;
-          filter: none;
+          transform: translate(0, 0%);
   opacity: 1;
 }
 html body #app .slide_up_text.slide_up_text--active > li:nth-child(1) span,
@@ -2625,140 +1771,31 @@ html body #app .slide_up_text.slide_up_text--active > div:nth-child(9) span {
 }
 html body #app section.in-cart {
   -webkit-flex-flow: column wrap;
-  flex-flow: column wrap;
+          flex-flow: column wrap;
 }
 html body #app section.in-cart .container {
   -webkit-align-items: center;
-  -ms-align-items: center;
-  align-items: center;
+          align-items: center;
   -webkit-justify-content: center;
-  -ms-justify-content: center;
-  justify-content: center;
+          justify-content: center;
   min-height: 520px;
   -webkit-flex-flow: column nowrap;
-  flex-flow: column nowrap;
+          flex-flow: column nowrap;
 }
 html body #app section.in-cart .container.is-empty {
   text-align: center;
 }
 html body #app section.in-cart .container.is-empty .title {
-  margin: 0 0 1.3rem;
-  font-weight: 300;
-  line-height: 115%;
-  transition: 0.4s ease;
-  font-size: 140%;
-  color: #e5e5e5;
-}
-html body #app section.in-cart .container.is-empty .link_under {
-  display: inline-block;
-  transition: 0.4s ease;
-  color: #545454;
-  font-size: 70%;
-}
-html body #app section.in-cart .container.is-empty .link_under:after {
-  content: "";
-  display: block;
-  width: 100%;
-  max-width: calc(100% - 0.01rem);
-  margin: 0.2rem auto;
-  height: 1px;
-  background-color: #ff002e;
-  transition: 0.8s ease;
-}
-html body #app section.in-cart .container.is-empty .link_under:hover {
-  cursor: pointer;
-  color: #ff002e;
-}
-html body #app section.in-cart .container.is-empty .link_under:hover:after {
-  width: 0%;
-  background-color: #545454;
+  color: $lightgrey2;
 }
 html body #app section.in-cart .container .product_count {
-  color: #d3d3d3;
+  color: $lightgrey;
   font-size: 30%;
   text-align: center;
   font-weight: 400;
   margin: 1rem;
 }
-html body #app section.in-cart .container .accordion_items {
-  padding: 0;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-flex-flow: column nowrap;
-  flex-flow: column nowrap;
-  margin: auto;
-  max-width: 940px;
-  width: 100%;
-}
-html body #app section.in-cart .container .accordion_items li span header {
-  display: inline-block;
-  transition: 0.4s ease;
-  color: #232323;
-  font-size: 70%;
-  margin: 0.3rem 0;
-}
-html body #app section.in-cart .container .accordion_items li span header:after {
-  content: "";
-  display: block;
-  width: 100%;
-  max-width: calc(100% - 0.01rem);
-  margin: 0.2rem auto;
-  height: 1px;
-  background-color: #ff002e;
-  transition: 0.8s ease;
-}
-html body #app section.in-cart .container .accordion_items li span header:hover {
-  cursor: pointer;
-  color: #ff002e;
-}
-html body #app section.in-cart .container .accordion_items li span header:hover:after {
-  width: 0%;
-  background-color: #adafaf;
-}
-html body #app section.in-cart .container .accordion_items li span header.active {
-  color: #adafaf;
-}
-html body #app section.in-cart .container .accordion_items li span header.active:hover {
-  color: #ff002e;
-}
-html body #app section.in-cart .container .accordion_items li span header.active ~ main {
-  display: block;
-  margin: 0;
-  margin: 0.5rem 0;
-  max-height: 100%;
-  -ms-filter: none;
-  -webkit-filter: none;
-          filter: none;
-  opacity: 1;
-  overflow: visible;
-}
-@media screen and (max-width: 480px) {
-  html body #app section.in-cart .container .accordion_items li span header.active ~ main {
-    max-height: initial;
-  }
-}
-html body #app section.in-cart .container .accordion_items li span .add {
-  display: inline;
-  color: #ff002e;
-  font-size: 70%;
-  margin: 0 0.8rem;
-}
-html body #app section.in-cart .container .accordion_items li span .add.null {
-  color: #adafaf;
-}
-html body #app section.in-cart .container .accordion_items li span main {
-  text-align: left;
-  font-size: 30%;
-  margin: 0;
-  line-height: 200%;
-  max-height: 0;
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-  filter: alpha(opacity=0);
-  opacity: 0;
-  transition: 0.4s ease;
-  overflow: hidden;
-}
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: $desktop) {
   html body #app section.in-cart .container .accordion_items {
     margin: 2rem auto;
   }
@@ -2801,53 +1838,42 @@ html body #app section.in-cart .container button.blank {
   margin: 1rem 0 0;
   font-size: 130%;
 }
-html body #app section.in-cart .container .steps_buttons {
-  display: -webkit-flex;
-  display: flex;
-  width: 100%;
-  margin: 1rem 0;
-}
-html body #app section.in-cart .container .steps_buttons button:first-child {
-  margin: 0 auto 0 0;
-}
 html body #app section.contact .container ul.office-tab {
   margin: 0 auto;
   padding: 0;
   display: -webkit-flex;
   display: flex;
   -webkit-flex-flow: row wrap;
-  flex-flow: row wrap;
+          flex-flow: row wrap;
   -webkit-justify-content: center;
-  -ms-justify-content: center;
-  justify-content: center;
+          justify-content: center;
   -webkit-align-items: center;
-  -ms-align-items: center;
-  align-items: center;
+          align-items: center;
 }
 html body #app section.contact .container ul.office-tab li {
   -webkit-flex: 1 0 auto;
-  flex: 1 0 auto;
+          flex: 1 0 auto;
   white-space: nowrap;
   margin: 1rem 0.4rem;
   cursor: pointer;
   text-align: center;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: $ipad) {
   html body #app section.contact .container ul.office-tab li {
     margin: 0.6rem;
   }
 }
-@media screen and (max-width: 568px) {
+@media screen and (max-width: $iphone5) {
   html body #app section.contact .container ul.office-tab li {
     margin: 0.1rem;
   }
 }
 html body #app section.contact .container ul.office-tab li a {
   font-size: 25%;
-  transition: 0.4s ease;
+  transition: $transition;
 }
 html body #app section.contact .container ul.office-tab li a:hover {
-  color: #ff002e;
+  color: $specialRed;
 }
 html body #app section.contact .container ul.office-tab li a:before {
   content: '';
@@ -2857,7 +1883,7 @@ html body #app section.contact .container ul.office-tab li a:before {
   margin: 0.1rem auto;
 }
 html body #app section.contact .container ul.office-tab li a.office-tab--active {
-  color: #ff002e;
+  color: $specialRed;
 }
 html body #app section.contact .container ul.office-tab li a.office-tab--active:before {
   background-image: url("../images/icon_pin.svg");
@@ -2867,7 +1893,7 @@ html body #app section.contact .container #offices {
   display: -webkit-flex;
   display: flex;
   -webkit-flex-flow: column wrap;
-  flex-flow: column wrap;
+          flex-flow: column wrap;
   margin: 1rem auto;
   width: 100%;
 }
@@ -2881,13 +1907,11 @@ html body #app section.contact .container #offices address .adr {
   display: -webkit-flex;
   display: flex;
   -webkit-flex-flow: column wrap;
-  flex-flow: column wrap;
+          flex-flow: column wrap;
   -webkit-align-items: center;
-  -ms-align-items: center;
-  align-items: center;
+          align-items: center;
   -webkit-justify-content: center;
-  -ms-justify-content: center;
-  justify-content: center;
+          justify-content: center;
   font-weight: 500;
   text-align: center;
 }
@@ -2911,62 +1935,24 @@ html body #app section.contact .container #offices address .info {
   display: -webkit-flex;
   display: flex;
   -webkit-flex-flow: column wrap;
-  flex-flow: column wrap;
+          flex-flow: column wrap;
   -webkit-align-items: center;
-  -ms-align-items: center;
-  align-items: center;
+          align-items: center;
   -webkit-justify-content: center;
-  -ms-justify-content: center;
-  justify-content: center;
+          justify-content: center;
   font-size: 55%;
-}
-html body #app section.contact .container #offices address .call span,
-html body #app section.contact .container #offices address .info span,
-html body #app section.contact .container #offices address .call a,
-html body #app section.contact .container #offices address .info a {
-  display: inline-block;
-  transition: 0.4s ease;
-  color: #232323;
-  font-size: 70%;
-}
-html body #app section.contact .container #offices address .call span:after,
-html body #app section.contact .container #offices address .info span:after,
-html body #app section.contact .container #offices address .call a:after,
-html body #app section.contact .container #offices address .info a:after {
-  content: "";
-  display: block;
-  width: 100%;
-  max-width: calc(100% - 0.01rem);
-  margin: 0.2rem auto;
-  height: 1px;
-  background-color: #ff002e;
-  transition: 0.8s ease;
-}
-html body #app section.contact .container #offices address .call span:hover,
-html body #app section.contact .container #offices address .info span:hover,
-html body #app section.contact .container #offices address .call a:hover,
-html body #app section.contact .container #offices address .info a:hover {
-  cursor: pointer;
-  color: #ff002e;
-}
-html body #app section.contact .container #offices address .call span:hover:after,
-html body #app section.contact .container #offices address .info span:hover:after,
-html body #app section.contact .container #offices address .call a:hover:after,
-html body #app section.contact .container #offices address .info a:hover:after {
-  width: 0%;
-  background-color: #ddd;
 }
 html body #app section.contact .container #offices address .call {
   -webkit-flex-flow: row nowrap;
-  flex-flow: row nowrap;
+          flex-flow: row nowrap;
   white-space: nowrap;
   -webkit-flex: 1 0 150px;
-  flex: 1 0 150px;
+          flex: 1 0 150px;
 }
-@media screen and (max-width: 568px) {
+@media screen and (max-width: $iphone5) {
   html body #app section.contact .container #offices address .call {
     -webkit-flex-flow: column wrap;
-    flex-flow: column wrap;
+            flex-flow: column wrap;
   }
 }
 html body #app section.contact .container #offices address .call .fax,
@@ -2982,14 +1968,12 @@ html body #app section.contact .container .social {
   display: -webkit-flex;
   display: flex;
   -webkit-flex-flow: column wrap;
-  flex-flow: column wrap;
+          flex-flow: column wrap;
   -webkit-align-items: center;
-  -ms-align-items: center;
-  align-items: center;
+          align-items: center;
   width: 100%;
   -webkit-justify-content: center;
-  -ms-justify-content: center;
-  justify-content: center;
+          justify-content: center;
   text-align: center;
 }
 html body #app section.contact .container .social .slogan {
@@ -3004,46 +1988,23 @@ html body #app section.contact .container .social ul.links {
   padding: 0;
   width: 100%;
   -webkit-flex-flow: row wrap;
-  flex-flow: row wrap;
+          flex-flow: row wrap;
   -webkit-justify-content: center;
-  -ms-justify-content: center;
-  justify-content: center;
+          justify-content: center;
 }
 html body #app section.contact .container .social ul.links li {
   -webkit-flex: 1 0 150px;
-  flex: 1 0 150px;
+          flex: 1 0 150px;
   margin: 0.4rem 0;
   font-size: 55%;
 }
-@media screen and (max-width: 667px) {
+@media screen and (max-width: $iphone6) {
   html body #app section.contact .container .social ul.links li {
     font-size: 75%;
   }
 }
 html body #app section.contact .container .social ul.links li a {
-  display: inline-block;
-  transition: 0.4s ease;
-  color: #232323;
-  font-size: 70%;
   font-weight: 600;
-}
-html body #app section.contact .container .social ul.links li a:after {
-  content: "";
-  display: block;
-  width: 100%;
-  max-width: calc(100% - 0.01rem);
-  margin: 0.2rem auto;
-  height: 1px;
-  background-color: #ff002e;
-  transition: 0.8s ease;
-}
-html body #app section.contact .container .social ul.links li a:hover {
-  cursor: pointer;
-  color: #ff002e;
-}
-html body #app section.contact .container .social ul.links li a:hover:after {
-  width: 0%;
-  background-color: #ddd;
 }
 html body #app section.contact .container ul.forces {
   margin: 4.5rem auto 1rem auto;
@@ -3051,22 +2012,22 @@ html body #app section.contact .container ul.forces {
   display: -webkit-flex;
   display: flex;
   -webkit-flex-flow: row wrap;
-  flex-flow: row wrap;
+          flex-flow: row wrap;
 }
 html body #app section.contact .container ul.forces li {
   -webkit-flex: 1 0 25%;
-  flex: 1 0 25%;
+          flex: 1 0 25%;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: $ipad) {
   html body #app section.contact .container ul.forces li {
     -webkit-flex: 1 0 50%;
-    flex: 1 0 50%;
+            flex: 1 0 50%;
   }
 }
 @media screen and (max-width: 400px) {
   html body #app section.contact .container ul.forces li {
     -webkit-flex: 1 0 100%;
-    flex: 1 0 100%;
+            flex: 1 0 100%;
   }
 }
 html body #app section.contact .container ul.forces li span {
@@ -3087,8 +2048,7 @@ html body #app section.contact .container ul.forces li span .force-fax {
 }
 html body #app section.feedback .container {
   -webkit-align-items: center;
-  -ms-align-items: center;
-  align-items: center;
+          align-items: center;
 }
 html body #app section.feedback .container .title {
   font-size: 150%;
@@ -3097,10 +2057,9 @@ html body #app section.feedback .container .title {
 }
 html body #app section.feedback .container form {
   width: 100%;
-  max-width: 940px;
+  max-width: $contentThin;
   -webkit-align-items: center;
-  -ms-align-items: center;
-  align-items: center;
+          align-items: center;
   padding: 1.5rem 0;
 }
 html body #app section.feedback .container form .thin {
@@ -3109,7 +2068,7 @@ html body #app section.feedback .container form .thin {
 }
 html body #app section.feedback .container form .thin .field {
   -webkit-flex: 1 1 33%;
-  flex: 1 1 33%;
+          flex: 1 1 33%;
   font-size: 70%;
 }
 html body #app section.feedback .container form .field label {
@@ -3124,19 +2083,16 @@ html body #app section.feedback .container form .field label {
   display: -webkit-flex;
   display: flex;
   -webkit-align-items: center;
-  -ms-align-items: center;
-  align-items: center;
+          align-items: center;
   -webkit-justify-content: center;
-  -ms-justify-content: center;
-  justify-content: center;
-  transition: 0.4s ease;
+          justify-content: center;
+  transition: $transition;
   border-bottom: 2px solid rgba(27,27,27,0.15);
 }
 html body #app section.feedback .container form .field label.active {
   font-size: 25%;
   -webkit-justify-content: left;
-  -ms-justify-content: left;
-  justify-content: left;
+          justify-content: left;
   color: #1b1b1b;
   border-bottom: 2px solid #1b1b1b;
 }
@@ -3146,10 +2102,10 @@ html body #app section.feedback .container form .field input {
   text-align: center;
   font-size: 42%;
   font-weight: 500;
-  transition: 0.4s ease;
+  transition: $transition;
   height: 1.5rem;
   padding: 0.9rem 0;
-  caret-color: #ff002e;
+  caret-color: $specialRed;
   z-index: 10;
 }
 html body #app section.feedback .container form .field input:hover {
@@ -3158,8 +2114,7 @@ html body #app section.feedback .container form .field input:hover {
 html body #app section.feedback .container form .field input:focus ~ label {
   font-size: 25%;
   -webkit-justify-content: left;
-  -ms-justify-content: left;
-  justify-content: left;
+          justify-content: left;
   color: #1b1b1b;
   border-bottom: 2px solid #1b1b1b;
 }
@@ -3176,82 +2131,6 @@ html body #app section.help .container {
 }
 html body #app section.help .container ul.faq.accordion_items {
   text-align: center;
-  padding: 0;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-flex-flow: column nowrap;
-  flex-flow: column nowrap;
-  margin: auto;
-  max-width: 940px;
-  width: 100%;
-}
-html body #app section.help .container ul.faq.accordion_items li span header {
-  display: inline-block;
-  transition: 0.4s ease;
-  color: #232323;
-  font-size: 70%;
-  margin: 0.3rem 0;
-}
-html body #app section.help .container ul.faq.accordion_items li span header:after {
-  content: "";
-  display: block;
-  width: 100%;
-  max-width: calc(100% - 0.01rem);
-  margin: 0.2rem auto;
-  height: 1px;
-  background-color: #ff002e;
-  transition: 0.8s ease;
-}
-html body #app section.help .container ul.faq.accordion_items li span header:hover {
-  cursor: pointer;
-  color: #ff002e;
-}
-html body #app section.help .container ul.faq.accordion_items li span header:hover:after {
-  width: 0%;
-  background-color: #adafaf;
-}
-html body #app section.help .container ul.faq.accordion_items li span header.active {
-  color: #adafaf;
-}
-html body #app section.help .container ul.faq.accordion_items li span header.active:hover {
-  color: #ff002e;
-}
-html body #app section.help .container ul.faq.accordion_items li span header.active ~ main {
-  display: block;
-  margin: 0;
-  margin: 0.5rem 0;
-  max-height: 100%;
-  -ms-filter: none;
-  -webkit-filter: none;
-          filter: none;
-  opacity: 1;
-  overflow: visible;
-}
-@media screen and (max-width: 480px) {
-  html body #app section.help .container ul.faq.accordion_items li span header.active ~ main {
-    max-height: initial;
-  }
-}
-html body #app section.help .container ul.faq.accordion_items li span .add {
-  display: inline;
-  color: #ff002e;
-  font-size: 70%;
-  margin: 0 0.8rem;
-}
-html body #app section.help .container ul.faq.accordion_items li span .add.null {
-  color: #adafaf;
-}
-html body #app section.help .container ul.faq.accordion_items li span main {
-  text-align: left;
-  font-size: 30%;
-  margin: 0;
-  line-height: 200%;
-  max-height: 0;
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-  filter: alpha(opacity=0);
-  opacity: 0;
-  transition: 0.4s ease;
-  overflow: hidden;
 }
 html body #app section.hero {
   background-color: #fff;
@@ -3272,25 +2151,25 @@ html body #app section.hero .promo {
 }
 html body #app section.hero .container {
   -webkit-flex-direction: column;
-  flex-direction: column;
+          flex-direction: column;
   max-height: 1200px;
   height: 100%;
   margin: auto auto 0;
   max-width: 100%;
   min-height: 100vh;
 }
-@media screen and (min-height: 1200px) and (min-width: 768px) {
+@media screen and (min-height: $desktop) and (min-width: $ipad) {
   html body #app section.hero .container {
-    max-height: 1200px;
+    max-height: $desktop;
   }
 }
-@media screen and (max-width: 667px) {
+@media screen and (max-width: $iphone6) {
   html body #app section.hero .container {
     height: auto;
     padding: 2rem 15px 1rem;
   }
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: $iphoneH) {
   html body #app section.hero .container {
     min-height: 480px;
   }
@@ -3299,7 +2178,7 @@ html body #app section.hero .container:after {
   content: '';
   position: absolute;
   top: 0.5rem;
-  background: url("../images/index_hat.png") no-repeat;
+  background: url("$goal01") no-repeat;
   background-size: contain;
   background-position: 100% 50%;
   height: 100%;
@@ -3311,15 +2190,13 @@ html body #app section.hero .container .screener {
   display: -webkit-flex;
   display: flex;
   -webkit-flex-direction: column;
-  flex-direction: column;
+          flex-direction: column;
   -webkit-align-items: flex-start;
-  -ms-align-items: flex-start;
-  align-items: flex-start;
+          align-items: flex-start;
   -webkit-flex: 1 0 auto;
-  flex: 1 0 auto;
+          flex: 1 0 auto;
   -webkit-justify-content: center;
-  -ms-justify-content: center;
-  justify-content: center;
+          justify-content: center;
   margin: auto;
   min-width: 100%;
 }
@@ -3340,12 +2217,12 @@ html body #app section.hero .container .screener .promoHero .img {
     padding: 0;
   }
 }
-@media screen and (max-width: 320px) {
+@media screen and (max-width: $iphone) {
   html body #app section.hero .container .screener {
     max-height: 1200px;
   }
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: $iphoneH) {
   html body #app section.hero .container .screener {
     min-height: 100vh;
   }
@@ -3358,11 +2235,11 @@ html body #app section.hero .container .screener .title {
   line-height: 130%;
 }
 html body #app section.hero .container .screener .title .takecontrol {
-  color: #ff002e;
+  color: $specialRed;
   font-size: 60%;
   margin-top: 0.7rem;
 }
-@media screen and (max-width: 320px) {
+@media screen and (max-width: $iphone) {
   html body #app section.hero .container .screener {
     font-size: 90%;
     line-height: 100%;
@@ -3372,7 +2249,7 @@ html body #app section.hero .container .screener button {
   margin: 1rem auto auto;
 }
 html body #app section.content.product-inner .container .title {
-  color: #242424;
+  color: $darkgrey;
   margin: 1.5rem auto;
   font-weight: 900;
   text-transform: uppercase;
@@ -3383,95 +2260,10 @@ html body #app section.content.product-inner .container .title {
   font-size: 150%;
 }
 html body #app section.content.product-inner .container ul.accordion_items {
-  padding: 0;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-flex-flow: column nowrap;
-  flex-flow: column nowrap;
-  margin: auto;
-  max-width: 940px;
-  width: 100%;
   margin: 1.6rem auto;
-}
-html body #app section.content.product-inner .container ul.accordion_items li span header {
-  display: inline-block;
-  transition: 0.4s ease;
-  color: #232323;
-  font-size: 70%;
-  margin: 0.3rem 0;
-}
-html body #app section.content.product-inner .container ul.accordion_items li span header:after {
-  content: "";
-  display: block;
-  width: 100%;
-  max-width: calc(100% - 0.01rem);
-  margin: 0.2rem auto;
-  height: 1px;
-  background-color: #ff002e;
-  transition: 0.8s ease;
-}
-html body #app section.content.product-inner .container ul.accordion_items li span header:hover {
-  cursor: pointer;
-  color: #ff002e;
-}
-html body #app section.content.product-inner .container ul.accordion_items li span header:hover:after {
-  width: 0%;
-  background-color: #adafaf;
-}
-html body #app section.content.product-inner .container ul.accordion_items li span header.active {
-  color: #adafaf;
-}
-html body #app section.content.product-inner .container ul.accordion_items li span header.active:hover {
-  color: #ff002e;
-}
-html body #app section.content.product-inner .container ul.accordion_items li span header.active ~ main {
-  display: block;
-  margin: 0;
-  margin: 0.5rem 0;
-  max-height: 100%;
-  -ms-filter: none;
-  -webkit-filter: none;
-          filter: none;
-  opacity: 1;
-  overflow: visible;
-}
-@media screen and (max-width: 480px) {
-  html body #app section.content.product-inner .container ul.accordion_items li span header.active ~ main {
-    max-height: initial;
-  }
-}
-html body #app section.content.product-inner .container ul.accordion_items li span .add {
-  display: inline;
-  color: #ff002e;
-  font-size: 70%;
-  margin: 0 0.8rem;
-}
-html body #app section.content.product-inner .container ul.accordion_items li span .add.null {
-  color: #adafaf;
-}
-html body #app section.content.product-inner .container ul.accordion_items li span main {
-  text-align: left;
-  font-size: 30%;
-  margin: 0;
-  line-height: 200%;
-  max-height: 0;
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-  filter: alpha(opacity=0);
-  opacity: 0;
-  transition: 0.4s ease;
-  overflow: hidden;
 }
 html body #app section.content.product-inner .container ul.accordion_items li {
   margin: 0.3rem 0;
-}
-html body #app section.content.product-inner .container .steps_buttons {
-  display: -webkit-flex;
-  display: flex;
-  width: 100%;
-  margin: 1rem 0;
-}
-html body #app section.content.product-inner .container .steps_buttons button:first-child {
-  margin: 0 auto 0 0;
 }
 html body #app section.content.product ul.product-list {
   padding: 0.6rem;
@@ -3480,22 +2272,20 @@ html body #app section.content.product ul.product-list {
   display: -webkit-flex;
   display: flex;
   -webkit-flex-flow: row wrap;
-  flex-flow: row wrap;
+          flex-flow: row wrap;
   -webkit-justify-content: center;
-  -ms-justify-content: center;
-  justify-content: center;
+          justify-content: center;
 }
 html body #app section.content.product ul.product-list li {
   margin: 0.3rem 0 0 -1.2rem;
   height: 4.4rem;
   width: 50%;
   min-width: 300px;
-  background-color: #f7f7f7;
+  background-color: $lightgrey3;
   display: -webkit-flex;
   display: flex;
   -webkit-align-items: flex-end;
-  -ms-align-items: flex-end;
-  align-items: flex-end;
+          align-items: flex-end;
   padding: 0 0.5rem;
   overflow: visible;
   background-image: url("http://bushwalk.npansw.org.au/wp-content/uploads/2017/02/placeholder-1024x683.png");
@@ -3503,7 +2293,7 @@ html body #app section.content.product ul.product-list li {
   background-position: center;
   transition: background 3s ease-in;
 }
-@media screen and (max-width: 320px) {
+@media screen and (max-width: $iphone) {
   html body #app section.content.product ul.product-list li {
     margin: 0.5rem !important;
   }
@@ -3525,27 +2315,26 @@ html body #app section.content.product #productsSwitcher {
   font-size: 70%;
   padding: 0;
   -webkit-flex-flow: row wrap;
-  flex-flow: row wrap;
+          flex-flow: row wrap;
   -webkit-justify-content: center;
-  -ms-justify-content: center;
-  justify-content: center;
+          justify-content: center;
 }
 html body #app section.content.product #productsSwitcher li {
-  border-bottom: 1px solid #adafaf;
+  border-bottom: 1px solid $specialGrey;
   padding: 0.3rem 1.2rem 0.3rem 1.2rem;
   cursor: pointer;
 }
-@media screen and (max-width: 568px) {
+@media screen and (max-width: $iphone5) {
   html body #app section.content.product #productsSwitcher li {
     padding: 0 0.3rem;
   }
 }
 html body #app section.content.product #productsSwitcher li.active {
-  border-bottom: 3px solid #ff002e;
-  color: #ff002e;
+  border-bottom: 3px solid $specialRed;
+  color: $specialRed;
 }
 html body #app section.content.product #productsSwitcher li.active .Lorem {
   font-size: 30%;
 }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=index.css.map */

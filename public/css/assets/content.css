@@ -1,0 +1,45 @@
+section.content {
+  display: -webkit-flex;
+  display: flex;
+  min-height: 100%;
+  padding: 5rem 0 3rem 0;
+}
+section.content .container {
+  -webkit-flex-flow: column wrap;
+          flex-flow: column wrap;
+  -webkit-align-self: center;
+          align-self: center;
+}
+section.content.index-about {
+  padding: 0;
+  min-height: 100vh;
+}
+section.content.index-about .container {
+  height: 100%;
+  -webkit-flex-direction: column;
+          flex-direction: column;
+  -webkit-align-items: center;
+          align-items: center;
+  text-align: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  min-height: 600px;
+  margin: auto;
+}
+@media screen and (max-width: $iphone6H) {
+  section.content.index-about .container .title {
+    font-size: 100%;
+    line-height: 100%;
+  }
+}
+@media screen and (max-width: $iphone) {
+  section.content.index-about .container .title {
+    font-size: 90%;
+    line-height: 100%;
+  }
+}
+section.content.index-about .container .link_under {
+  font-size: 70%;
+}
+
+/*# sourceMappingURL=content.css.map */

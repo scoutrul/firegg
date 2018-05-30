@@ -1,4 +1,4 @@
-import React, {Component} from 'react'
+import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import { withRouter } from 'react-router-dom'
 import { NavLink } from 'react-router-dom'
@@ -74,7 +74,7 @@ class ContactsPage extends Component{
 				headquarters.map((item, i) => 
 					<li key={item.name}>
 						<span>
-							<NavLink onClick={this.tabActive.bind(this, i)} to={`/contacts/${item.name.split(' ').join('_')}`} activeClassName='office-tab--active'>{item.name}</NavLink>
+							<NavLink onClick={this.tabActive.bind(this, i)} to={`/contact/${item.name.split(' ').join('_')}`} activeClassName='office-tab--active'>{item.name}</NavLink>
 						</span>
 					</li>
 				)
