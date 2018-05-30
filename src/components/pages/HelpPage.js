@@ -1,6 +1,6 @@
 import React, { Component} from 'react'
 import { connect } from 'react-redux'
-
+import Tabs from '../blocks/Tabs'
 
 const mapStateToProps = state => {
 	return {
@@ -27,12 +27,20 @@ class HelpPage extends Component{
 			)
 		})
 
+		const renderContent = (
+			<ul className="faq slide_up_text accordion_items">
+				{ items }
+			</ul>
+		)
 		return (
-			<section className="content help">
+			<section className="content tabs">
 				<div className="container">
-					<ul className="faq slide_up_text accordion_items">
-						{ items }
-					</ul>
+					<Tabs 
+						firstTabName={"FAQ"} 
+						secondTabName={"Demos"} 
+						firstBlock={renderContent} 
+						secondBlock={(<div>LOREM</div>)} 
+						/>
 				</div>
 			</section>
 		)

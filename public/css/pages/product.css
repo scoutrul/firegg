@@ -41,33 +41,5 @@ section.content.product ul.product-list li:nth-child(2n) {
 section.content.product ul.product-list li:hover {
   background-size: 120%;
 }
-section.content.product #productsSwitcher {
-  display: -webkit-flex;
-  display: flex;
-  margin: auto;
-  font-size: 70%;
-  padding: 0;
-  -webkit-flex-flow: row wrap;
-          flex-flow: row wrap;
-  -webkit-justify-content: center;
-          justify-content: center;
-}
-section.content.product #productsSwitcher li {
-  border-bottom: 1px solid $specialGrey;
-  padding: 0.3rem 1.2rem 0.3rem 1.2rem;
-  cursor: pointer;
-}
-@media screen and (max-width: $iphone5) {
-  section.content.product #productsSwitcher li {
-    padding: 0 0.3rem;
-  }
-}
-section.content.product #productsSwitcher li.active {
-  border-bottom: 3px solid $specialRed;
-  color: $specialRed;
-}
-section.content.product #productsSwitcher li.active .Lorem {
-  font-size: 30%;
-}
 
 /*# sourceMappingURL=product.css.map */

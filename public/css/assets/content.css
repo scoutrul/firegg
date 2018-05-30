@@ -4,11 +4,17 @@ section.content {
   min-height: 100%;
   padding: 5rem 0 3rem 0;
 }
+section.content.tabs {
+  padding-top: 300px;
+}
 section.content .container {
   -webkit-flex-flow: column wrap;
           flex-flow: column wrap;
   -webkit-align-self: center;
           align-self: center;
+  margin-top: 0;
+  -webkit-align-items: center;
+          align-items: center;
 }
 section.content.index-about {
   padding: 0;
