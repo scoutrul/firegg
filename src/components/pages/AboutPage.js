@@ -1,50 +1,26 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import cn from 'classnames'
-import { ProductsListHome, ProductsListOffice } from '../blocks/ProductsList'
-
-
-
-const mapStateToProps = state => {
-	return {
-		homelist: state.productsReducer.home,
-		officelist: state.productsReducer.office
-	}
-}
+import Tabs from '../blocks/Tabs'
 
 class AboutPage extends Component {
-
-	constructor(){
-		super();
-		this.state = {
-			homeTab: true
-		}
-	}
-
 	render(){
-		const ProductsForHome = () => {
-			return (
-				<ul className="product-list slide_up_text" id="homelist">
-					<ProductsListHome list={this.props.homelist}/>
-				</ul>
-			)	
-		}
-		const ProductsForOffice = () => {
-			return (
-				<ul className="product-list slide_up_text" id="officelist">
-					<ProductsListOffice list={this.props.officelist}/>
-				</ul>
-			)	
-		}
 
+		const Block = (<div>Lorem ipsum</div>)
+		
 		return (
-			<section className="content">
+			<section className="content product tabs">
 				<div className="container">
-					CONTENT
+					<Tabs 
+						firstTabName={"History"} 
+						secondTabName={"Management"} 
+						firstBlock={Block} 
+						secondBlock={Block} 
+						/>
 				</div>
 			</section>
 		)
 	}
 }
 
-export default connect(mapStateToProps, )(AboutPage)
+export default AboutPage

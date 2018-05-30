@@ -1942,12 +1942,19 @@ html body #app section.content {
   min-height: 100%;
   padding: 5rem 0 3rem 0;
 }
+html body #app section.content.tabs {
+  padding-top: 300px;
+}
 html body #app section.content .container {
   -webkit-flex-flow: column wrap;
   flex-flow: column wrap;
   -webkit-align-self: center;
   -ms-align-self: center;
   align-self: center;
+  margin-top: 0;
+  -webkit-align-items: center;
+  -ms-align-items: center;
+  align-items: center;
 }
 html body #app section.content.index-about {
   padding: 0;
@@ -2622,6 +2629,35 @@ html body #app .slide_up_text.slide_up_text--active > div:nth-child(8) span {
 html body #app .slide_up_text.slide_up_text--active > li:nth-child(9) span,
 html body #app .slide_up_text.slide_up_text--active > div:nth-child(9) span {
   transition-delay: 0.8s;
+}
+html body #app #tabSwitcher {
+  display: -webkit-flex;
+  display: flex;
+  margin: auto;
+  font-size: 70%;
+  padding: 0;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -webkit-justify-content: center;
+  -ms-justify-content: center;
+  justify-content: center;
+}
+html body #app #tabSwitcher li {
+  border-bottom: 1px solid #adafaf;
+  padding: 0.3rem 1.2rem 0.3rem 1.2rem;
+  cursor: pointer;
+}
+@media screen and (max-width: 568px) {
+  html body #app #tabSwitcher li {
+    padding: 0 0.3rem;
+  }
+}
+html body #app #tabSwitcher li.active {
+  border-bottom: 3px solid #ff002e;
+  color: #ff002e;
+}
+html body #app #tabSwitcher li.active .Lorem {
+  font-size: 30%;
 }
 html body #app section.in-cart {
   -webkit-flex-flow: column wrap;
@@ -3517,35 +3553,6 @@ html body #app section.content.product ul.product-list li:nth-child(2n) {
 }
 html body #app section.content.product ul.product-list li:hover {
   background-size: 120%;
-}
-html body #app section.content.product #productsSwitcher {
-  display: -webkit-flex;
-  display: flex;
-  margin: auto;
-  font-size: 70%;
-  padding: 0;
-  -webkit-flex-flow: row wrap;
-  flex-flow: row wrap;
-  -webkit-justify-content: center;
-  -ms-justify-content: center;
-  justify-content: center;
-}
-html body #app section.content.product #productsSwitcher li {
-  border-bottom: 1px solid #adafaf;
-  padding: 0.3rem 1.2rem 0.3rem 1.2rem;
-  cursor: pointer;
-}
-@media screen and (max-width: 568px) {
-  html body #app section.content.product #productsSwitcher li {
-    padding: 0 0.3rem;
-  }
-}
-html body #app section.content.product #productsSwitcher li.active {
-  border-bottom: 3px solid #ff002e;
-  color: #ff002e;
-}
-html body #app section.content.product #productsSwitcher li.active .Lorem {
-  font-size: 30%;
 }
 
 /*# sourceMappingURL=style.css.map */
