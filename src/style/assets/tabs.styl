@@ -1,0 +1,18 @@
+#tabSwitcher
+    display: flex;
+    margin: auto;
+    font-size: 70%;
+    padding: 0;
+    flex-flow: row wrap;
+    justify-content: center;
+    li
+        border-bottom: 1px solid $specialGrey;
+        padding: 0.3rem 1.2rem 0.3rem 1.2rem;
+        cursor pointer
+        @media screen and (max-width: $iphone5)
+            padding: 0 0.3rem;
+        &.active
+            border-bottom: 3px solid $specialRed;
+            color $specialRed
+            .Lorem 
+                font-size: 30%;
