@@ -1,14 +1,11 @@
 import React from 'react'
 import { connect } from 'react-redux'
 import { withRouter } from 'react-router-dom'
-
 import Helmet from 'react-helmet'
 
 import Routes from './components/routes'
 import {Header, Footer, Wrapper} from './components/blocks'
 import './js/appearModule'
-
-
 
 const mapStateToProps = state => {
 	return {
