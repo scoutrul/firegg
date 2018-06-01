@@ -1,0 +1,82 @@
+section.feedback .container {
+  -webkit-align-items: center;
+          align-items: center;
+}
+section.feedback .container .title {
+  font-size: 150%;
+  text-align: center;
+  padding: 1rem 0;
+}
+section.feedback .container form {
+  width: 100%;
+  max-width: $contentThin;
+  -webkit-align-items: center;
+          align-items: center;
+  padding: 1.5rem 0;
+}
+section.feedback .container form .thin {
+  display: -webkit-flex;
+  display: flex;
+}
+section.feedback .container form .thin .field {
+  -webkit-flex: 1 1 33%;
+          flex: 1 1 33%;
+  font-size: 70%;
+}
+section.feedback .container form .field label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  font-size: 42%;
+  font-weight: 400;
+  color: #bcbcbc;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+          align-items: center;
+  -webkit-justify-content: center;
+          justify-content: center;
+  transition: $transition;
+  border-bottom: 2px solid rgba(27,27,27,0.15);
+}
+section.feedback .container form .field label.active {
+  font-size: 25%;
+  -webkit-justify-content: left;
+          justify-content: left;
+  color: #1b1b1b;
+  border-bottom: 2px solid #1b1b1b;
+}
+section.feedback .container form .field input {
+  width: 60%;
+  margin: auto;
+  text-align: center;
+  font-size: 42%;
+  font-weight: 500;
+  transition: $transition;
+  height: 1.5rem;
+  padding: 0.9rem 0;
+  caret-color: $specialRed;
+  z-index: 10;
+}
+section.feedback .container form .field input:hover {
+  cursor: text;
+}
+section.feedback .container form .field input:focus ~ label {
+  font-size: 25%;
+  -webkit-justify-content: left;
+          justify-content: left;
+  color: #1b1b1b;
+  border-bottom: 2px solid #1b1b1b;
+}
+section.feedback .container .feedback_send .title {
+  font-size: 100%;
+}
+section.feedback .container .feedback_send .title2 {
+  font-size: 32%;
+  color: #ddd;
+  margin: 0.5rem 0;
+}
+
+/*# sourceMappingURL=feedback.css.map */

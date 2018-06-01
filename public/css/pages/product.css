@@ -1,0 +1,45 @@
+section.content.product ul.product-list {
+  padding: 0.6rem;
+  margin-top: 1.5rem;
+  width: 100%;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-justify-content: center;
+          justify-content: center;
+}
+section.content.product ul.product-list li {
+  margin: 0.3rem 0 0 -1.2rem;
+  height: 4.4rem;
+  width: 50%;
+  min-width: 300px;
+  background-color: $lightgrey3;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: flex-end;
+          align-items: flex-end;
+  padding: 0 0.5rem;
+  overflow: visible;
+  background-image: url("http://bushwalk.npansw.org.au/wp-content/uploads/2017/02/placeholder-1024x683.png");
+  background-size: 100%;
+  background-position: center;
+  transition: background 3s ease-in;
+}
+@media screen and (max-width: $iphone) {
+  section.content.product ul.product-list li {
+    margin: 0.5rem !important;
+  }
+}
+section.content.product ul.product-list li span {
+  bottom: -0.3rem;
+  font-size: 70%;
+}
+section.content.product ul.product-list li:nth-child(2n) {
+  margin: 1rem -1.2rem 0.4rem 1.2rem;
+}
+section.content.product ul.product-list li:hover {
+  background-size: 120%;
+}
+
+/*# sourceMappingURL=product.css.map */

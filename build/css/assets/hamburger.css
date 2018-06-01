@@ -1,0 +1,83 @@
+.hamburger {
+  cursor: pointer;
+  outline: 0;
+  z-index: 100;
+  position: fixed;
+  right: 30px;
+  top: 35px;
+}
+@media screen and (min-width: $desktop) {
+  .hamburger {
+    display: none;
+  }
+}
+.hamburger .hamburger-box {
+  width: 37px;
+  height: 24px;
+  display: inline-block;
+  position: relative;
+}
+.hamburger .hamburger-box .hamburger-inner {
+  display: block;
+  top: 50%;
+  margin-top: -2px;
+}
+.hamburger .hamburger-box .hamburger-inner,
+.hamburger .hamburger-box .hamburger-inner:before,
+.hamburger .hamburger-box .hamburger-inner:after {
+  width: 37px;
+  height: 3px;
+  position: absolute;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+  transition-duration: 0.15s;
+  transition-timing-function: ease;
+}
+.hamburger .hamburger-box .hamburger-inner:before,
+.hamburger .hamburger-box .hamburger-inner:after {
+  content: "";
+  display: block;
+}
+.hamburger .hamburger-box .hamburger-inner:before {
+  top: -9px;
+}
+.hamburger .hamburger-box .hamburger-inner:after {
+  bottom: -9px;
+}
+.hamburger .hamburger-box .hamburger-inner {
+  transition: $transition;
+  background-color: $specialRed;
+}
+.hamburger .hamburger-box .hamburger-inner:before,
+.hamburger .hamburger-box .hamburger-inner:after {
+  transition: $transition;
+  background-color: $specialRed;
+}
+.hamburger .hamburger-box:hover {
+  cursor: pointer;
+}
+.hamburger .hamburger-box:hover .hamburger-inner,
+.hamburger .hamburger-box:hover .hamburger-inner:before,
+.hamburger .hamburger-box:hover .hamburger-inner:after {
+  background-color: $darkhover;
+}
+.hamburger.is-active .hamburger-inner:before,
+.hamburger.is-active .hamburger-inner:after {
+  opacity: 0;
+}
+.hamburger.is-active .hamburger-inner {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+.hamburger.is-active .hamburger-inner:before {
+  top: 0;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  opacity: 1;
+}
+.hamburger.is-active .hamburger-inner:after {
+  bottom: 0;
+}
+
+/*# sourceMappingURL=hamburger.css.map */

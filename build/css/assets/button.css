@@ -1,0 +1,989 @@
+button {
+  cursor: pointer;
+  width: 4rem;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: center;
+          justify-content: center;
+  -webkit-align-items: center;
+          align-items: center;
+}
+@media screen and (max-width: $iphoneH) {
+  button {
+    font-size: 100%;
+  }
+}
+button .message {
+  color: $specialRed;
+  font-size: 27%;
+}
+button.blank .message {
+  text-align: center;
+}
+button.left.red {
+  -webkit-justify-content: flex-end;
+          justify-content: flex-end;
+}
+button.left.red .button_inner {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: center;
+          justify-content: center;
+  -webkit-align-items: center;
+          align-items: center;
+  border-radius: 10rem;
+  min-height: 0.9rem;
+  line-height: 0.9rem;
+  max-width: 3.7rem;
+  width: 100%;
+  transition: $transition;
+  background-color: $specialRed;
+}
+button.left.red .button_inner:hover {
+  background-color: $darkhover;
+  max-width: 4rem;
+}
+button.left.red .button_inner .message {
+  position: absolute;
+  left: 0;
+  top: 0;
+  transition: $transition;
+  white-space: nowrap;
+  color: $white;
+  font-weight: 400;
+  font-size: 27%;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  text-align: center;
+}
+button.left.red .button_inner .arrows {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+          align-items: center;
+  width: 100%;
+  height: 100%;
+  transition: $transition;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+button.left.red .button_inner .arrows:after,
+button.left.red .button_inner .arrows:before {
+  content: '';
+  display: block;
+  width: 0.2rem;
+  height: 0.2rem;
+  margin: auto;
+  background-repeat: no-repeat;
+  transition: $transition;
+  opacity: 0;
+  position: absolute;
+  top: calc('50% - 0.1rem');
+}
+button.left.red .button_inner .arrows:before {
+  left: 0.4rem;
+  background-position: 0%;
+  margin: 0 auto 0 0;
+}
+button.left.red .button_inner .arrows:after {
+  right: 0.4rem;
+  background-position: 100%;
+  margin: 0 0 0 auto;
+  background-image: url("../images/icon_arrow_white_right.svg");
+}
+button.left.red .button_inner .arrows:before {
+  opacity: 1;
+}
+button.left.red .button_inner .arrows:after {
+  opacity: 0;
+}
+button.left.red .button_inner:hover .message {
+  left: 0.15rem;
+}
+button.left.blue {
+  -webkit-justify-content: flex-end;
+          justify-content: flex-end;
+}
+button.left.blue .button_inner {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: center;
+          justify-content: center;
+  -webkit-align-items: center;
+          align-items: center;
+  border-radius: 10rem;
+  min-height: 0.9rem;
+  line-height: 0.9rem;
+  max-width: 3.7rem;
+  width: 100%;
+  transition: $transition;
+  background-color: #0077cb;
+}
+button.left.blue .button_inner:hover {
+  background-color: $darkhover;
+  max-width: 4rem;
+}
+button.left.blue .button_inner .message {
+  position: absolute;
+  left: 0;
+  top: 0;
+  transition: $transition;
+  white-space: nowrap;
+  color: $white;
+  font-weight: 400;
+  font-size: 27%;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  text-align: center;
+}
+button.left.blue .button_inner .arrows {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+          align-items: center;
+  width: 100%;
+  height: 100%;
+  transition: $transition;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+button.left.blue .button_inner .arrows:after,
+button.left.blue .button_inner .arrows:before {
+  content: '';
+  display: block;
+  width: 0.2rem;
+  height: 0.2rem;
+  margin: auto;
+  background-repeat: no-repeat;
+  transition: $transition;
+  opacity: 0;
+  position: absolute;
+  top: calc('50% - 0.1rem');
+}
+button.left.blue .button_inner .arrows:before {
+  left: 0.4rem;
+  background-position: 0%;
+  margin: 0 auto 0 0;
+}
+button.left.blue .button_inner .arrows:after {
+  right: 0.4rem;
+  background-position: 100%;
+  margin: 0 0 0 auto;
+  background-image: url("../images/icon_arrow_white_right.svg");
+}
+button.left.blue .button_inner .arrows:before {
+  opacity: 1;
+}
+button.left.blue .button_inner .arrows:after {
+  opacity: 0;
+}
+button.left.blue .button_inner:hover .message {
+  left: 0.15rem;
+}
+button.left.grey {
+  -webkit-justify-content: flex-end;
+          justify-content: flex-end;
+}
+button.left.grey .button_inner {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: center;
+          justify-content: center;
+  -webkit-align-items: center;
+          align-items: center;
+  border-radius: 10rem;
+  min-height: 0.9rem;
+  line-height: 0.9rem;
+  max-width: 3.7rem;
+  width: 100%;
+  transition: $transition;
+  background-color: $lightgrey2;
+}
+button.left.grey .button_inner:hover {
+  background-color: $darkhover;
+  max-width: 4rem;
+}
+button.left.grey .button_inner:hover .arrows:after,
+button.left.grey .button_inner:hover .arrows:before {
+  -webkit-filter: brightness(10);
+          filter: brightness(10);
+}
+button.left.grey .button_inner:hover .message {
+  color: $white;
+}
+button.left.grey .button_inner .message {
+  position: absolute;
+  left: 0;
+  top: 0;
+  transition: $transition;
+  white-space: nowrap;
+  color: $darkgrey;
+  font-weight: 400;
+  font-size: 27%;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  text-align: center;
+}
+button.left.grey .button_inner .arrows {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+          align-items: center;
+  width: 100%;
+  height: 100%;
+  transition: $transition;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+button.left.grey .button_inner .arrows:after,
+button.left.grey .button_inner .arrows:before {
+  content: '';
+  display: block;
+  width: 0.2rem;
+  height: 0.2rem;
+  margin: auto;
+  background-repeat: no-repeat;
+  transition: $transition;
+  opacity: 0;
+  position: absolute;
+  top: calc('50% - 0.1rem');
+}
+button.left.grey .button_inner .arrows:before {
+  left: 0.4rem;
+  background-position: 0%;
+  margin: 0 auto 0 0;
+  background-image: url("../images/icon_arrow_black_left.svg");
+}
+button.left.grey .button_inner .arrows:after {
+  right: 0.4rem;
+  background-position: 100%;
+  margin: 0 0 0 auto;
+  background-image: url("../images/icon_arrow_white_right.svg");
+  background-image: url("../images/icon_arrow_black_right.svg");
+}
+button.left.grey .button_inner .arrows:before {
+  opacity: 1;
+}
+button.left.grey .button_inner .arrows:after {
+  opacity: 0;
+}
+button.left.grey .button_inner:hover .message {
+  left: 0.15rem;
+}
+button.left.green {
+  -webkit-justify-content: flex-end;
+          justify-content: flex-end;
+}
+button.left.green .button_inner {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: center;
+          justify-content: center;
+  -webkit-align-items: center;
+          align-items: center;
+  border-radius: 10rem;
+  min-height: 0.9rem;
+  line-height: 0.9rem;
+  max-width: 3.7rem;
+  width: 100%;
+  transition: $transition;
+  background-color: #00cba6;
+}
+button.left.green .button_inner:hover {
+  background-color: $darkhover;
+  max-width: 4rem;
+}
+button.left.green .button_inner .message {
+  position: absolute;
+  left: 0;
+  top: 0;
+  transition: $transition;
+  white-space: nowrap;
+  color: $white;
+  font-weight: 400;
+  font-size: 27%;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  text-align: center;
+}
+button.left.green .button_inner .arrows {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+          align-items: center;
+  width: 100%;
+  height: 100%;
+  transition: $transition;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+button.left.green .button_inner .arrows:after,
+button.left.green .button_inner .arrows:before {
+  content: '';
+  display: block;
+  width: 0.2rem;
+  height: 0.2rem;
+  margin: auto;
+  background-repeat: no-repeat;
+  transition: $transition;
+  opacity: 0;
+  position: absolute;
+  top: calc('50% - 0.1rem');
+}
+button.left.green .button_inner .arrows:before {
+  left: 0.4rem;
+  background-position: 0%;
+  margin: 0 auto 0 0;
+}
+button.left.green .button_inner .arrows:after {
+  right: 0.4rem;
+  background-position: 100%;
+  margin: 0 0 0 auto;
+  background-image: url("../images/icon_arrow_white_right.svg");
+}
+button.left.green .button_inner .arrows:before {
+  opacity: 1;
+}
+button.left.green .button_inner .arrows:after {
+  opacity: 0;
+}
+button.left.green .button_inner:hover .message {
+  left: 0.15rem;
+}
+button.right.red {
+  -webkit-justify-content: flex-start;
+          justify-content: flex-start;
+}
+button.right.red .button_inner {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: center;
+          justify-content: center;
+  -webkit-align-items: center;
+          align-items: center;
+  border-radius: 10rem;
+  min-height: 0.9rem;
+  line-height: 0.9rem;
+  max-width: 3.7rem;
+  width: 100%;
+  transition: $transition;
+  background-color: $specialRed;
+}
+button.right.red .button_inner:hover {
+  background-color: $darkhover;
+  max-width: 4rem;
+}
+button.right.red .button_inner .message {
+  position: absolute;
+  left: 0;
+  top: 0;
+  transition: $transition;
+  white-space: nowrap;
+  color: $white;
+  font-weight: 400;
+  font-size: 27%;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  text-align: center;
+}
+button.right.red .button_inner .arrows {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+          align-items: center;
+  width: 100%;
+  height: 100%;
+  transition: $transition;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+button.right.red .button_inner .arrows:after,
+button.right.red .button_inner .arrows:before {
+  content: '';
+  display: block;
+  width: 0.2rem;
+  height: 0.2rem;
+  margin: auto;
+  background-repeat: no-repeat;
+  transition: $transition;
+  opacity: 0;
+  position: absolute;
+  top: calc('50% - 0.1rem');
+}
+button.right.red .button_inner .arrows:before {
+  left: 0.4rem;
+  background-position: 0%;
+  margin: 0 auto 0 0;
+}
+button.right.red .button_inner .arrows:after {
+  right: 0.4rem;
+  background-position: 100%;
+  margin: 0 0 0 auto;
+  background-image: url("../images/icon_arrow_white_right.svg");
+}
+button.right.red .button_inner .arrows:before {
+  opacity: 0;
+}
+button.right.red .button_inner .arrows:after {
+  opacity: 1;
+}
+button.right.red .button_inner:hover .message {
+  left: -0.15rem;
+}
+button.right.blue {
+  -webkit-justify-content: flex-start;
+          justify-content: flex-start;
+}
+button.right.blue .button_inner {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: center;
+          justify-content: center;
+  -webkit-align-items: center;
+          align-items: center;
+  border-radius: 10rem;
+  min-height: 0.9rem;
+  line-height: 0.9rem;
+  max-width: 3.7rem;
+  width: 100%;
+  transition: $transition;
+  background-color: #0077cb;
+}
+button.right.blue .button_inner:hover {
+  background-color: $darkhover;
+  max-width: 4rem;
+}
+button.right.blue .button_inner .message {
+  position: absolute;
+  left: 0;
+  top: 0;
+  transition: $transition;
+  white-space: nowrap;
+  color: $white;
+  font-weight: 400;
+  font-size: 27%;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  text-align: center;
+}
+button.right.blue .button_inner .arrows {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+          align-items: center;
+  width: 100%;
+  height: 100%;
+  transition: $transition;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+button.right.blue .button_inner .arrows:after,
+button.right.blue .button_inner .arrows:before {
+  content: '';
+  display: block;
+  width: 0.2rem;
+  height: 0.2rem;
+  margin: auto;
+  background-repeat: no-repeat;
+  transition: $transition;
+  opacity: 0;
+  position: absolute;
+  top: calc('50% - 0.1rem');
+}
+button.right.blue .button_inner .arrows:before {
+  left: 0.4rem;
+  background-position: 0%;
+  margin: 0 auto 0 0;
+}
+button.right.blue .button_inner .arrows:after {
+  right: 0.4rem;
+  background-position: 100%;
+  margin: 0 0 0 auto;
+  background-image: url("../images/icon_arrow_white_right.svg");
+}
+button.right.blue .button_inner .arrows:before {
+  opacity: 0;
+}
+button.right.blue .button_inner .arrows:after {
+  opacity: 1;
+}
+button.right.blue .button_inner:hover .message {
+  left: -0.15rem;
+}
+button.right.grey {
+  -webkit-justify-content: flex-start;
+          justify-content: flex-start;
+}
+button.right.grey .button_inner {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: center;
+          justify-content: center;
+  -webkit-align-items: center;
+          align-items: center;
+  border-radius: 10rem;
+  min-height: 0.9rem;
+  line-height: 0.9rem;
+  max-width: 3.7rem;
+  width: 100%;
+  transition: $transition;
+  background-color: $lightgrey2;
+}
+button.right.grey .button_inner:hover {
+  background-color: $darkhover;
+  max-width: 4rem;
+}
+button.right.grey .button_inner:hover .arrows:after,
+button.right.grey .button_inner:hover .arrows:before {
+  -webkit-filter: brightness(10);
+          filter: brightness(10);
+}
+button.right.grey .button_inner:hover .message {
+  color: $white;
+}
+button.right.grey .button_inner .message {
+  position: absolute;
+  left: 0;
+  top: 0;
+  transition: $transition;
+  white-space: nowrap;
+  color: $darkgrey;
+  font-weight: 400;
+  font-size: 27%;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  text-align: center;
+}
+button.right.grey .button_inner .arrows {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+          align-items: center;
+  width: 100%;
+  height: 100%;
+  transition: $transition;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+button.right.grey .button_inner .arrows:after,
+button.right.grey .button_inner .arrows:before {
+  content: '';
+  display: block;
+  width: 0.2rem;
+  height: 0.2rem;
+  margin: auto;
+  background-repeat: no-repeat;
+  transition: $transition;
+  opacity: 0;
+  position: absolute;
+  top: calc('50% - 0.1rem');
+}
+button.right.grey .button_inner .arrows:before {
+  left: 0.4rem;
+  background-position: 0%;
+  margin: 0 auto 0 0;
+  background-image: url("../images/icon_arrow_black_left.svg");
+}
+button.right.grey .button_inner .arrows:after {
+  right: 0.4rem;
+  background-position: 100%;
+  margin: 0 0 0 auto;
+  background-image: url("../images/icon_arrow_white_right.svg");
+  background-image: url("../images/icon_arrow_black_right.svg");
+}
+button.right.grey .button_inner .arrows:before {
+  opacity: 0;
+}
+button.right.grey .button_inner .arrows:after {
+  opacity: 1;
+}
+button.right.grey .button_inner:hover .message {
+  left: -0.15rem;
+}
+button.right.green {
+  -webkit-justify-content: flex-start;
+          justify-content: flex-start;
+}
+button.right.green .button_inner {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: center;
+          justify-content: center;
+  -webkit-align-items: center;
+          align-items: center;
+  border-radius: 10rem;
+  min-height: 0.9rem;
+  line-height: 0.9rem;
+  max-width: 3.7rem;
+  width: 100%;
+  transition: $transition;
+  background-color: #00cba6;
+}
+button.right.green .button_inner:hover {
+  background-color: $darkhover;
+  max-width: 4rem;
+}
+button.right.green .button_inner .message {
+  position: absolute;
+  left: 0;
+  top: 0;
+  transition: $transition;
+  white-space: nowrap;
+  color: $white;
+  font-weight: 400;
+  font-size: 27%;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  text-align: center;
+}
+button.right.green .button_inner .arrows {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+          align-items: center;
+  width: 100%;
+  height: 100%;
+  transition: $transition;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+button.right.green .button_inner .arrows:after,
+button.right.green .button_inner .arrows:before {
+  content: '';
+  display: block;
+  width: 0.2rem;
+  height: 0.2rem;
+  margin: auto;
+  background-repeat: no-repeat;
+  transition: $transition;
+  opacity: 0;
+  position: absolute;
+  top: calc('50% - 0.1rem');
+}
+button.right.green .button_inner .arrows:before {
+  left: 0.4rem;
+  background-position: 0%;
+  margin: 0 auto 0 0;
+}
+button.right.green .button_inner .arrows:after {
+  right: 0.4rem;
+  background-position: 100%;
+  margin: 0 0 0 auto;
+  background-image: url("../images/icon_arrow_white_right.svg");
+}
+button.right.green .button_inner .arrows:before {
+  opacity: 0;
+}
+button.right.green .button_inner .arrows:after {
+  opacity: 1;
+}
+button.right.green .button_inner:hover .message {
+  left: -0.15rem;
+}
+button.center {
+  margin: auto;
+}
+button.center.red .button_inner {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: center;
+          justify-content: center;
+  -webkit-align-items: center;
+          align-items: center;
+  border-radius: 10rem;
+  min-height: 0.9rem;
+  line-height: 0.9rem;
+  max-width: 3.7rem;
+  width: 100%;
+  transition: $transition;
+  background-color: $specialRed;
+}
+button.center.red .button_inner:hover {
+  background-color: $darkhover;
+  max-width: 4rem;
+}
+button.center.red .button_inner .message {
+  position: absolute;
+  left: 0;
+  top: 0;
+  transition: $transition;
+  white-space: nowrap;
+  color: $white;
+  font-weight: 400;
+  font-size: 27%;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  text-align: center;
+}
+button.center.red .button_inner .arrows {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+          align-items: center;
+  width: 100%;
+  height: 100%;
+  transition: $transition;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+button.center.red .button_inner .arrows:after,
+button.center.red .button_inner .arrows:before {
+  content: '';
+  display: block;
+  width: 0.2rem;
+  height: 0.2rem;
+  margin: auto;
+  background-repeat: no-repeat;
+  transition: $transition;
+  opacity: 0;
+  position: absolute;
+  top: calc('50% - 0.1rem');
+}
+button.center.red .button_inner .arrows:before {
+  left: 0.4rem;
+  background-position: 0%;
+  margin: 0 auto 0 0;
+}
+button.center.red .button_inner .arrows:after {
+  right: 0.4rem;
+  background-position: 100%;
+  margin: 0 0 0 auto;
+  background-image: url("../images/icon_arrow_white_right.svg");
+}
+button.center.blue .button_inner {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: center;
+          justify-content: center;
+  -webkit-align-items: center;
+          align-items: center;
+  border-radius: 10rem;
+  min-height: 0.9rem;
+  line-height: 0.9rem;
+  max-width: 3.7rem;
+  width: 100%;
+  transition: $transition;
+  background-color: #0077cb;
+}
+button.center.blue .button_inner:hover {
+  background-color: $darkhover;
+  max-width: 4rem;
+}
+button.center.blue .button_inner .message {
+  position: absolute;
+  left: 0;
+  top: 0;
+  transition: $transition;
+  white-space: nowrap;
+  color: $white;
+  font-weight: 400;
+  font-size: 27%;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  text-align: center;
+}
+button.center.blue .button_inner .arrows {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+          align-items: center;
+  width: 100%;
+  height: 100%;
+  transition: $transition;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+button.center.blue .button_inner .arrows:after,
+button.center.blue .button_inner .arrows:before {
+  content: '';
+  display: block;
+  width: 0.2rem;
+  height: 0.2rem;
+  margin: auto;
+  background-repeat: no-repeat;
+  transition: $transition;
+  opacity: 0;
+  position: absolute;
+  top: calc('50% - 0.1rem');
+}
+button.center.blue .button_inner .arrows:before {
+  left: 0.4rem;
+  background-position: 0%;
+  margin: 0 auto 0 0;
+}
+button.center.blue .button_inner .arrows:after {
+  right: 0.4rem;
+  background-position: 100%;
+  margin: 0 0 0 auto;
+  background-image: url("../images/icon_arrow_white_right.svg");
+}
+button.center.grey .button_inner {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: center;
+          justify-content: center;
+  -webkit-align-items: center;
+          align-items: center;
+  border-radius: 10rem;
+  min-height: 0.9rem;
+  line-height: 0.9rem;
+  max-width: 3.7rem;
+  width: 100%;
+  transition: $transition;
+  background-color: $lightgrey2;
+}
+button.center.grey .button_inner:hover {
+  background-color: $darkhover;
+  max-width: 4rem;
+}
+button.center.grey .button_inner:hover .arrows:after,
+button.center.grey .button_inner:hover .arrows:before {
+  -webkit-filter: brightness(10);
+          filter: brightness(10);
+}
+button.center.grey .button_inner:hover .message {
+  color: $white;
+}
+button.center.grey .button_inner .message {
+  position: absolute;
+  left: 0;
+  top: 0;
+  transition: $transition;
+  white-space: nowrap;
+  color: $darkgrey;
+  font-weight: 400;
+  font-size: 27%;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  text-align: center;
+}
+button.center.grey .button_inner .arrows {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+          align-items: center;
+  width: 100%;
+  height: 100%;
+  transition: $transition;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+button.center.grey .button_inner .arrows:after,
+button.center.grey .button_inner .arrows:before {
+  content: '';
+  display: block;
+  width: 0.2rem;
+  height: 0.2rem;
+  margin: auto;
+  background-repeat: no-repeat;
+  transition: $transition;
+  opacity: 0;
+  position: absolute;
+  top: calc('50% - 0.1rem');
+}
+button.center.grey .button_inner .arrows:before {
+  left: 0.4rem;
+  background-position: 0%;
+  margin: 0 auto 0 0;
+  background-image: url("../images/icon_arrow_black_left.svg");
+}
+button.center.grey .button_inner .arrows:after {
+  right: 0.4rem;
+  background-position: 100%;
+  margin: 0 0 0 auto;
+  background-image: url("../images/icon_arrow_white_right.svg");
+  background-image: url("../images/icon_arrow_black_right.svg");
+}
+button.center.green .button_inner {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: center;
+          justify-content: center;
+  -webkit-align-items: center;
+          align-items: center;
+  border-radius: 10rem;
+  min-height: 0.9rem;
+  line-height: 0.9rem;
+  max-width: 3.7rem;
+  width: 100%;
+  transition: $transition;
+  background-color: #00cba6;
+}
+button.center.green .button_inner:hover {
+  background-color: $darkhover;
+  max-width: 4rem;
+}
+button.center.green .button_inner .message {
+  position: absolute;
+  left: 0;
+  top: 0;
+  transition: $transition;
+  white-space: nowrap;
+  color: $white;
+  font-weight: 400;
+  font-size: 27%;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  text-align: center;
+}
+button.center.green .button_inner .arrows {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+          align-items: center;
+  width: 100%;
+  height: 100%;
+  transition: $transition;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+button.center.green .button_inner .arrows:after,
+button.center.green .button_inner .arrows:before {
+  content: '';
+  display: block;
+  width: 0.2rem;
+  height: 0.2rem;
+  margin: auto;
+  background-repeat: no-repeat;
+  transition: $transition;
+  opacity: 0;
+  position: absolute;
+  top: calc('50% - 0.1rem');
+}
+button.center.green .button_inner .arrows:before {
+  left: 0.4rem;
+  background-position: 0%;
+  margin: 0 auto 0 0;
+}
+button.center.green .button_inner .arrows:after {
+  right: 0.4rem;
+  background-position: 100%;
+  margin: 0 0 0 auto;
+  background-image: url("../images/icon_arrow_white_right.svg");
+}
+
+/*# sourceMappingURL=button.css.map */
