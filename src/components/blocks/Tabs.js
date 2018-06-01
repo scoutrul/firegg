@@ -3,12 +3,9 @@ import cn from 'classnames';
 import { Link } from 'react-router-dom';
 
 export default class Tabs extends Component {
-	constructor(){
-		super();
-		this.state = {
-			homeTab: true
-		}
-		this.toggle = this.toggle.bind(this);
+
+	state = {
+		homeTab: true
 	}
 
 	toggle = () => {
@@ -35,10 +32,10 @@ export default class Tabs extends Component {
 
 		const TabTitles = () => (
 			<ul id="tabSwitcher">
-				<li onClick={() => this.toggle} className={cn({ active: this.state.homeTab })}>
+				<li onClick={this.toggle} className={cn({ active: this.state.homeTab })}>
 					{firstTabName}
 				</li>
-				<li onClick={() => this.toggle} className={cn({ active: !this.state.homeTab })}>
+				<li onClick={this.toggle} className={cn({ active: !this.state.homeTab })}>
 					{secondTabName}
 				</li>
 			</ul>

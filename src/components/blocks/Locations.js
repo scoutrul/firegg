@@ -23,7 +23,7 @@ class Locations extends Component {
 		super();
 		this.state = {
 			step1: true,
-			curlang: this.props.CurrentLanguage
+			curlang: "English"
 		};
 	}
 
