@@ -2280,7 +2280,7 @@ html body #app section.hero .container .screener .title .takecontrol {
   }
 }
 html body #app section.hero .container .screener button {
-  margin: 1rem auto auto;
+  margin: 1rem auto 3rem;
 }
 html body #app section.content.product-inner .container .title {
   color: $darkgrey;

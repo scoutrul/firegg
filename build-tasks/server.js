@@ -16,11 +16,6 @@ var gulp      = require('gulp'),
     return server.watch(src.overwatch, function(evt, file) {
       if (evt === 'change' && file.indexOf('.css') === -1)
         server.reload();
-      if (evt === 'change' && file.indexOf('.css') !== -1)
-        vf.readSync(file)
-          .pipe(vss(file))
-          .pipe(vb())
-          .pipe(server.stream());
     });
   };
 

@@ -20,9 +20,9 @@ gulp.task(keys.serve, [keys.compile], server.start);
   from source, concatenating and uglifying content and publishing output based on env flag. 
   For example, if we want sourcemaps we can output our individual JS files and the sourcemap for them to the desired directory by using the --map flag.
 */
-gulp.task(keys.lint_scripts, scripts.lint);
-gulp.task(keys.compile_scripts, [keys.lint_scripts], scripts.compile);
-gulp.task(keys.watch_scripts, scripts.watch);
+// gulp.task(keys.lint_scripts, scripts.lint);
+// gulp.task(keys.compile_scripts, [keys.lint_scripts], scripts.compile);
+// gulp.task(keys.watch_scripts, scripts.watch);
 
 /*
   styles:compile/styles:watch
@@ -34,34 +34,34 @@ gulp.task(keys.watch_styles, styles.watch);
 /*
   markup:compile/markup:watch
 */
-gulp.task(keys.lint_markup, markup.lint);
-gulp.task(keys.compile_markup, [keys.lint_markup], markup.compile);
-gulp.task(keys.watch_markup, markup.watch);
+// gulp.task(keys.lint_markup, markup.lint);
+// gulp.task(keys.compile_markup, [keys.lint_markup], markup.compile);
+// gulp.task(keys.watch_markup, markup.watch);
 
 /*
   images:compile/images:watch
 */
-gulp.task(keys.images, images.compile);
+// gulp.task(keys.images, images.compile);
 
 gulp.task(keys.deploy, [keys.compile], deploy.run);
 
 gulp.task(keys.lint, [
-  keys.lint_markup,
+  // keys.lint_markup,
   keys.lint_styles,
-  keys.lint_scripts
+  // keys.lint_scripts
 ]);
 
 gulp.task(keys.compile, [
-  keys.compile_markup,
+  // keys.compile_markup,
   keys.compile_styles,
-  keys.compile_scripts,
-  keys.images
+  // keys.compile_scripts,
+  // keys.images
 ]);
 
 gulp.task(keys.watch, [
-  keys.watch_markup,
+  // keys.watch_markup,
   keys.watch_styles,
-  keys.watch_scripts
+  // keys.watch_scripts
 ]);
 
 const defaultTasks = gutil.env.deploy ? [keys.deploy] :

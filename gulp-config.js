@@ -1,5 +1,6 @@
 var env = 'public/',
-  pkg   = require('./package.json');
+pkg   = require('./package.json');
+
 module.exports = {
   pkg: {
     name: pkg.name
