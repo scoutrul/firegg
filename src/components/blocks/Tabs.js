@@ -3,13 +3,12 @@ import cn from 'classnames';
 import { Link } from 'react-router-dom';
 
 export default class Tabs extends Component {
-
 	state = {
 		homeTab: true
-	}
+	};
 
-	toggle = () => {
-		this.setState({ homeTab: !this.state.homeTab });
+	toggle = (condition) => {
+		this.setState({ homeTab: condition });
 	};
 
 	render() {
@@ -32,10 +31,16 @@ export default class Tabs extends Component {
 
 		const TabTitles = () => (
 			<ul id="tabSwitcher">
-				<li onClick={this.toggle} className={cn({ active: this.state.homeTab })}>
+				<li
+					onClick={() => this.toggle(true) }
+					className={cn({ active: this.state.homeTab })}
+				>
 					{firstTabName}
 				</li>
-				<li onClick={this.toggle} className={cn({ active: !this.state.homeTab })}>
+				<li
+					onClick={() => this.toggle(false) }
+					className={cn({ active: !this.state.homeTab })}
+				>
 					{secondTabName}
 				</li>
 			</ul>
@@ -44,13 +49,11 @@ export default class Tabs extends Component {
 		return (
 			<div>
 				<TabTitles />
-				{
-					this.state.homeTab ? (
-						<TabBlock list={firstList || null} block={firstBlock || null} />
-					) : (
-						<TabBlock list={secondList || null} block={secondBlock || null} />
-					)
-			}
+				{this.state.homeTab ? (
+					<TabBlock list={firstList} block={firstBlock} />
+				) : (
+					<TabBlock list={secondList} block={secondBlock} />
+				)}
 			</div>
 		);
 	}

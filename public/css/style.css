@@ -3331,17 +3331,6 @@ html body #app section.hero .container {
     min-height: 480px;
   }
 }
-html body #app section.hero .container:after {
-  content: '';
-  position: absolute;
-  top: 0.5rem;
-  background: url("../images/index_hat.png") no-repeat;
-  background-size: contain;
-  background-position: 100% 50%;
-  height: 100%;
-  width: 100%;
-  z-index: 6;
-}
 html body #app section.hero .container .screener {
   z-index: 10;
   display: -webkit-flex;
