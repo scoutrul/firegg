@@ -2208,17 +2208,6 @@ html body #app section.hero .container {
     min-height: 480px;
   }
 }
-html body #app section.hero .container:after {
-  content: '';
-  position: absolute;
-  top: 0.5rem;
-  background: url("$goal01") no-repeat;
-  background-size: contain;
-  background-position: 100% 50%;
-  height: 100%;
-  width: 100%;
-  z-index: 6;
-}
 html body #app section.hero .container .screener {
   z-index: 10;
   display: -webkit-flex;
@@ -2280,7 +2269,7 @@ html body #app section.hero .container .screener .title .takecontrol {
   }
 }
 html body #app section.hero .container .screener button {
-  margin: 1rem auto auto;
+  margin: 1rem auto 3rem;
 }
 html body #app section.content.product-inner .container .title {
   color: $darkgrey;

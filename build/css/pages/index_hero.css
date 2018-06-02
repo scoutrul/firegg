@@ -40,17 +40,6 @@ section.hero .container {
     min-height: 480px;
   }
 }
-section.hero .container:after {
-  content: '';
-  position: absolute;
-  top: 0.5rem;
-  background: url("$goal01") no-repeat;
-  background-size: contain;
-  background-position: 100% 50%;
-  height: 100%;
-  width: 100%;
-  z-index: 6;
-}
 section.hero .container .screener {
   z-index: 10;
   display: -webkit-flex;
@@ -112,7 +101,7 @@ section.hero .container .screener .title .takecontrol {
   }
 }
 section.hero .container .screener button {
-  margin: 1rem auto auto;
+  margin: 1rem auto 3rem;
 }
 
 /*# sourceMappingURL=index_hero.css.map */

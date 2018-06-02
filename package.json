@@ -8,7 +8,7 @@
   },
   "author": "Golovachov Anton <antongolova@gmail.com> (http://github.com/scoutrul)",
   "license": "MIT",
-  "homepage": "https://scoutrul.github.io/firegg/",
+  "homepage": "https://scoutrul.github.io/firegg/build/",
   "dependencies": {
     "browser-sync": "^2.24.4",
     "classnames": "^2.2.5",
