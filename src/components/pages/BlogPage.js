@@ -1,8 +1,5 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
-import cn from 'classnames'
-import { Lorem,  } from '../blocks/'
-import Tabs from '../blocks/Tabs'
 
 const mapStateToProps = state => {
 	return {
@@ -12,9 +9,7 @@ const mapStateToProps = state => {
 }
 
 class ProductsPage extends Component {
-
 	render(){
-
 		return (
 			<section className="content product">
 				<div className="container">

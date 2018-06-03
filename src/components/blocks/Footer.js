@@ -42,8 +42,8 @@ const Footer = ({ MenuItems, SocialItems, title1, title2, copy, button }) => {
 						<div className="footer-partners">
 							<div className="footer-partners-links-header">Check our partners</div>
 							<div className="footer-partners-links">
-								<a href="#">GML Security</a>
-								<a href="#">MX Systems</a>
+								<a href="/#">GML Security</a>
+								<a href="/#">MX Systems</a>
 							</div>
 						</div>
 					</div>

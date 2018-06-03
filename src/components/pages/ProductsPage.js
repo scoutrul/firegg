@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
-import cn from 'classnames'
 import Tabs from '../blocks/Tabs'
 
 const mapStateToProps = state => {
