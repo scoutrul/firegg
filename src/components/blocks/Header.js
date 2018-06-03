@@ -2,8 +2,6 @@ import React from 'react'
 import { NavLink, withRouter } from 'react-router-dom'
 import cn from 'classnames'
 
-import {LocationsOpener} from "./"
-
 const Header = ({location, MenuItems }) => {
 
 	const { pathname } = location
@@ -24,7 +22,6 @@ const Header = ({location, MenuItems }) => {
 							<img src="images/icon_logo.svg" alt="Logotype"/>
 						</NavLink>
 					</div>
-					<LocationsOpener/>
 				</div>
 				<div className="column menu">
 					<ul className="top_menu slide_up_text">
@@ -43,6 +40,5 @@ const Header = ({location, MenuItems }) => {
 		</section>
 	)
 }
-
 
 export default withRouter(Header)

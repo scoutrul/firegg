@@ -8,6 +8,7 @@
           flex-flow: row wrap;
   -webkit-justify-content: center;
           justify-content: center;
+  margin-bottom: 1rem;
 }
 #tabSwitcher li {
   border-bottom: 1px solid $specialGrey;
@@ -22,9 +23,6 @@
 #tabSwitcher li.active {
   border-bottom: 3px solid $specialRed;
   color: $specialRed;
-}
-#tabSwitcher li.active .Lorem {
-  font-size: 30%;
 }
 
 /*# sourceMappingURL=tabs.css.map */

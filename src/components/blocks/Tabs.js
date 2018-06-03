@@ -15,7 +15,7 @@ export default class Tabs extends Component {
 		const { firstBlock, secondBlock, firstTabName, secondTabName, firstList, secondList } = this.props;
 
 		const TabBlock = ({ list, block }) => {
-			const listBlock = list && (
+			const ListBlock = list && (
 				<ul className="product-list slide_up_text" id="homelist">
 					{list.map((item, i) => (
 						<li key={`${item.title} ${i}`}>
@@ -25,8 +25,8 @@ export default class Tabs extends Component {
 						</li>
 					))}
 				</ul>
-			);
-			return list ? listBlock : block;
+			)
+			return list ? ListBlock : block;
 		};
 
 		const TabTitles = () => (

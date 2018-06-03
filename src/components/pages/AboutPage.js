@@ -1,10 +1,8 @@
 import React, { Component } from 'react'
 import Tabs from '../blocks/Tabs'
-
+import { Block, Block2 } from '../blocks/Lorem'
 class AboutPage extends Component {
 	render(){
-
-		const Block = (<div>Lorem ipsum</div>)
 		
 		return (
 			<section className="content product tabs">
@@ -13,7 +11,7 @@ class AboutPage extends Component {
 						firstTabName={"History"} 
 						secondTabName={"Management"} 
 						firstBlock={Block} 
-						secondBlock={Block} 
+						secondBlock={Block2} 
 						/>
 				</div>
 			</section>

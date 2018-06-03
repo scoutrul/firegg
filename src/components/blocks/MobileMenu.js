@@ -3,9 +3,6 @@ import { NavLink, Link } from 'react-router-dom'
 import cn from 'classnames'
 import { connect } from 'react-redux'
 
-import {LocationsOpener} from './'
-
-
 const mapStateToProps = state => {
 	return { HamburgerOn: state.uiReducer.HamburgerOn }
 }
@@ -26,7 +23,6 @@ class MobileMenu extends Component {
 		return (
 			<section className={ cn('mobile_menu', { 'mobile_menu-active': condition }) }>
 				<div className="container">
-					<LocationsOpener/>
 					<ul className="mobile_menu_list slide_up_text">
 						{menuItems}
 					</ul>
@@ -41,9 +37,7 @@ class MobileMenu extends Component {
 				</div>
 			</section>
 		)
-		
 	}
-	
 }
 
 export default connect(mapStateToProps)(MobileMenu)

@@ -24,7 +24,6 @@ const appearModule = {
 //Console log title
 console.log("%cGuardsman Limited", "font: 2.2rem 'Work Sans', 'sans-serif'; color: #FFF; background-color: #1b1b1b; text-decoration: underline #ff002e");
 
-
 //magic appear//////////
 window.onload = function() {
 	(document.visibilityState === 'visible') && setTimeout(appearModule.addToAllClasses, 500);

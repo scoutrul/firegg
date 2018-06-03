@@ -1,6 +1,7 @@
 import React, { Component} from 'react'
 import { connect } from 'react-redux'
 import Tabs from '../blocks/Tabs'
+import { Block2 } from '../blocks/Lorem'
 
 const mapStateToProps = state => {
 	return {
@@ -32,13 +33,13 @@ class HelpPage extends Component{
 			</ul>
 		)
 		return (
-			<section className="content tabs">
+			<section className="content help tabs">
 				<div className="container">
 					<Tabs 
 						firstTabName={"FAQ"} 
 						secondTabName={"Demos"} 
 						firstBlock={renderContent} 
-						secondBlock={(<div>LOREM</div>)} 
+						secondBlock={Block2} 
 						/>
 				</div>
 			</section>

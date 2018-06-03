@@ -11,6 +11,9 @@ section.footer .container {
     -webkit-flex-flow: row wrap;
             flex-flow: row wrap;
   }
+  section.footer .container .footer-partners {
+    margin-bottom: 1rem;
+  }
 }
 section.footer .container .footer-title {
   min-width: 7rem;

@@ -1197,6 +1197,16 @@ html body #app section.content.index-about .container {
 html body #app section.content.index-about .container .link_under {
   font-size: 70%;
 }
+html body #app section.content .content_block {
+  margin-top: 1.5rem;
+  font-size: 40%;
+  font-weight: 400;
+  line-height: 170%;
+}
+html body #app section.content .content_block p {
+  display: block;
+  margin-bottom: 1rem;
+}
 html body #app section.footer {
   background-color: $footerbg;
   padding: 1.9rem 0;
@@ -1209,6 +1219,9 @@ html body #app section.footer .container {
   html body #app section.footer .container {
     -webkit-flex-flow: row wrap;
             flex-flow: row wrap;
+  }
+  html body #app section.footer .container .footer-partners {
+    margin-bottom: 1rem;
   }
 }
 html body #app section.footer .container .footer-title {
@@ -1524,8 +1537,7 @@ html body #app section.header .container .column.menu .top_menu {
           justify-content: center;
 }
 html body #app section.header .container .column.menu .top_menu li {
-  margin: 0 0.2rem;
-  min-width: 1.65rem;
+  margin: 0 auto;
   text-align: center;
   transition: $transition;
 }
@@ -1785,6 +1797,7 @@ html body #app #tabSwitcher {
           flex-flow: row wrap;
   -webkit-justify-content: center;
           justify-content: center;
+  margin-bottom: 1rem;
 }
 html body #app #tabSwitcher li {
   border-bottom: 1px solid $specialGrey;
@@ -1799,9 +1812,6 @@ html body #app #tabSwitcher li {
 html body #app #tabSwitcher li.active {
   border-bottom: 3px solid $specialRed;
   color: $specialRed;
-}
-html body #app #tabSwitcher li.active .Lorem {
-  font-size: 30%;
 }
 html body #app section.in-cart {
   -webkit-flex-flow: column wrap;
@@ -2161,7 +2171,7 @@ html body #app section.feedback .container .feedback_send .title2 {
   margin: 0.5rem 0;
 }
 html body #app section.help .container {
-  margin: 2rem auto auto;
+  margin: 0 auto auto;
 }
 html body #app section.help .container ul.faq.accordion_items {
   text-align: center;
