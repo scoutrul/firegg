@@ -47,5 +47,15 @@ section.content.index-about .container {
 section.content.index-about .container .link_under {
   font-size: 70%;
 }
+section.content .content_block {
+  margin-top: 1.5rem;
+  font-size: 40%;
+  font-weight: 400;
+  line-height: 170%;
+}
+section.content .content_block p {
+  display: block;
+  margin-bottom: 1rem;
+}
 
 /*# sourceMappingURL=content.css.map */
