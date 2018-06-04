@@ -26,7 +26,7 @@ class Routes extends Component {
 	}
 
 	redirectPls() {
-		window.location.href = '/home'
+		window.location.href = 'https://scoutrul.github.io/firegg/release/home/'
 	}
 
 	render(){
