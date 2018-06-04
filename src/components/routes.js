@@ -1,6 +1,6 @@
 import React, {Component} from 'react'
 import { Switch, Route } from 'react-router-dom'
-import { withRouter } from 'react-router'
+import { withRouter, Redirect } from 'react-router'
 import { connect } from 'react-redux'
 
 import { bindActionCreators } from 'redux'
@@ -25,10 +25,6 @@ class Routes extends Component {
 		});
 	}
 
-	redirectPls() {
-		window.location.href = 'https://scoutrul.github.io/firegg/release/home/'
-	}
-
 	render(){
 		return(
 			<Switch>
@@ -40,8 +36,7 @@ class Routes extends Component {
 				<Route path='/feedback' component={FeedbackPage}/>
 				<Route path='/blog' component={BlogPage}/>
 				<Route render={() => { 
-					this.redirectPls();
-					return (<section className="content" style={{justifyContent: "center"}}>Under Construction</section>)}
+					return (<Redirect push to="/home" />)}
 				}/>
 			</Switch>	
 		)
