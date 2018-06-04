@@ -25,6 +25,10 @@ class Routes extends Component {
 		});
 	}
 
+	redirectPls() {
+		window.location.href = '/home'
+	}
+
 	render(){
 		return(
 			<Switch>
@@ -35,7 +39,10 @@ class Routes extends Component {
 				<Route path='/contact' component={ContactsPage}/>
 				<Route path='/feedback' component={FeedbackPage}/>
 				<Route path='/blog' component={BlogPage}/>
-				<Route render={()=>(<section className="content" style={{justifyContent: "center"}}>Under Construction</section>)}/>
+				<Route render={() => { 
+					this.redirectPls();
+					return (<section className="content" style={{justifyContent: "center"}}>Under Construction</section>)}
+				}/>
 			</Switch>	
 		)
 	}

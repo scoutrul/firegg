@@ -1,0 +1,28 @@
+#tabSwitcher {
+  display: -webkit-flex;
+  display: flex;
+  margin: auto;
+  font-size: 70%;
+  padding: 0;
+  -webkit-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-justify-content: center;
+          justify-content: center;
+  margin-bottom: 1rem;
+}
+#tabSwitcher li {
+  border-bottom: 1px solid $specialGrey;
+  padding: 0.3rem 1.2rem 0.3rem 1.2rem;
+  cursor: pointer;
+}
+@media screen and (max-width: $iphone5) {
+  #tabSwitcher li {
+    padding: 0 0.3rem;
+  }
+}
+#tabSwitcher li.active {
+  border-bottom: 3px solid $specialRed;
+  color: $specialRed;
+}
+
+/*# sourceMappingURL=tabs.css.map */

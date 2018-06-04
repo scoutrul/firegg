@@ -1,0 +1,107 @@
+section.hero {
+  background-color: #fff;
+  display: -webkit-flex;
+  display: flex;
+  min-height: 100vh;
+  background-image: -webkit-radial-gradient(bottom, rgba(29,30,30,0.23) 30%, rgba(29,30,30,0.13) 40%, #fff 70%);
+}
+section.hero .promo {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  color: #ff002e;
+  text-transform: uppercase;
+  font-weight: 900;
+  top: 30%;
+  font-size: 13vw;
+}
+section.hero .container {
+  -webkit-flex-direction: column;
+          flex-direction: column;
+  max-height: 1200px;
+  height: 100%;
+  margin: auto auto 0;
+  max-width: 100%;
+  min-height: 100vh;
+}
+@media screen and (min-height: $desktop) and (min-width: $ipad) {
+  section.hero .container {
+    max-height: $desktop;
+  }
+}
+@media screen and (max-width: $iphone6) {
+  section.hero .container {
+    height: auto;
+    padding: 2rem 15px 1rem;
+  }
+}
+@media screen and (max-width: $iphoneH) {
+  section.hero .container {
+    min-height: 480px;
+  }
+}
+section.hero .container .screener {
+  z-index: 10;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+          flex-direction: column;
+  -webkit-align-items: flex-start;
+          align-items: flex-start;
+  -webkit-flex: 1 0 auto;
+          flex: 1 0 auto;
+  -webkit-justify-content: center;
+          justify-content: center;
+  margin: auto;
+  min-width: 100%;
+}
+section.hero .container .screener .promoHero {
+  position: absolute;
+  min-width: 100vw;
+  min-height: 100vh;
+}
+section.hero .container .screener .promoHero .img {
+  background: url("../images/guardsman_promo.png") 50% 100%/100vh no-repeat;
+  left: -15px;
+  min-width: 100vw;
+  min-height: 100vh;
+}
+@media screen and (max-width: 620px) {
+  section.hero .container .screener {
+    max-width: 100%;
+    padding: 0;
+  }
+}
+@media screen and (max-width: $iphone) {
+  section.hero .container .screener {
+    max-height: 1200px;
+  }
+}
+@media screen and (max-width: $iphoneH) {
+  section.hero .container .screener {
+    min-height: 100vh;
+  }
+}
+section.hero .container .screener .title {
+  color: #fff;
+  text-align: center;
+  font-weight: 300;
+  margin: auto auto 0 auto;
+  line-height: 130%;
+}
+section.hero .container .screener .title .takecontrol {
+  color: $specialRed;
+  font-size: 60%;
+  margin-top: 0.7rem;
+}
+@media screen and (max-width: $iphone) {
+  section.hero .container .screener {
+    font-size: 90%;
+    line-height: 100%;
+  }
+}
+section.hero .container .screener button {
+  margin: 1rem auto 3rem;
+}
+
+/*# sourceMappingURL=index_hero.css.map */

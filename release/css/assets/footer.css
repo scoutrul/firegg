@@ -1,0 +1,111 @@
+section.footer {
+  background-color: $footerbg;
+  padding: 1.9rem 0;
+}
+section.footer .container {
+  display: -webkit-flex;
+  display: flex;
+}
+@media screen and (max-width: $iphone6) {
+  section.footer .container {
+    -webkit-flex-flow: row wrap;
+            flex-flow: row wrap;
+  }
+  section.footer .container .footer-partners {
+    margin-bottom: 1rem;
+  }
+}
+section.footer .container .footer-title {
+  min-width: 7rem;
+  max-width: 50%;
+  width: 100%;
+  -webkit-flex: 1 0 auto;
+          flex: 1 0 auto;
+  min-height: 3.5rem;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+          flex-direction: column;
+  -webkit-justify-content: space-between;
+          justify-content: space-between;
+}
+section.footer .container .footer-title .footer-slogan {
+  color: $specialRed;
+  transition: $transition;
+  font-size: 60%;
+  font-weight: 300;
+}
+section.footer .container .footer-menu {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex: 1 0 auto;
+          flex: 1 0 auto;
+}
+section.footer .container .footer-menu ul {
+  -webkit-flex: 1 0 auto;
+          flex: 1 0 auto;
+  padding: 0;
+}
+section.footer .container .footer-menu ul li {
+  max-height: 0.6rem;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: flex-end;
+          align-items: flex-end;
+}
+section.footer .container .footer-menu ul li a {
+  line-height: 0.79rem;
+  color: $white;
+  transition: $transition;
+  font-size: 40%;
+  min-width: 3rem;
+  display: inline-block;
+}
+section.footer .container .footer-menu ul li a:hover {
+  color: $specialRed;
+  cursor: pointer;
+}
+section.footer .container .footer-copy {
+  display: -webkit-flex;
+  display: flex;
+  width: 100%;
+  -webkit-align-items: center;
+          align-items: center;
+  margin: 1.2rem 0 0 0;
+  -webkit-flex-flow: row wrap;
+          flex-flow: row wrap;
+}
+section.footer .container .footer-copy .copy {
+  color: $darkgrey3;
+  font-size: 25%;
+  -webkit-flex: 1 1 50%;
+          flex: 1 1 50%;
+}
+section.footer .container .footer-copy .footer-column {
+  margin: 0 auto 0 0;
+  -webkit-flex: 1 0 50%;
+          flex: 1 0 50%;
+}
+section.footer .container .footer-copy .footer-column.footer-button {
+  margin: 0.8rem auto;
+  -webkit-flex: 1 1 50%;
+          flex: 1 1 50%;
+  display: -webkit-flex;
+  display: flex;
+}
+section.footer .container .footer-partners {
+  font-size: 40%;
+  color: #fff;
+}
+section.footer .container .footer-partners .footer-partners-links-header {
+  font-size: 60%;
+}
+section.footer .container .footer-partners .footer-partners-links a {
+  font-size: 80%;
+  text-decoration: underline;
+  margin-right: 30px;
+  margin-top: 30px;
+  display: inline-block;
+}
+
+/*# sourceMappingURL=footer.css.map */
